@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Crimson Market | מכולת פירות, ירקות ומזון בריא ברמת גן</title>
+<meta name="description" content="אצלנו תמצאו פירות וירקות, פירות קפואים, גרנולה וזרעים. יש גם מארזי אסאי, מאצ&#x27;ה, מי קוקוס וחלב אורז שקדים, ואנחנו ברחוב הבונים ברמת גן.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Crimson Market | מכולת פירות, ירקות ומזון בריא ברמת גן">
+<meta property="og:description" content="אצלנו תמצאו פירות וירקות, פירות קפואים, גרנולה וזרעים. יש גם מארזי אסאי, מאצ&#x27;ה, מי קוקוס וחלב אורז שקדים, ואנחנו ברחוב הבונים ברמת גן.">
+<meta property="og:image" content="https://imageproxy.wolt.com/assets/692c1aa5061174aecd7b5fcf?w=1200">
+<meta name="theme-color" content="#1C2433">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Bellefair&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#F1F3F6;--ink:#1C2433;--accent:#2D63C8;--second:#F0B429;--display:"Secular One",serif;--on-accent:#fff; }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "Assistant",system-ui,sans-serif;padding-bottom:calc(86px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%}
+a{color:inherit}
+ul{list-style:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.ribbon{background:var(--ink);color:var(--bg);font-size:13px;line-height:1.4;text-align:center;padding:7px 16px}
+
+/* hero: the business's own photo, its name set as large as the width allows */
+.hero{position:relative;min-height:74svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);color:#fff;isolation:isolate}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.35) 42%,rgba(0,0,0,0) 72%)}
+.hero__text{width:100%;max-width:980px;margin:0 auto;padding:0 22px 30px}
+.hero__logo{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.85);margin-bottom:14px;background:#fff}
+.hero__name{display:inline-block;font-family:var(--display);font-weight:400;line-height:.98;white-space:nowrap;font-size:64px;letter-spacing:-.005em}
+.hero__name.wrap{white-space:normal}
+.hero__tag{font-size:clamp(18px,4.6vw,22px);line-height:1.4;margin-top:12px;max-width:30ch;color:rgba(255,255,255,.92)}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-weight:700;font-size:15px;padding:7px 14px 7px 16px;border-radius:999px;background:rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#C9CDD3}
+.status.open::before{background:#5EE38B;box-shadow:0 0 0 4px rgba(94,227,139,.25)}
+@media (prefers-reduced-motion:no-preference){
+  .hero__img{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) both}
+  .hero__name{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes settle{from{transform:scale(1.07)}}
+  @keyframes rise{from{transform:translateY(35%);opacity:0}}
+}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;padding:20px 0 4px;font-size:15.5px}
+.facts b{color:var(--accent);font-weight:800}
+section{padding:40px 0 8px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(32px,8.4vw,46px);line-height:1.05;margin-bottom:20px}
+.about p{font-size:clamp(19px,4.8vw,22px);line-height:1.6;max-width:34ch}
+
+/* menu */
+.chips{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:12px 22px;margin:0 -22px 6px;background:var(--bg);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;text-decoration:none;font-weight:700;font-size:15px;padding:7px 15px;border-radius:999px;border:1.5px solid color-mix(in srgb,var(--ink) 30%,transparent);transition:background .2s,color .2s,border-color .2s}
+.chips a.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cat{padding-top:18px;scroll-margin-top:64px}
+.cat h3{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.2;color:var(--accent);padding-bottom:6px;border-bottom:3px solid var(--second)}
+.item{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.item__txt{flex:1;min-width:0}
+.item__name{font-weight:800;font-size:17.5px;line-height:1.35}
+.item__desc{font-size:15px;line-height:1.5;color:color-mix(in srgb,var(--ink) 72%,transparent);margin-top:3px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.item__price{display:block;margin-top:6px;font-weight:800;font-size:16px;color:var(--accent)}
+.item img{width:100px;height:100px;flex:none;object-fit:cover;border-radius:16px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+
+/* beauty */
+.services{display:flex;flex-wrap:wrap;gap:9px}
+.services li{font-weight:600;font-size:16px;padding:9px 16px;border-radius:999px;background:color-mix(in srgb,var(--accent) 13%,var(--bg));border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+.gallery img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+
+/* hours + location */
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent);font-size:16.5px}
+.hours li.today{font-weight:800;color:var(--accent)}
+.hours span:last-child{direction:ltr;unicode-bidi:isolate}
+.addr{font-size:18px;margin-bottom:14px}
+.map{width:100%;height:270px;border:0;border-radius:18px;display:block;background:color-mix(in srgb,var(--second) 25%,var(--bg))}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15.5px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--ink)}
+
+.foot{text-align:center;font-size:13.5px;padding:48px 22px 28px;color:color-mix(in srgb,var(--ink) 65%,transparent)}
+.foot .by{direction:ltr;margin-top:4px}
+.foot .by b{letter-spacing:.06em}
+
+/* bottom action bar */
+.bar{position:fixed;inset:auto 0 0 0;z-index:10;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--ink)}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;border-radius:14px;color:var(--bg);text-decoration:none;font-size:13px;font-weight:700}
+.bar a.main{background:var(--accent);color:var(--on-accent)}
+.bar svg{width:22px;height:22px}
+@media (min-width:760px){
+  .bar{left:50%;right:auto;bottom:16px;transform:translateX(-50%);width:min(560px,92vw);border-radius:22px;padding:8px}
+  .item img{width:120px;height:120px}
+  .gallery{grid-template-columns:1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>window.SITE = {"kind": "shop", "name": "Crimson Market", "tagline": "מכולת פירות, ירקות ומזון בריא ברמת גן", "about": "אצלנו תמצאו פירות וירקות, פירות קפואים, גרנולה וזרעים. יש גם מארזי אסאי, מאצ'ה, מי קוקוס וחלב אורז שקדים, ואנחנו ברחוב הבונים ברמת גן.", "phone": "0505304620", "whatsapp": "0505304620", "address": "הבונים 12, רמת גן", "lat": 32.08840794093949, "lon": 34.80257822784017, "hours": [[], [[630, 960]], [[630, 960]], [], [], [], []], "cover": "https://imageproxy.wolt.com/assets/692c1aa5061174aecd7b5fcf?w=1600", "logo": null, "rating": {"score": 9.8, "count": 10, "src": "וולט"}, "menu": [{"name": "הוספת צידנית לרכישה", "items": [{"name": "תרצו להוסיף אריזת צידנית סמבה?", "desc": "התמונה להמחשה בלבד", "price": 8.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f442a"}]}, {"name": "מארזים", "items": [{"name": "מארז אסאי", "desc": "צידנית של סמבהזון, פיינט סורבה אסאי 500 מ\"ל, קערה וכפית קוקוס", "price": 69.0, "img": "https://imageproxy.wolt.com/assets/69380c47dcf93820d678eea6"}, {"name": "מארז אסאי זוגי", "desc": "צידנית, 2 אסאי קלאסי 500 מ\"ל, 2 סט קערה וכפית קוקוס", "price": 119.0, "img": "https://imageproxy.wolt.com/assets/692c0f9e061174aecd7b5ea4"}, {"name": "מארז אסאי - מתחילים", "desc": "צידנית סמבהזון, רביעיית אסאי מקורי,חצי קילו בננה קפואה, חצי קילו תות קפוא, חצי קילו אוכמניות קפואות, חלב שקדים, גרנולה קטן, רצועות קוקוס קטן, 2 קערות קוקוס, 2 כפיות קוקוס", "price": 269.0, "img": "https://imageproxy.wolt.com/assets/692c0fc54be0f0d2140fe6a6"}, {"name": "מארז אספקה חודשית", "desc": "2 רביעיות אסאי מקורי, 1 ק\"ג בננה קפואה, 1 ק\"ג תות קפוא, 1 ק\"ג אוכמניות קפואות, חלב שקדים, גרנולה בינוני, רצועות קוקוס טבעי בינוני", "price": 289.0, "img": "https://imageproxy.wolt.com/assets/692c0fbf061174aecd7b5eaa"}, {"name": "מארז JUNGLE", "desc": "צידנית סמבהזון,1 קילו אננס קפוא,  1 קילו מנגו קפוא, 1 קילו פסיפלורה קפואה", "price": 179.0, "img": "https://imageproxy.wolt.com/assets/692c0fbf061174aecd7b5eaa"}, {"name": "מארז DETOX", "desc": "צידנית סמבהזון, רבעיית אסאי טהור, 1 ק\"ג אוכמניות קפואות,  1 קילו תות קפוא, 1 קילו אננס קפוא,  1 ליטר מי קוקוס", "price": 199.0, "img": "https://imageproxy.wolt.com/assets/692c0fbf061174aecd7b5eaa"}]}, {"name": "קפואים", "items": [{"name": "בננה קפואה | 1 ק״ג", "desc": "בננה קפואה 1 קילו, כשר, בננות, בננה, בננ, מוז", "price": 39.0, "img": "https://imageproxy.wolt.com/assets/693fe8411ed68ef1db2c24cf"}, {"name": "תות קפוא | 1 ק״ג", "desc": "תות קפוא 1 קילו, כשר, תותים, תות שדה, תות שדה, תותים טריים, תות", "price": 39.0, "img": "https://imageproxy.wolt.com/assets/693fe7c432c5f705060fd5cd"}, {"name": "אננס קפוא | 1 ק״ג", "desc": "אננס קפוא 1 קילו, כשר", "price": 55.0, "img": "https://imageproxy.wolt.com/assets/69411e169bd35c2271341c4e"}, {"name": "מנגו קפוא | 1 ק״ג", "desc": "מנגו קפוא 1 קילו, כשר", "price": 55.0, "img": "https://imageproxy.wolt.com/assets/693fe8c232c5f705060fd620"}, {"name": "תמר קפוא | 1 ק״ג", "desc": "תמר קפוא 1 קילו, כשר", "price": 58.0, "img": "https://imageproxy.wolt.com/assets/69411dff9587ae3377faff6c"}, {"name": "פטל שחור קפוא | 1 ק״ג", "desc": "פטל שחור קפוא 1 קילו, פטל אדום, פטל שחור, Raspberry, פירות יער, פטל", "price": 59.0, "img": "https://imageproxy.wolt.com/assets/69411e369bd35c2271341c4f"}, {"name": "מיקס פירות יער קפוא | 1 ק״ג", "desc": "מיקס פירות יער קפוא 1 קילו- דומדמניות, דובדבן ואוכמניות שחורות. (עלול להשתנות), אוכמנית, אוכמנייה, בלוברי, Blueberries, פירות יער, אוכמניות, דובדבנים, דובדבנים טריים, דובדבן, דובדב", "price": 59.0, "img": "https://imageproxy.wolt.com/assets/69411e489bd35c2271341c50"}, {"name": "פסיפלורה קפוא | 1 ק״ג", "desc": "פסיפלורה קפואה 1 קילו, כשר", "price": 68.0, "img": "https://imageproxy.wolt.com/assets/69411e5a9587ae3377faff74"}, {"name": "אוכמניות כחולות קפוא | 1 ק״ג", "desc": "אוכמניות כחולות קפואות 1 קילו, כשר, אוכמנית, אוכמנייה, בלוברי, Blueberries, פירות יער, אוכמניות", "price": 68.0, "img": "https://imageproxy.wolt.com/assets/69411e719587ae3377faff78"}, {"name": "פטל אדום קפוא | 1 ק״ג", "desc": "פטל אדום קפוא 1 קילו, פטל אדום, פטל שחור, Raspberry, פירות יער, פטל", "price": 85.0, "img": "https://imageproxy.wolt.com/assets/69411e8f0bf8cf3e5c6d5f9a"}, {"name": "מלון קפוא | 1 ק״ג", "desc": "כשר, מלון קפוא 1 קילו", "price": 46.0, "img": "https://imageproxy.wolt.com/assets/694120c59587ae3377faffc0"}, {"name": "בננה קפואה | 2 ק״ג", "desc": "בננה קפואה 2 קילו, כשר, בננות, בננה, בננ, מוז", "price": 65.0, "img": "https://imageproxy.wolt.com/assets/693fe864412f4b47cf4c274c"}, {"name": "תות קפוא | 2 ק״ג", "desc": "תות קפוא 2 קילו, כשר, תותים, תות שדה, תות שדה, תותים טריים, תות", "price": 65.0, "img": "https://imageproxy.wolt.com/assets/693fe7eb32c5f705060fd5db"}, {"name": "מנגו קפוא | 2 ק״ג", "desc": "מנגו קפוא 2 קילו, כשר", "price": 85.0, "img": "https://imageproxy.wolt.com/assets/693fe89f32c5f705060fd611"}, {"name": "אננס קפוא | 2 ק״ג", "desc": "אננס קפוא 2 קילו, כשר", "price": 85.0, "img": "https://imageproxy.wolt.com/assets/694120e19587ae3377faffc5"}, {"name": "מלון קפוא | 2 ק״ג", "desc": "כשר", "price": 85.0, "img": "https://imageproxy.wolt.com/assets/694120fe9587ae3377faffc6"}, {"name": "תמר קפוא | 2 ק״ג", "desc": "תמר קפוא 2 קילו, כשר", "price": 89.0, "img": "https://imageproxy.wolt.com/assets/694121179587ae3377faffca"}, {"name": "פיספלורה קפוא | 2 ק״ג", "desc": "פסיפלורה קפואה 2 קילו, כשר", "price": 109.0, "img": "https://imageproxy.wolt.com/assets/694121299587ae3377faffcb"}, {"name": "מיקס פירות יער קפוא | 2 ק״ג", "desc": "מיקס פירות יער קפוא 2 קילו- דומדמניות, דובדבן ואוכמניות שחורות. (עלול להשתנות), אוכמנית, אוכמנייה, בלוברי, Blueberries, פירות יער, אוכמניות, דובדבנים, דובדבנים טריים, דובדבן, דובדב", "price": 109.0, "img": "https://imageproxy.wolt.com/assets/6941213b9587ae3377faffcc"}, {"name": "אוכמניות כחולות קפוא | 2 ק״ג", "desc": "אוכמניות כחולות קפואות 2 קילו, כשר, אוכמנית, אוכמנייה, בלוברי, Blueberries, פירות יער, אוכמניות", "price": 120.0, "img": "https://imageproxy.wolt.com/assets/6941214e9bd35c2271341c78"}, {"name": "רביעיית אסאי מקורי עם גוארנה קפוא | סמבהזון", "desc": "ללא גלוטן, טבעוני, כשר, 4 יחידות של 100 גרם", "price": 37.9, "img": "https://imageproxy.wolt.com/assets/692c0fbf061174aecd7b5eaa"}, {"name": "סמבהזון סורבה אסאי בננה 500 מ״ל", "desc": "500 מ״ל ללא גלוטן, טבעוני, כשר אסאי מוכן לאכילה בשילוב בננה קפוא | סמבהזון", "price": 37.9, "img": "https://imageproxy.wolt.com/assets/692c1023061174aecd7b5eb7"}, {"name": "סמבהזון סורבה אסאי 500 מ״ל", "desc": "500 מ״ל סורבה סמבהזון אסאי ללא גלוטן, טבעוני, כשר אסאי מוכן לאכילה קלאסי קפוא | סמבהזון", "price": 39.9, "img": "https://imageproxy.wolt.com/assets/692c0fae061174aecd7b5ea6"}, {"name": "דלי סורבה סמבהזון אסאי קפוא 3.6 ליטר", "desc": "ללא גלוטן, טבעוני, כשר 3.6 ליטר של סורבה אסאי מוכן לאכילה", "price": 289.0, "img": "https://imageproxy.wolt.com/assets/692c1055061174aecd7b5ebc"}, {"name": "סמבהזון Berry Bliss™ Frozen Açaí Bowl - קערת אסאי מוכנה לאכילה - תות בננה", "desc": "קערת אסאי אורגנית מוכנה לאכילה, ללא צורך בבלנדר. נמסה תוך דקות ספורות. תערובת טעימה של מחית אסאי, תות ובננה. כוללת תוספת גרנולה.\n120 קלוריות למנה (כולל תוספות 190) | 16 גרם סוכר טבעי | כל יחידה 173 גרם | יש לשמור במקפיא ", "price": 24.9, "img": "https://imageproxy.wolt.com/assets/6a7aec397747ba05e8e5e078"}, {"name": "סמבהזון Amazon Superberry™ Frozen Açaí Bowl - קערת אסאי מוכנה לאכילה - פירות יער", "desc": "קערת אסאי אורגנית מוכנה לאכילה, ללא צורך בבלנדר. נמסה תוך דקות ספורות. תערובת טעימה של מחית אסאי, תות ובננה. כוללת תוספת גרנולה.\n160 קלוריות למנה (כולל תוספות 230) | 14 גרם סוכר טבעי | כל יחידה 173 גרם | יש לשמור במקפיא ", "price": 24.9, "img": "https://imageproxy.wolt.com/assets/6a7aec297747ba05e8e5e071"}]}, {"name": "טופינג", "items": [{"name": "גרנולה מוזלי שקדיה | קטן", "desc": "גרנולה מוזלי שקדיה | קטן 270 מ״ל", "price": 19.9, "img": "https://imageproxy.wolt.com/assets/692c10724be0f0d2140fe6b8"}, {"name": "רצועות קוקוס טבעי | קטן", "desc": "רצועות קוקוס טבעי  270 מ״ל", "price": 19.9, "img": "https://imageproxy.wolt.com/assets/692c0ebefa4732ccf7810787"}, {"name": "זרעי דלעת | קטן", "desc": "זרעי דלעת  270 מ״ל", "price": 19.9, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f43e4"}, {"name": "זרעי צ׳יה | קטן", "desc": "זרעי צ'יה  270 מ״ל", "price": 19.9, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f43e6"}, {"name": "זרעי פשתן | קטן", "desc": "זרעי פשתן 270 מ״ל", "price": 19.9, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f43e5"}, {"name": "גוג׳י ברי | קטן", "desc": "גוג'י ברי,  270 מ״ל", "price": 24.9, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f43dc"}, {"name": "אגוזי מלך | קטן", "desc": "אגוזי מלך  270 מ״ל", "price": 24.9, "img": "https://imageproxy.wolt.com/assets/692c0b094be0f0d2140fe62f"}, {"name": "פקאן סיני | קטן", "desc": "פקאן סיני  270 מ״ל", "price": 24.9, "img": "https://imageproxy.wolt.com/assets/692c0b18fa4732ccf78106f3"}, {"name": "קוקוס טחון | קטן", "desc": "קוקוס טחון  270 מ״ל", "price": 19.9, "img": "https://imageproxy.wolt.com/assets/692c0d01fa4732ccf7810725"}, {"name": "גרנולה מוזלי שקדיה | בינוני", "desc": "גרנולה במשקל, 500 מ״ל", "price": 34.9, "img": "https://imageproxy.wolt.com/assets/692c1079fa4732ccf78107b0"}, {"name": "גוג׳י ברי | בינוני", "desc": "גוג'י ברי 500 מ״ל", "price": 39.9, "img": "https://imageproxy.wolt.com/assets/692c0d16061174aecd7b5e3e"}, {"name": "רצועות קוקוס טבעי | בינוני", "desc": "רצועות קוקוס טבעי 500 מ״ל", "price": 34.9, "img": "https://imageproxy.wolt.com/assets/692c0ec6061174aecd7b5e72"}, {"name": "זרעי דלעת | בינוני", "desc": "זרעי דלעת 500 מ״ל", "price": 34.9, "img": "https://imageproxy.wolt.com/assets/692c0d344be0f0d2140fe66a"}, {"name": "זרעי צ׳יה | בינוני", "desc": "זרעי צ'יה 500 מ״ל", "price": 34.9, "img": "https://imageproxy.wolt.com/assets/692c0d44061174aecd7b5e45"}, {"name": "זרעי פשתן | בינוני", "desc": "זרעי פשתן 500 מ״ל", "price": 34.9, "img": "https://imageproxy.wolt.com/assets/692c0d53061174aecd7b5e49"}, {"name": "אגוזי מלך | בינוני", "desc": "אגוזי מלך 500 מ״ל", "price": 39.9, "img": "https://imageproxy.wolt.com/assets/692c0d62061174aecd7b5e4c"}, {"name": "פקאן סיני | בינוני", "desc": "פקאן סיני 500 מ״ל", "price": 39.9, "img": "https://imageproxy.wolt.com/assets/692c0d74061174aecd7b5e50"}, {"name": "קוקוס טחון | בינוני", "desc": "קוקוס טחון 500 מ״ל", "price": 34.9, "img": "https://imageproxy.wolt.com/assets/692c0db8fa4732ccf7810750"}]}, {"name": "חלבון, מאצ׳ה וחבריו", "items": [{"name": "מאצ׳ה סילבר 50 גרם", "desc": "שקית מאצ׳ה סילבר 50 גרם, כשר, מאצ׳ה סילבר בעלת צבע ירוק עז,  נקייה מכימיקליים, 35-50 כוסות תלוי בחוזק", "price": 59.0, "img": "https://imageproxy.wolt.com/assets/694103bd1ed68ef1db2c569e"}, {"name": "מאצ׳ה פרפקט טד 30 גרם", "desc": "אבקת המאצ’ה של Perfect Ted היא מאצ'ה בדרגת Ceremonial Grade, המיוצרת מעלי תה ירוק צעירים הנטחנים באבן בתהליך לשמירה על צבע ירוק חי, מרקם חלק וטעם מאוזן ועדין. שקית של 30 גרם ללא גלוטן, ויגן פרנדלי. כשר", "price": 99.0, "img": "https://imageproxy.wolt.com/assets/6a7aecf17747ba05e8e5e0ca"}, {"name": "מאצ׳ה וניל פרפקט טד 75 גרם", "desc": "אבקת המאצ’ה וניל של Perfect Ted היא מאצ'ה בשילוב וניל, מייצרת טעם בלתי נשכח . שקית של 75 גרם", "price": 99.0, "img": "https://imageproxy.wolt.com/assets/6a7aecd37747ba05e8e5e0c2"}, {"name": "מאצ׳ה פרפקט טד  עם מערבב מאצ׳ה whisk bamboo", "desc": "אבקת המאצ’ה של Perfect Ted היא מאצ'ה בדרגת Ceremonial Grade, שקית של 30 גרם ללא גלוטן, ויגן פרנדלי. כשר, ביחד עם מערבב מאצ׳ה וויסק", "price": 149.9, "img": "https://imageproxy.wolt.com/assets/6a7c44e0fd48a8e3c29eb672"}, {"name": "מאצ׳ה פרפקט טד  וניל עם מערבב מאצ׳ה whisk bamboo", "desc": "אבקת המאצ’ה של Perfect Ted בטעם וניל. שקית של 75 גרם ללא גלוטן, ויגן פרנדלי. כשר, ביחד עם מערבב מאצ׳ה וויסק", "price": 149.9, "img": "https://imageproxy.wolt.com/assets/6a7c44d2fd48a8e3c29eb667"}, {"name": "ערכת מאצ׳ה", "desc": "ערכת מאצ׳ה- מאצה פרימיום 50 גרם, מערבב מאצ׳ה, כפית למאצ׳ה וקערת מאצ׳ה", "price": 259.0, "img": "https://imageproxy.wolt.com/assets/694666dbc3a37c5feafb6845"}, {"name": "ערכת מאצ׳ה למתקדמים", "desc": "ערכת מאצ׳ה- מאצה פרימיום 50 גרם, מערבב מאצ׳ה, כפית למאצ׳ה, קערת מאצ׳ה וסטנד מעמד למערבב מאצ׳ה", "price": 299.0, "img": "https://imageproxy.wolt.com/assets/694667141b17af7f09c21716"}, {"name": "ערכת מאצ׳ה עם פרפקט טד למתקדמים", "desc": "כל מה שצריך בשביל להתחיל לשתות מאצ׳ה בבית -ערכת מאצ׳ה- מאצה פרפקט טד 30 גרם, מערבב מאצ׳ה, כפית למאצ׳ה, קערת מאצ׳ה, מסננת וסטנד מעמד למערבב מאצ׳ה", "price": 349.0, "img": "https://imageproxy.wolt.com/assets/6a7c44e4fd48a8e3c29eb673"}, {"name": "שבבי קקאו ניבס אורגני 227 גרם נביטאס", "desc": "227 גרם ,שבבי קקאו רוא, פריכים ועשירים בטעמם, המופקים מפולי קקאו שלמים שקולפו ופוררו - Organic Cacao Nibs, navitas", "price": 109.9, "img": "https://imageproxy.wolt.com/assets/69e0af6a6ae486dd9c9bcf82"}, {"name": "אבקת קקאו נא 227 גרם נביטאס", "desc": "אבקת קקאו נא 227 גרם נביטאס, טבעוני, כשר, לא מהונדס גנטי", "price": 99.9, "img": "https://imageproxy.wolt.com/assets/693ff80a32c5f705060fe14e"}, {"name": "אבקת מאקה 227 גרם נביטאס", "desc": "אבקת מאקה 227 גרם נביטאס, מגביר פוריות, מאזן הורמונלי", "price": 139.9, "img": "https://imageproxy.wolt.com/assets/693fe1ce412f4b47cf4c2516"}, {"name": "אבקת קריאטין 300 גרם סאן ווריור", "desc": "אבקת קריאטין מונוהידרייט טבעונית 300 גרם, ללא תוספת סוכר, תוסף תזונה . סאן ווריור", "price": 149.9, "img": "https://imageproxy.wolt.com/assets/693fe31d1ed68ef1db2c2346"}, {"name": "אבקת קולגן טבעוני סאן ווריור", "desc": "קולגן טבעוני,טעם נטורל אבקת פפטידים עם ביוטין וחומצה היאלורונית  500 גרם, סאן ווריור", "price": 249.9, "img": "https://imageproxy.wolt.com/assets/693ff3be1ed68ef1db2c29f6"}, {"name": "אבקת ספירולינה כחולה blue majik", "desc": "אבקת ספירולינה כחולה 50 גרם פיקוציאנין טולסי ספיריט, blue majik", "price": 299.9, "img": "https://imageproxy.wolt.com/assets/693ff5c0412f4b47cf4c3078"}, {"name": "קקאומאקה לאטה בוקר", "desc": "תערובת קקאו מאקה לאטה- קקאו בוקר עם קורדיספס- לאטה אורגני 100גר' באריזת קרטון ממוחזר עם דיו מירקות ושקית קומפוסטאבל ביתית", "price": 99.9, "img": "https://imageproxy.wolt.com/assets/693ff78b412f4b47cf4c315c"}, {"name": "אבקת פטריית קורדיספס אורגנית 100 גרם tulsi spirit", "desc": "אבקת פטריית קורדיספס אורגנית 100 גרם tulsi spirit, לשיפור ביצועים שפורטיביים והורדת סטרס", "price": 179.9, "img": "https://imageproxy.wolt.com/assets/6947e5d06e37f9d39e3acf60"}, {"name": "אבקת פטריית רעמת האריה  100 גרם tulsi spirit", "desc": "פטריית רעמת האריה (ליון מיין/ הריסום) אורגנית , תומכת בשיפור הזיכרון, מגבירה ריכוז ובהירות, מאזנת מצבי רוח organic lion's mane mushroom", "price": 159.9, "img": "https://imageproxy.wolt.com/assets/6947e6c5a473d9384b50b3a4"}, {"name": "בייטס פרו מקס ברנר כדורי שוקולד חלב חלבון- 18 גרם חלבון", "desc": "בייטס פרו מקס ברנר כדורי שוקולד חלב , 18 גרם חלבון - 60 גרם, כשר", "price": 24.0, "img": "https://imageproxy.wolt.com/assets/6a7d57ea5b3de04a70aacc45"}, {"name": "בייטס פרו מקס ברנר כדורי שוקולד לבן 18 גרם חלבון", "desc": "בייטס פרו מקס ברנר כדורי שוקולד לבן 18 גרם חלבון, 60 גרם", "price": 24.0, "img": "https://imageproxy.wolt.com/assets/6a7d57d65b3de04a70aacc41"}, {"name": "pro bar- חטיף חלבון מקס ברנר בטעם שוקולד דובאי 18 גרם חלבון", "desc": "pro bar- חטיף חלבון מקס ברנר בטעם שוקולד דובאי, 18 גרם חלבון, 60 גרם חטיף", "price": 22.0, "img": "https://imageproxy.wolt.com/assets/6a7c44c8fd48a8e3c29eb660"}, {"name": "pro bar- חטיף חלבון מקס ברנר בטעם שוקולד לבן ופיסטוק 20 גרם חלבון", "desc": "pro bar- חטיף חלבון מקס ברנר בטעם שוקולד לבן ופיסטוק, 20 גרם חלבון, 60 גרם חטיף", "price": 22.0, "img": "https://imageproxy.wolt.com/assets/6a7c44b9063615fd3c62d3b6"}, {"name": "pro bar- חטיף חלבון מקס ברנר בטעם שוקולד ואגוזים 20 גרם חלבון", "desc": "pro bar- חטיף חלבון מקס ברנר בטעם שוקולד ואגוזים, 20 גרם חלבון, 60 גרם חטיף", "price": 22.0, "img": "https://imageproxy.wolt.com/assets/6a7c44dafd48a8e3c29eb66d"}, {"name": "חטיף חלבון טודיי בטעם קרם עוגיות", "desc": "חטיף חלבון טודיי בטעם קרם עוגיות 65 גרם, 22 גרם חלבון!, 200 קלוריות Today Protein", "price": 18.0, "img": "https://imageproxy.wolt.com/assets/6a7c44d6fd48a8e3c29eb66b"}, {"name": "חטיף חלבון טודיי בטעם שוקו צ׳יפס", "desc": "חטיף חלבון טודיי בטעם שוקו צ׳יפס 51 גרם ללא גלוטן, 18 גרם חלבון, 190 קלוריות, Today Protein", "price": 18.0, "img": "https://imageproxy.wolt.com/assets/6a7d57ba77cd4c8a68cc2f33"}, {"name": "פולראטי- שלוקים להקפאה ללא צבעי מאכל", "desc": "שלוקים להקפאה, מאגדת של 10 יחידות, בטעמי פירות- דובדבן, תות, לימון ותפוז. ללא צבעי מאכל, ללא חומרים משמרים, ללא גלוטן polaretti fruit\n(אפשר לבקש בהערות שיגיע כבר קפוא)", "price": 20.0, "img": "https://imageproxy.wolt.com/assets/6a7c44cdfd48a8e3c29eb664"}, {"name": "צ׳יפס חלבון גריל טודיי- 20 גרם חלבון", "desc": "חטיף חלבון אפוי בטעם גריל, 50 גרם, 20 גרם חלבון, 220 קלוריות today protein", "price": 18.0, "img": "https://imageproxy.wolt.com/assets/6a7d57e55b3de04a70aacc44"}, {"name": "צ׳יפס חלבון שמנת בצל טודיי- 20 גרם חלבון", "desc": "חטיף חלבון אפוי בטעם שמנת בצל, 50 גרם, 20 גרם חלבון, 220 קלוריות today protein", "price": 18.0, "img": "https://imageproxy.wolt.com/assets/6a7d57ab77cd4c8a68cc2f2e"}]}, {"name": "מזווה", "items": [{"name": "חלב אורז שקדים | כרם", "desc": "אריזה סגורה, כשר", "price": 20.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f43ec"}, {"name": "מי קוקוס | 1 ליטר coco mix", "desc": "אריזה סגורה, כשר,1 ליטר", "price": 29.0, "img": "https://imageproxy.wolt.com/assets/6937df74aee415e61b5eae77"}, {"name": "שמן זית פחית | המעדנייה", "desc": "שמן זית ישראלי בלנד המעדנייה, רמת חמיצות 0.5% , 250 מ\"ל", "price": 32.0, "img": "https://imageproxy.wolt.com/assets/692c1236061174aecd7b5ee5"}, {"name": "ממרח פסטו | המעדניה", "desc": "ממרחים מיוחדים ומפתיעים, ישדרגו כל כריך, ארוחה. תוצרת הארץ 185 גרם", "price": 24.0, "img": "https://imageproxy.wolt.com/assets/692c1291fa4732ccf7810807"}, {"name": "ממרח עגבניות מיובשות | המעדניה", "desc": "ממרחים מיוחדים ומפתיעים, ישדרגו כל כריך, ארוחה. תוצרת הארץ 185 גרם", "price": 24.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f4414"}, {"name": "ממרח ארטישוק | המעדניה", "desc": "ממרחים מיוחדים ומפתיעים, ישדרגו כל כריך, ארוחה. תוצרת הארץ 185 גרם", "price": 24.0, "img": "https://imageproxy.wolt.com/assets/692c129bfa4732ccf7810808"}, {"name": "ממרח פלפלים קלויים | המעדניה", "desc": "ממרחים מיוחדים ומפתיעים, ישדרגו כל כריך, ארוחה. תוצרת הארץ 185 גרם", "price": 24.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f4415"}, {"name": "חמאת בוטנים טבעי, B&D קילו", "desc": "חמאת בוטנים טבעית ללא תוספת סוכר, ללא תוספת שומן 1 קילו", "price": 38.0, "img": "https://imageproxy.wolt.com/assets/692c12f24be0f0d2140fe6f6"}, {"name": "סילאן לחיץ. ללא תוספת סוכר 620 גרם| b&d", "desc": "סילאן לחיץ ללא תוספת סוכר ללא חומדמריםללא צבעי מאכל, b&d 620גרם", "price": 26.9, "img": "https://imageproxy.wolt.com/assets/6a7d57f05b3de04a70aacc48"}, {"name": "סילאן ללא תוספת סוכר 900 גרם| כרם", "desc": "אריזה סגורה, כשר 900 גרם", "price": 29.9, "img": "https://imageproxy.wolt.com/assets/692c1308061174aecd7b5f0e"}, {"name": "טחינה הר ברכה | 1 קילו", "desc": "אריזה סגורה, כשר", "price": 42.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f43fb"}, {"name": "חמאת שקדים", "desc": "חמאת שקדים בכבישה קרה כרם 300 גרם, בד״ץ", "price": 26.0, "img": "https://imageproxy.wolt.com/assets/6937fd4c3bbac3ed7f83852e"}, {"name": "דבש קיבוץ ארז", "desc": "אריזה סגורה, 200 גרם כשר", "price": 29.9, "img": "https://imageproxy.wolt.com/assets/692c1319fa4732ccf7810817"}, {"name": "דבש מכוורת פרא", "desc": "130 גרם, דבש פרחי בר מכוורת פרא, כשר", "price": 29.0, "img": "https://imageproxy.wolt.com/assets/6937e4753bbac3ed7f836da0"}, {"name": "זרעי צ׳יה שחורה אורגנית כרם 300 גרם", "desc": "זרעי צ׳יה שחורה אורגנית כרם 300 גרם", "price": 32.0, "img": "https://imageproxy.wolt.com/assets/6937ebf63bbac3ed7f837723"}, {"name": "פקאן סיני מסוכר 200 גרם- כרם", "desc": "פקאן סיני מסוכר 200 גרם- כרם", "price": 39.0, "img": "https://imageproxy.wolt.com/assets/6937ea843bbac3ed7f83749b"}, {"name": "פופקורן בטעם דבש חמאה ללא גלוטן", "desc": "פופקורן בטעם דבש חמאה ללא גלוטן, בד״צ 80 גרם", "price": 15.0, "img": "https://imageproxy.wolt.com/assets/6937f03edcf93820d678ddc1"}, {"name": "מלח הימלאיה גס 1 קילו", "desc": "מלח הימלאיה גס 1 קילו בד״צ", "price": 24.0, "img": "https://imageproxy.wolt.com/assets/6937eed13bbac3ed7f837a52"}, {"name": "סירופ מייפל אורגני", "desc": "סירופ מייפל אורגני 250 מ״ל בד״צ", "price": 49.0, "img": "https://imageproxy.wolt.com/assets/693a73438874cd9ceb38b998"}, {"name": "מלח פפריקה| חוות דרך התבלינים", "desc": "פרווה, כשר, 25 גרם", "price": 10.0, "img": "https://imageproxy.wolt.com/assets/693a73cf59bf32b9452d8a5c"}, {"name": "מלח רוזמרין | חוות דרך התבלינים", "desc": "פרווה, כשר,  15 גרם", "price": 10.0, "img": "https://imageproxy.wolt.com/assets/693a73c0f57a2e26a69de263"}, {"name": "מלח פלפל שחור | חוות דרך התבלינים", "desc": "פרווה, כשר, 30 גרם", "price": 10.0, "img": "https://imageproxy.wolt.com/assets/6937e4e93bbac3ed7f836dff"}, {"name": "מלח שום | חוות דרך התבלינים", "desc": "פרווה, כשר 20 גרם", "price": 10.0, "img": "https://imageproxy.wolt.com/assets/6937e696dcf93820d678d5d3"}, {"name": "קונפיטורת תות | המעדניה", "desc": "תוצרת הארץ, ללא חומרים משמרים, ללא צבעי מאכל , 220 גרם", "price": 25.0, "img": "https://imageproxy.wolt.com/assets/693a73b8f57a2e26a69de260"}, {"name": "קונפיטורת דובדבן | המעדניה", "desc": "תוצרת הארץ, ללא חומרים משמרים, ללא צבעי מאכל , 220 גרם", "price": 25.0, "img": "https://imageproxy.wolt.com/assets/6937e65edcf93820d678d5ad"}, {"name": "קונפיטורת משמש | המעדניה", "desc": "תוצרת הארץ, ללא חומרים משמרים, ללא צבעי מאכל , 220 גרם", "price": 25.0, "img": "https://imageproxy.wolt.com/assets/6937e2d03bbac3ed7f836cab"}, {"name": "סרמוני תה פירות יער", "desc": "20 שקיקי חליטות תה איכותיות, טבעי, כשר, מתאים לאירוח וליומיום", "price": 19.0, "img": "https://imageproxy.wolt.com/assets/693ffb051ed68ef1db2c30c0"}, {"name": "סרמוני תה ארל גריי", "desc": "20 שקיקי פרמדיות, חליטות תה איכותיות, טבעי, כשר, מתאים לאירוח וליומיום", "price": 19.0, "img": "https://imageproxy.wolt.com/assets/6947e38988a4d8a18717dad7"}, {"name": "סרמוני תה נענע מרוקאית", "desc": "20 שקיקי פרמדיות, חליטות תה איכותיות, טבעי, כשר, מתאים לאירוח וליומיום  מנטה, עלי נענע, mint, נענע", "price": 19.0, "img": "https://imageproxy.wolt.com/assets/693ffb251ed68ef1db2c30cb"}, {"name": "גרנולה מוזלי שקדיה | 850 גרם", "desc": "אריזה סגורה, כשר", "price": 44.9, "img": "https://imageproxy.wolt.com/assets/69302f0a8044470e20b10fef"}]}, {"name": "כלים", "items": [{"name": "קערת קוקוס סמבהזון טבעית", "desc": "קערת קוקוס אקולוגית, לשימוש רב פעמי", "price": 18.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f4438"}, {"name": "כפית קוקוס סמבהזון", "desc": "כפית אקולוגית מקוקוס טבעי, רב־פעמית ומתאימה לכל שימוש יומיומי", "price": 6.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f4402"}, {"name": "סט כלי קוקוס קערה כפית מזלג", "desc": "סט אקולוגי מקוקוס טבעי הכולל קערה, כפית ומזלג", "price": 26.0, "img": "https://imageproxy.wolt.com/assets/694285a99bd35c227134258d"}, {"name": "מזלג קוקוס סמבהזון", "desc": "מזלג ידידותי לסביבה מקוקוס טבעי, רב־פעמי ונוח לאכילה.", "price": 6.0, "img": "https://imageproxy.wolt.com/assets/692c0f40fa4732ccf7810791"}, {"name": "קשית במבוק סמבהזון", "desc": "קשית רב־פעמי מבמבוק טבעי, ידידותי לסביבה ועמיד", "price": 3.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f4439"}, {"name": "מברשת ניקוי לקשית", "desc": "יחידה אחת,מברשת ניקוי לקשית, חוטר קש", "price": 5.0, "img": "https://imageproxy.wolt.com/assets/694166049bd35c2271342081"}, {"name": "סט 5 קשים וחוטר לניקוי ונרתיק בד", "desc": "סט אקולוגי של 5 קשי במבוק, חוטר לניקוי ונרתיק.", "price": 15.0, "img": "https://imageproxy.wolt.com/assets/692c1396fa4732ccf7810820"}, {"name": "כוס במבוק סמבהזון", "desc": "כוס רב־פעמית מבמבוק טבעי, ידידותית לסביבה ועמידה לשימוש יומיומי", "price": 46.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f43ff"}, {"name": "סט כלי סלט", "desc": "סט כלים לסלט להגשה מעץ טבעי", "price": 24.0, "img": "https://imageproxy.wolt.com/assets/692c13adfa4732ccf7810827"}, {"name": "צידנית של סמבהזון", "desc": "צידנית ממותגת, שומרת קור לאורך זמן, נוחה לנשיאה לטיולים וחוף הים", "price": 15.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f442a"}, {"name": "רודה דבש מעץ", "desc": "רודה דבש מעץ", "price": 9.0, "img": "https://imageproxy.wolt.com/assets/692c13b3061174aecd7b5f23"}, {"name": "מסננת תה נירוסטה", "desc": "מסננת נירוסטה לחליטות תה", "price": 15.0, "img": "https://imageproxy.wolt.com/assets/692c13bafa4732ccf781082a"}, {"name": "נר ריחני טבעי- דוקרדו", "desc": "נר ריחני טבעי מבית דקורדו", "price": 35.0, "img": "https://imageproxy.wolt.com/assets/6937e38adcf93820d678d0c7"}, {"name": "גפרורים בצנצנת- דקורדו", "desc": "גפרורים בצנצנת זכוכית דקורטיבית", "price": 35.0, "img": "https://imageproxy.wolt.com/assets/692c13d5fa4732ccf781082d"}, {"name": "פותחן יין חשמלי", "desc": "מושלם כמתנה לחובבי יין", "price": 50.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f4425"}, {"name": "כף גלידה", "desc": "כף גלידה לחיץ", "price": 59.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f4400"}, {"name": "צלחות מרובעות מתכלות 50 יחידות", "desc": "50 יחידות, צבע לבן", "price": 45.0, "img": "https://imageproxy.wolt.com/assets/6937f41adcf93820d678e1df"}, {"name": "כפיות pla", "desc": "50 יחידות, צבע לבן, עשוי מעמילן תירס pla מתכלה", "price": 40.0, "img": "https://imageproxy.wolt.com/assets/6937f3973bbac3ed7f83808e"}, {"name": "מזלגות pla", "desc": "100 יחידות, צבע לבן ,עשוי מעמילן תירס pla מתכלה", "price": 70.0, "img": "https://imageproxy.wolt.com/assets/6937f327dcf93820d678e16d"}, {"name": "כפפות ניטריל שחורות מידה L", "desc": "100 יחידות בקופסא, צבע שחור", "price": 20.0, "img": null}, {"name": "גליל שקיות זבל שחורות חזקות", "desc": "גליל שקיות זבל שחורות חזקות", "price": 20.0, "img": "https://imageproxy.wolt.com/assets/6937f2f43bbac3ed7f838043"}, {"name": "bamboo whisk מערבב מאצ׳ה מבמבוק", "desc": "bamboo whisk מערבב מאצ׳ה מבמבוק מגיע בקופסה ייעודית", "price": 64.0, "img": "https://imageproxy.wolt.com/assets/6943fe9cb089f867cf462754"}, {"name": "קערה לערבוב מאצ׳ה", "desc": "קערת מאצ׳ה, קערה לערבוב מאצ׳ה מקרמיקה", "price": 89.0, "img": "https://imageproxy.wolt.com/assets/694100b81ed68ef1db2c5603"}, {"name": "כפית מאצ׳ה מבמבוק", "desc": "כפית למזיגת מאצ׳ה מבמבוק", "price": 39.0, "img": "https://imageproxy.wolt.com/assets/6941014b1ed68ef1db2c561b"}, {"name": "סטנד למערבב מאצ׳ה מקרמיקה", "desc": "סטנד למערבב מאצ׳ה מקרמיקה, מניחים עליו את המערבב להתייבש", "price": 79.0, "img": "https://imageproxy.wolt.com/assets/694100562779142902e31bc5"}]}, {"name": "מיצים", "items": [{"name": "קמבוצ׳ה ורדים | המעדנייה", "desc": "ללא גלוטן, ללא חומרים משמרים, אין צורך בקירור, 330 מ\"ל", "price": 22.0, "img": "https://imageproxy.wolt.com/assets/692c15d64be0f0d2140fe73c"}, {"name": "קמבוצ׳ה מנגו ופסיפלורה - המדענייה", "desc": "ללא גלוטן, ללא חומרים משמרים, אין צורך בקירור, 330 מ\"ל", "price": 22.0, "img": "https://imageproxy.wolt.com/assets/692c15d64be0f0d2140fe73c"}, {"name": "קמבוצ׳ה מלפפון וכוסברה | המעדנייה", "desc": "ללא גלוטן, ללא חומרים משמרים, אין צורך בקירור, 330 מ\"ל", "price": 22.0, "img": "https://imageproxy.wolt.com/assets/692c15c34be0f0d2140fe73a"}, {"name": "קמבוצ׳ה אסרולה וג׳ינג׳ר | המעדנייה", "desc": "ללא גלוטן, ללא חומרים משמרים, אין צורך בקירור, 330 מ\"ל", "price": 22.0, "img": "https://imageproxy.wolt.com/assets/692c15be1f847ea89874f9a1"}, {"name": "קמבוצ׳ה שוט אורגני אשווגנדה מליסה | המעדנייה", "desc": "אורגני, משולב פרוביוטיקה, אינו מוגז, לא דורש קירור, 98 מ\"ל", "price": 15.0, "img": "https://imageproxy.wolt.com/assets/692c15aa1f847ea89874f99b"}, {"name": "קמבוצ׳ה שוט אורגני אסרולה וג׳ינג׳ר | המעדנייה", "desc": "אורגני, משולב פרוביוטיקה, אינו מוגז, לא דורש קירור, 98 מ\"ל", "price": 15.0, "img": "https://imageproxy.wolt.com/assets/692c157f061174aecd7b5f6c"}, {"name": "קמבוצ׳ה שוט אורגני תה ירוק, שורש ולריאן ונענע", "desc": "אורגני, משולב פרוביוטיקה, אינו מוגז, לא דורש קירור, 98 מ\"למנטה, עלי נענע, mint, נענע", "price": 15.0, "img": "https://imageproxy.wolt.com/assets/6a0d840b8cbf13ed0c0fdac1"}, {"name": "מיץ real - תפוח וסלק", "desc": "ללא תוספת סוכר, ללא חומרים משמרים, 100% פירות וירקות, 250 מ\"ל", "price": 18.0, "img": "https://imageproxy.wolt.com/assets/692c155e1f847ea89874f98b"}, {"name": "מיץ real - תפוז טבעי", "desc": "ללא תוספת סוכר, ללא חומרים משמרים, 100% פירות וירקות, 250 מ\"ל", "price": 18.0, "img": "https://imageproxy.wolt.com/assets/692c15591f847ea89874f989"}, {"name": "מיץ real - תפוח טבעי", "desc": "ללא תוספת סוכר, ללא חומרים משמרים, 100% פירות וירקות, 250 מ\"ל", "price": 18.0, "img": "https://imageproxy.wolt.com/assets/692c1553061174aecd7b5f63"}, {"name": "מיץ real - תפוח גזר ותפוז טבעי", "desc": "ללא תוספת סוכר, ללא חומרים משמרים, 100% פירות וירקות, 250 מ\"ל", "price": 18.0, "img": "https://imageproxy.wolt.com/assets/69285b0b4be0f0d2140f440a"}]}], "menu_title": "המוצרים", "services": [], "gallery": [], "order_url": "https://wolt.com/he/isr/tel-aviv/venue/krimzon-market"};</script>
+<script>
+(function(){
+const S = window.SITE;
+const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const DAYS = ["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
+const hm = m => { m = ((m % 1440) + 1440) % 1440; return String(Math.floor(m/60)).padStart(2,"0") + ":" + String(m%60).padStart(2,"0"); };
+const ICON = {
+  phone:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>',
+  nav:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 3 3 10.6l7.4 2.9L13.4 21z"/></svg>',
+  bag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>',
+  menu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
+  pics:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m3 16 5-5 5 5 3-3 5 5"/></svg>'
+};
+
+function nowIL(){
+  const p = new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Jerusalem",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date());
+  const g = t => p.find(x => x.type === t).value;
+  return { d: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")), m: (+g("hour")) * 60 + (+g("minute")) };
+}
+function status(){
+  const H = S.hours; if (!H) return null;
+  const {d, m} = nowIL();
+  for (const [a,b] of H[d] || []) { const end = b <= a ? b + 1440 : b; if (m >= a && m < end) return {open:true, text:"פתוח עכשיו, עד " + hm(b)}; }
+  for (const [a,b] of H[(d+6)%7] || []) if (b <= a && m < b) return {open:true, text:"פתוח עכשיו, עד " + hm(b)};
+  for (let i = 0; i < 7; i++) {
+    const rs = (H[(d+i)%7] || []).filter(([a]) => i > 0 || a > m).sort((x,y) => x[0]-y[0]);
+    if (rs.length) {
+      const when = i === 0 ? "היום" : i === 1 ? "מחר" : "ביום " + DAYS[(d+i)%7];
+      return {open:false, text:"סגור עכשיו, נפתח " + when + " ב-" + hm(rs[0][0])};
+    }
+  }
+  return null;
+}
+
+const st = status();
+const waLink = S.whatsapp ? "https://wa.me/972" + S.whatsapp.replace(/^0/,"") : "";
+const tel = S.phone ? "tel:" + S.phone.replace(/[^\d+]/g,"") : "";
+const waze = S.lat ? "https://waze.com/ul?ll=" + S.lat + "," + S.lon + "&navigate=yes" : "";
+const gmaps = S.lat ? "https://www.google.com/maps/search/?api=1&query=" + S.lat + "," + S.lon : "";
+let h = "";
+
+h += '<p class="ribbon">אתר הדגמה ש-TOMI הכינו עבור ' + esc(S.name) + '</p>';
+h += '<header class="hero">' + (S.cover ? '<img class="hero__img" src="' + esc(S.cover) + '" alt="" fetchpriority="high">' : '') +
+     '<div class="hero__text">' + (S.logo ? '<img class="hero__logo" src="' + esc(S.logo) + '" alt="">' : '') +
+     '<h1 class="hero__name">' + esc(S.name) + '</h1>' +
+     (S.tagline ? '<p class="hero__tag">' + esc(S.tagline) + '</p>' : '') +
+     (st ? '<p class="status' + (st.open ? ' open' : '') + '">' + esc(st.text) + '</p>' : '') +
+     '</div></header>';
+
+h += '<main class="wrap">';
+const facts = [];
+if (S.rating && S.rating.score) facts.push('<span>דירוג <b>' + esc(S.rating.score) + '</b> ב' + esc(S.rating.src) + (S.rating.count ? ', ' + esc(S.rating.count) + ' מדרגים' : '') + '</span>');
+if (S.address) facts.push('<span>' + esc(S.address) + '</span>');
+if (facts.length) h += '<div class="facts">' + facts.join("") + '</div>';
+if (S.about) h += '<section class="about"><p>' + esc(S.about) + '</p></section>';
+
+if (S.menu && S.menu.length) {
+  h += '<section id="menu"><h2>' + esc(S.menu_title || "התפריט") + '</h2><nav class="chips" aria-label="קטגוריות">' +
+       S.menu.map((c,i) => '<a href="#c' + i + '">' + esc(c.name) + '</a>').join("") + '</nav>';
+  S.menu.forEach((c,i) => {
+    h += '<div class="cat" id="c' + i + '"><h3>' + esc(c.name) + '</h3><ul>';
+    for (const it of c.items) {
+      h += '<li class="item"><div class="item__txt"><div class="item__name">' + esc(it.name) + '</div>' +
+           (it.desc ? '<p class="item__desc">' + esc(it.desc) + '</p>' : '') +
+           '<span class="item__price">' + esc(String(it.price).replace(/\.0+$/,"")) + ' ₪</span></div>' +
+           (it.img ? '<img loading="lazy" src="' + esc(it.img) + '?w=360" alt="' + esc(it.name) + '" onerror="this.remove()">' : '') + '</li>';
+    }
+    h += '</ul></div>';
+  });
+  h += '</section>';
+}
+if (S.services && S.services.length)
+  h += '<section id="services"><h2>הטיפולים שלנו</h2><ul class="services">' + S.services.map(s => '<li>' + esc(s) + '</li>').join("") + '</ul></section>';
+if (S.gallery && S.gallery.length)
+  h += '<section id="gallery"><h2>מהסטודיו</h2><div class="gallery">' + S.gallery.map(g => '<img loading="lazy" src="' + esc(g) + '" alt="" onerror="this.remove()">').join("") + '</div></section>';
+
+if (S.hours) {
+  const today = nowIL().d;
+  h += '<section id="hours"><h2>שעות פתיחה</h2><ul class="hours">' + DAYS.map((name,i) => {
+    const r = S.hours[i] || [];
+    return '<li' + (i === today ? ' class="today"' : '') + '><span>יום ' + name + '</span><span>' +
+      (r.length ? r.map(([a,b]) => hm(a) + "–" + hm(b)).join(", ") : "סגור") + '</span></li>';
+  }).join("") + '</ul></section>';
+}
+if (S.lat) {
+  h += '<section id="where"><h2>איך מגיעים</h2>' + (S.address ? '<p class="addr">' + esc(S.address) + '</p>' : '') +
+       '<iframe class="map" loading="lazy" title="מפה" src="https://maps.google.com/maps?q=' + S.lat + ',' + S.lon + '&z=16&hl=iw&output=embed"></iframe>' +
+       '<div class="links"><a class="btn" href="' + waze + '">' + ICON.nav + 'ניווט ב-Waze</a><a class="btn" href="' + gmaps + '">Google Maps</a></div></section>';
+}
+h += '</main>';
+h += '<footer class="foot"><div>© ' + new Date().getFullYear() + ' ' + esc(S.name) + ', כל הזכויות שמורות</div><div class="by">Website by <b>TOMI</b></div></footer>';
+
+const bar = [];
+if (tel) bar.push('<a href="' + tel + '"' + (S.kind === "beauty" && !waLink ? ' class="main"' : '') + '>' + ICON.phone + 'התקשרו</a>');
+if (waLink) bar.push('<a href="' + waLink + '"' + (S.kind === "beauty" ? ' class="main"' : '') + '>' + ICON.wa + 'וואטסאפ</a>');
+if (S.menu && S.menu.length) bar.push('<a href="#menu">' + ICON.menu + (S.kind === "shop" ? 'מוצרים' : 'תפריט') + '</a>');
+if (S.gallery && S.gallery.length) bar.push('<a href="#gallery">' + ICON.pics + 'תמונות</a>');
+if (waze) bar.push('<a href="' + waze + '">' + ICON.nav + 'ניווט</a>');
+if (S.order_url) bar.push('<a class="main" href="' + esc(S.order_url) + '">' + ICON.bag + 'להזמנה</a>');
+h += '<nav class="bar" aria-label="פעולות מהירות">' + bar.join("") + '</nav>';
+
+document.getElementById("app").innerHTML = h;
+
+// fit the name to the width of the hero
+const nm = document.querySelector(".hero__name");
+function fit(){
+  const cs = getComputedStyle(nm.parentElement);
+  const box = nm.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  nm.classList.remove("wrap");
+  let size = Math.min(150, window.innerHeight * 0.16);
+  nm.style.fontSize = size + "px";
+  while (nm.offsetWidth > box && size > 34) { size -= 2; nm.style.fontSize = size + "px"; }
+  if (nm.offsetWidth > box) { nm.classList.add("wrap"); nm.style.fontSize = "40px"; }
+}
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(fit);
+fit(); addEventListener("resize", fit);
+
+// highlight the menu category in view
+const chips = [...document.querySelectorAll(".chips a")];
+if (chips.length && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    chips.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));
+    const on = chips.find(a => a.classList.contains("on"));
+    if (on) on.scrollIntoView({block:"nearest", inline:"center", behavior:"smooth"});
+  }), {rootMargin:"-30% 0px -60% 0px"});
+  document.querySelectorAll(".cat").forEach(c => io.observe(c));
+}
+})();
+</script>
+</body>
+</html>
