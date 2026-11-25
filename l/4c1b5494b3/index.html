@@ -48,6 +48,14 @@ summary{cursor:pointer;color:var(--mute);font-size:14px}
 .acts .full{grid-column:1/-1}
 .acts .soft{background:none;color:var(--mute);font-weight:600;font-size:14px;padding:6px}
 .empty{text-align:center;color:var(--mute);padding:56px 20px}
+.chat{display:flex;flex-direction:column;gap:6px;margin-top:12px}
+.b{max-width:86%;padding:8px 12px;border-radius:14px;font-size:15px;line-height:1.45;white-space:pre-wrap}
+.b.them{align-self:flex-start;background:var(--bg)}
+.b.me{align-self:flex-end;background:#DCF7C5}
+.lbl{font-size:13.5px;font-weight:700;color:var(--mute);margin-top:12px}
+.draft{width:100%;min-height:96px;margin-top:6px;border:2px solid var(--wa);border-radius:12px;padding:9px 12px;font-size:15px;resize:vertical}
+.in{width:100%;min-height:46px;margin-top:12px;border:1.5px dashed var(--line);border-radius:12px;padding:9px 12px;font-size:15px;resize:vertical}
+.addbtn{display:block;width:100%;margin-top:6px;border:0;border-radius:12px;padding:10px;background:var(--ink);color:#fff;font-weight:700;font-size:15px;cursor:pointer}
 .connect{max-width:520px;margin:30px auto;background:#fff;border-radius:18px;padding:20px}
 .connect h2{font-size:20px;margin-bottom:6px}
 .connect p{color:var(--mute);font-size:15px}
@@ -79,6 +87,8 @@ let token = localStorage.getItem("tomi-token");
 let leads = JSON.parse(localStorage.getItem("tomi-leads") || "[]");
 let status = JSON.parse(localStorage.getItem("tomi-status") || "{}");
 let pending = JSON.parse(localStorage.getItem("tomi-pending") || "{}");   // changes not yet saved to GitHub
+let drafts = JSON.parse(localStorage.getItem("tomi-drafts") || "{}");     // reply suggestions written by the bot
+let anyWaiting = false;
 let sha = null, tab = "ready", query = "", saving = false, syncText = "";
 
 function toast(t){ const el = document.getElementById("toast"); el.textContent = t; el.classList.add("show"); clearTimeout(toast.h); toast.h = setTimeout(() => el.classList.remove("show"), 1800); }
@@ -107,6 +117,8 @@ async function refresh() {
   try {
     const r = await gh("leads.json", {raw: true});
     if (r.ok) { leads = await r.json(); localStorage.setItem("tomi-leads", JSON.stringify(leads)); }
+    const rd = await gh("drafts.json", {raw: true});
+    if (rd.ok) { drafts = await rd.json(); localStorage.setItem("tomi-drafts", JSON.stringify(drafts)); }
     const remote = await loadStatus();
     status = Object.assign(remote, pending);
     localStorage.setItem("tomi-status", JSON.stringify(status));
@@ -161,6 +173,26 @@ function waLink(l, withText) {
   return "https://wa.me/" + n + (withText ? "?text=" + encodeURIComponent(l.message) : "");
 }
 
+const chatOf = s => s.chat || (s.note ? [{w: "them", x: s.note, t: s.t}] : []);
+function chatBlock(l, s) {
+  const id = esc(l.id), chat = chatOf(s);
+  let h = chat.length ? '<div class="chat">' + chat.map(m => '<p class="b ' + (m.w === "me" ? "me" : "them") + '">' + esc(m.x) + '</p>').join("") + '</div>' : "";
+  const them = chat.filter(m => m.w === "them"), last = them[them.length - 1], d = drafts[l.id];
+  const waitingForMe = chat.length > 0 && chat[chat.length - 1].w === "them";
+  const stale = s.redo && (!d || s.redo > d.made);
+  if (waitingForMe && d && d.for === last.t && !stale) {
+    h += '<p class="lbl">הצעת תשובה מהבוט (אפשר לשנות לפני ששולחים):</p><textarea class="draft" data-draft="' + id + '">' + esc(d.text) + '</textarea>' +
+         '<div class="acts"><a class="wa full" href="#" data-reply="' + id + '">שלח את התשובה בוואטסאפ</a>' +
+         '<button class="soft full" data-redo="' + id + '">תכתוב לי תשובה אחרת</button></div>';
+  } else if (waitingForMe) {
+    anyWaiting = true;
+    h += '<p class="lbl">⏳ הבוט כותב הצעת תשובה… (עד דקה, כשהמחשב דלוק)</p>';
+  }
+  h += '<textarea class="in" data-in="' + id + '" placeholder="' + (chat.length ? "הם כתבו משהו חדש? הדבק כאן" : "מה הם כתבו לך? הדבק כאן את ההודעה שלהם") + '"></textarea>' +
+       '<button class="addbtn" data-add="' + id + '">הוסף, והבוט יציע תשובה</button>';
+  return h;
+}
+
 function card(l) {
   const st = stOf(l), s = status[l.id] || {};
   let h = '<article class="card" id="' + esc(l.id) + '"><div class="top"><img src="' + esc(l.thumb) + '" alt="" onerror="this.style.visibility=\'hidden\'">' +
@@ -176,8 +208,9 @@ function card(l) {
   }
   if (st === "out") h += '<p class="when">' + OUT[s.s] + (l.deleted ? '. 🗑 האתר נמחק (עבר שבוע). הבוט לא יפנה אליהם שוב.'
                           : '. 🔒 הקישור לאתר נסגר. אם לא תחזיר אותו תוך שבוע, הוא יימחק.') + '</p>';
-  if (st === "replied" || st === "won" || st === "out" && s.s === "lost")
-    h += '<textarea class="note" data-note="' + esc(l.id) + '" placeholder="מה הוא ענה? מחיר, מה ביקש לשנות… (נשמר לבד)">' + esc(s.note || "") + '</textarea>';
+  if (st === "replied" || st === "won") h += chatBlock(l, s);
+  if (st === "won" || st === "out" && s.s === "lost")
+    h += '<textarea class="note" data-note="' + esc(l.id) + '" placeholder="הערות: מחיר שסגרתם, מה ביקש לשנות… (נשמר לבד)">' + esc(s.note || "") + '</textarea>';
   if (st === "ready") h += '<details><summary>ההודעה</summary><div class="msg">' + esc(l.message) + '</div></details>';
   h += '<div class="acts">';
   if (st === "ready") {
@@ -210,6 +243,7 @@ function render() {
       '<textarea id="tok" placeholder="github_pat_..."></textarea><button id="saveTok">חבר</button></div>';
     return;
   }
+  anyWaiting = false;
   const counts = {}; TABS.forEach(([k]) => counts[k] = 0);
   leads.forEach(l => counts[stOf(l)]++);
   const q = query.trim().toLowerCase();
@@ -225,7 +259,26 @@ function render() {
 }
 
 document.addEventListener("click", e => {
-  const t = e.target.closest("[data-tab],[data-set],[data-sent],#saveTok"); if (!t) return;
+  const t = e.target.closest("[data-tab],[data-set],[data-sent],[data-add],[data-reply],[data-redo],#saveTok"); if (!t) return;
+  if (t.dataset.add) {
+    const id = t.dataset.add, box = document.querySelector('[data-in="' + id + '"]'), x = box.value.trim();
+    if (!x) { box.focus(); return; }
+    addChat(id, {w: "them", x, t: new Date().toISOString()});
+    toast("נוסף. הבוט כותב תשובה…"); render(); return;
+  }
+  if (t.dataset.reply) {
+    const id = t.dataset.reply, l = leads.find(v => v.id === id);
+    const x = document.querySelector('[data-draft="' + id + '"]').value.trim();
+    t.href = waLink(l, false) + "?text=" + encodeURIComponent(x);    // the link itself opens WhatsApp
+    addChat(id, {w: "me", x, t: new Date().toISOString()});
+    setTimeout(render, 800); return;
+  }
+  if (t.dataset.redo) {
+    const id = t.dataset.redo;
+    status[id] = Object.assign({}, status[id] || {}, {redo: new Date().toISOString()}); pending[id] = status[id];
+    localStorage.setItem("tomi-pending", JSON.stringify(pending));
+    save(); toast("מבקש תשובה אחרת…"); render(); return;
+  }
   if (t.id === "saveTok") { const v = document.getElementById("tok").value.trim(); if (v) { token = v; localStorage.setItem("tomi-token", v); refresh(); } return; }
   if (t.dataset.tab) { tab = t.dataset.tab; query = ""; render(); scrollTo(0, 0); return; }
   if (t.dataset.sent) { setStatus(t.dataset.sent, "sent"); setTimeout(render, 800); return; }   // the link itself opens WhatsApp
@@ -245,7 +298,18 @@ document.addEventListener("input", e => {
     clearTimeout(setStatus.h); setStatus.h = setTimeout(save, 1200);
   }
 });
+function addChat(id, msg) {
+  const cur = status[id] || {};
+  status[id] = Object.assign({}, cur, {chat: chatOf(cur).concat([msg])});
+  if (msg.w === "them" && (!cur.s || cur.s === "ready" || cur.s === "sent")) status[id].s = "replied";
+  pending[id] = status[id];
+  localStorage.setItem("tomi-pending", JSON.stringify(pending));
+  localStorage.setItem("tomi-status", JSON.stringify(status));
+  save();
+}
 document.addEventListener("visibilitychange", () => { if (!document.hidden) refresh(); });
+// while a reply suggestion is being written, check for it every 20 s (not while typing)
+setInterval(() => { if (anyWaiting && !document.hidden && !(document.activeElement && document.activeElement.tagName === "TEXTAREA")) refresh(); }, 20000);
 render(); refresh();
 </script>
 </body>
