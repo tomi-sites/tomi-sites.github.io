@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Bezzo Pizza | פיצריה איטלקית בלב תל אביב</title>
+<meta name="description" content="אצלנו מכינים פיצות בסגנון איטלקי, מהמרגריטה הקלאסית ועד פיצה לבנה ופיצה עם פטריות כמהין. יש גם אפשרויות טבעוניות ופסטות, ואפשר לבוא להרים מגש או להזמין הביתה.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bezzo Pizza | פיצריה איטלקית בלב תל אביב">
+<meta property="og:description" content="אצלנו מכינים פיצות בסגנון איטלקי, מהמרגריטה הקלאסית ועד פיצה לבנה ופיצה עם פטריות כמהין. יש גם אפשרויות טבעוניות ופסטות, ואפשר לבוא להרים מגש או להזמין הביתה.">
+<meta property="og:image" content="https://imageproxy.wolt.com/assets/67cd90a40f6aa346c0fc08d5?w=1200">
+<meta name="theme-color" content="#2A1C13">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Bellefair&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#F1EADB;--ink:#2A1C13;--accent:#B8381A;--second:#6E8B3D;--display:"Secular One",serif;--on-accent:#fff; }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "Assistant",system-ui,sans-serif;padding-bottom:calc(86px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%}
+a{color:inherit}
+ul{list-style:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.ribbon{background:var(--ink);color:var(--bg);font-size:13px;line-height:1.4;text-align:center;padding:7px 16px}
+
+/* hero: the business's own photo, its name set as large as the width allows */
+.hero{position:relative;min-height:74svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);color:#fff;isolation:isolate}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.35) 42%,rgba(0,0,0,0) 72%)}
+.hero__text{width:100%;max-width:980px;margin:0 auto;padding:0 22px 30px}
+.hero__logo{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.85);margin-bottom:14px;background:#fff}
+.hero__name{display:inline-block;font-family:var(--display);font-weight:400;line-height:.98;white-space:nowrap;font-size:64px;letter-spacing:-.005em}
+.hero__name.wrap{white-space:normal}
+.hero__tag{font-size:clamp(18px,4.6vw,22px);line-height:1.4;margin-top:12px;max-width:30ch;color:rgba(255,255,255,.92)}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-weight:700;font-size:15px;padding:7px 14px 7px 16px;border-radius:999px;background:rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#C9CDD3}
+.status.open::before{background:#5EE38B;box-shadow:0 0 0 4px rgba(94,227,139,.25)}
+@media (prefers-reduced-motion:no-preference){
+  .hero__img{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) both}
+  .hero__name{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes settle{from{transform:scale(1.07)}}
+  @keyframes rise{from{transform:translateY(35%);opacity:0}}
+}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;padding:20px 0 4px;font-size:15.5px}
+.facts b{color:var(--accent);font-weight:800}
+section{padding:40px 0 8px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(32px,8.4vw,46px);line-height:1.05;margin-bottom:20px}
+.about p{font-size:clamp(19px,4.8vw,22px);line-height:1.6;max-width:34ch}
+
+/* menu */
+.chips{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:12px 22px;margin:0 -22px 6px;background:var(--bg);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;text-decoration:none;font-weight:700;font-size:15px;padding:7px 15px;border-radius:999px;border:1.5px solid color-mix(in srgb,var(--ink) 30%,transparent);transition:background .2s,color .2s,border-color .2s}
+.chips a.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cat{padding-top:18px;scroll-margin-top:64px}
+.cat h3{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.2;color:var(--accent);padding-bottom:6px;border-bottom:3px solid var(--second)}
+.item{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.item__txt{flex:1;min-width:0}
+.item__name{font-weight:800;font-size:17.5px;line-height:1.35}
+.item__desc{font-size:15px;line-height:1.5;color:color-mix(in srgb,var(--ink) 72%,transparent);margin-top:3px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.item__price{display:block;margin-top:6px;font-weight:800;font-size:16px;color:var(--accent)}
+.item img{width:100px;height:100px;flex:none;object-fit:cover;border-radius:16px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+
+/* beauty */
+.services{display:flex;flex-wrap:wrap;gap:9px}
+.services li{font-weight:600;font-size:16px;padding:9px 16px;border-radius:999px;background:color-mix(in srgb,var(--accent) 13%,var(--bg));border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+.gallery img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+
+/* hours + location */
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent);font-size:16.5px}
+.hours li.today{font-weight:800;color:var(--accent)}
+.hours span:last-child{direction:ltr;unicode-bidi:isolate}
+.addr{font-size:18px;margin-bottom:14px}
+.map{width:100%;height:270px;border:0;border-radius:18px;display:block;background:color-mix(in srgb,var(--second) 25%,var(--bg))}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15.5px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--ink)}
+
+.foot{text-align:center;font-size:13.5px;padding:48px 22px 28px;color:color-mix(in srgb,var(--ink) 65%,transparent)}
+.foot .by{direction:ltr;margin-top:4px}
+.foot .by b{letter-spacing:.06em}
+
+/* bottom action bar */
+.bar{position:fixed;inset:auto 0 0 0;z-index:10;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--ink)}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;border-radius:14px;color:var(--bg);text-decoration:none;font-size:13px;font-weight:700}
+.bar a.main{background:var(--accent);color:var(--on-accent)}
+.bar svg{width:22px;height:22px}
+@media (min-width:760px){
+  .bar{left:50%;right:auto;bottom:16px;transform:translateX(-50%);width:min(560px,92vw);border-radius:22px;padding:8px}
+  .item img{width:120px;height:120px}
+  .gallery{grid-template-columns:1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>window.SITE = {"kind": "food", "name": "Bezzo Pizza", "tagline": "פיצריה איטלקית בלב תל אביב", "about": "אצלנו מכינים פיצות בסגנון איטלקי, מהמרגריטה הקלאסית ועד פיצה לבנה ופיצה עם פטריות כמהין. יש גם אפשרויות טבעוניות ופסטות, ואפשר לבוא להרים מגש או להזמין הביתה.", "phone": "0524887775", "whatsapp": "0524887775", "address": "הירקון 22, תל אביב", "lat": 32.0705866, "lon": 34.765048, "hours": [[[480, 1350]], [[480, 1350]], [[480, 1350]], [[480, 1350]], [[480, 1350]], [[480, 1350]], [[480, 1350]]], "cover": "https://imageproxy.wolt.com/assets/67cd90a40f6aa346c0fc08d5?w=1600", "logo": null, "rating": {"score": 9.0, "count": 100, "src": "וולט"}, "menu": [{"name": "💜 שימו לב 💜", "items": [{"name": "45 pizzas", "desc": "", "price": 2600.0, "img": null}]}, {"name": "🌟 מבצעים 🌟", "items": [{"name": "מגש + תוספת + שתייה גדולה", "desc": "", "price": 89.0, "img": "https://imageproxy.wolt.com/assets/67d05f01bcb2f443170db667"}, {"name": "מגש ספיישל + שתייה גדולה", "desc": "", "price": 99.0, "img": "https://imageproxy.wolt.com/assets/67d05fab7d220d43098a86a2"}, {"name": "שני מגשים + שתי תוספות + שתייה גדולה", "desc": "", "price": 169.0, "img": "https://imageproxy.wolt.com/assets/67d05f5b8df525635d5e41ed"}, {"name": "2 פיצה של מרגריטה", "desc": "", "price": 139.0, "img": "https://imageproxy.wolt.com/assets/67cd91938df525635d5e0134"}, {"name": "2 פיצות מיוחדות + משקה גדול", "desc": "", "price": 179.0, "img": "https://imageproxy.wolt.com/assets/67d0601a8df525635d5e4201"}, {"name": "5 פיצות + 5 תוספות", "desc": "", "price": 350.0, "img": "https://imageproxy.wolt.com/assets/67d05f5b8df525635d5e41ed"}]}, {"name": "‫פיצה ספיישל 🍕", "items": [{"name": "פיצה לבנה", "desc": "מוצרלה, ריקוטה, בצל מקורמל, גבינת פרמז'ן ופטרוזיליה", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd918a8df525635d5e0132"}, {"name": "פיצה פטריות כמהין", "desc": "פטריות טריות, גבינת פרמז'ן ושמן כמהין", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd91aa8df525635d5e0138"}, {"name": "פיצה יוונית", "desc": "רוטב עגבניות, עגבניות, בצל סגול,זיתי קלמטה וגבינת פטה", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd91808df525635d5e0131"}, {"name": "פופאי פיצה", "desc": "רוטב שמנת לבנה, מוצרלה, תרד, שום, פטריות, פרמזן וגבינת פטה", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd91a28df525635d5e0136"}, {"name": "פיצה פסטו", "desc": "רוטב עגבניות, מוצרלה, פלפל אדום קלוי, בצל אדום ופסטו", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd91bdbcb2f443170d751f"}, {"name": "פיצה ארבע העונות", "desc": "רוטב עגבניות, מוצרלה, עגבניות שרי, בצל אדום, זיתי קלמטה ופטרוזיליה טרייה", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd91768df525635d5e012f"}, {"name": "פיצה רומא", "desc": "רוטב עגבניות, ארטישוק, עגבניות, פרמזן", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd91e3bcb2f443170d7524"}]}, {"name": "פיצה בהרכבה עצמית", "items": [{"name": "פיצה מרגריטה", "desc": "", "price": 75.0, "img": "https://imageproxy.wolt.com/assets/67cd91918df525635d5e0133"}]}, {"name": "פיצה טבעונית 🌱", "items": [{"name": "‫פיצה טבעונית 🌱", "desc": "רוטב עגבניות, חציל, פטריות אפויות, פלפל קלוי, כרישה, זיתי קלמטה, פסטו וטחינה", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd925cbcb2f443170d7539"}, {"name": "פיצה פסטו טבעונית 🌱", "desc": "רוטב עגבניות, מוצרלה קשיו, פלפל אדום קלוי, בצל אדום ופסטו", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd91bfbcb2f443170d7520"}, {"name": "פיצה מרגריטה", "desc": "", "price": 75.0, "img": "https://imageproxy.wolt.com/assets/67cd90c0bcb2f443170d7512"}, {"name": "פיצה ארבע העונות טבעונית 🌱", "desc": "רוטב עגבניות, מוצרלה קשיו, עגבניות שרי, בצל אדום, זיתי קלמטה ופטרוזיליה טרייה", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd91788df525635d5e0130"}, {"name": "פיצה פטריות כמהין", "desc": "פטריות טריות, גבינת פרמז'ן ושמן כמהין", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd91ac8df525635d5e0139"}, {"name": "פיצה טבעונית רומא 🌱", "desc": "רוטב עגבניות, מוצרלה קשיו, ארטישוק, עגבנייה", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/67cd91e5bcb2f443170d7525"}]}, {"name": "פַּסטָה", "items": [{"name": "פסטה פומודורו", "desc": "רוטב עגבניות, שום, טימין.", "price": 46.0, "img": "https://imageproxy.wolt.com/assets/67cd91ebbcb2f443170d7526"}, {"name": "פטריות פסטה", "desc": "רוטב שמנת, שום, פטריות, פרמזן.", "price": 49.0, "img": "https://imageproxy.wolt.com/assets/67cd91edbcb2f443170d7527"}, {"name": "פסטה ורד", "desc": "רוטב שמנת, רוטב עגבניות, פרמזן.", "price": 48.0, "img": "https://imageproxy.wolt.com/assets/67cd91f5bcb2f443170d752b"}, {"name": "פסטה קרמי פסטו", "desc": "רוטב שמנת כבד, פסטו, פטה, פרמזן.", "price": 49.0, "img": "https://imageproxy.wolt.com/assets/67cd91f2bcb2f443170d752a"}]}, {"name": "‫סלט 🥗", "items": [{"name": "סלט קפרזה", "desc": "קרעי מוצרלה, עגבניות שרי, בצל סגול, חסה, זיתי קלמטה, בזיליקום, שמן זית ובלסמי", "price": 48.0, "img": "https://imageproxy.wolt.com/assets/67cd91498df525635d5e012d"}, {"name": "סלט קיסר", "desc": "לבבות חסה, עגבניות שרי, בצל סגול, גבינת פרמז'ן ורוטב קיסר", "price": 48.0, "img": "https://imageproxy.wolt.com/assets/67cd91478df525635d5e012c"}, {"name": "סלט יווני", "desc": "לבבות חסה, עגבניות שרי תמר, מלפפון, בצל סגול, זיתי קלמטה וגבינת פטה", "price": 49.0, "img": "https://imageproxy.wolt.com/assets/67cd91448df525635d5e012b"}, {"name": "סלט טונה", "desc": "לבבות חסה, טונה, בצל סגול, עגבניות שרי, זיתי קלמטה, פלפל אדום קלוי, תירס, שמן זית ולימון", "price": 49.0, "img": "https://imageproxy.wolt.com/assets/67cd9141cc4a3916eb961489"}]}, {"name": "בצד", "items": [{"name": "קלצונה קלאסי", "desc": "תערובת גבינות- מוצרלה, ריקוטה, פטה פרמזן. מוגש עם רוטב עגבניות", "price": 40.0, "img": "https://imageproxy.wolt.com/assets/67e3f305d025c6733684b4db"}, {"name": "קלצונה תרד ועשבי תיבול", "desc": "תערובת גבינות ותרד. מוגש עם רוטב עגבניות", "price": 45.0, "img": "https://imageproxy.wolt.com/assets/67e3f316d025c6733684b4df"}, {"name": "לחם שום", "desc": "", "price": 12.0, "img": "https://imageproxy.wolt.com/assets/67cd913bcc4a3916eb961488"}, {"name": "כדור גבינה", "desc": "כדור ממולא תערובת גבינות מוצרלה, פטה ועשבי תיבול", "price": 16.0, "img": "https://imageproxy.wolt.com/assets/67cd90dbbcb2f443170d7513"}, {"name": "רוטב פיצה", "desc": "", "price": 2.0, "img": "https://imageproxy.wolt.com/assets/67cd9222bcb2f443170d7534"}, {"name": "רוטב שום", "desc": "", "price": 3.0, "img": "https://imageproxy.wolt.com/assets/67cd9224bcb2f443170d7535"}, {"name": "סלסה ורדה", "desc": "", "price": 3.0, "img": "https://imageproxy.wolt.com/assets/67cd91538df525635d5e012e"}]}, {"name": "טָעִים", "items": [{"name": "נוטלה ומסקרפונה קלצונה", "desc": "", "price": 38.0, "img": "https://imageproxy.wolt.com/assets/67cd921abcb2f443170d7533"}]}, {"name": "‫שתיה 🥤", "items": [{"name": "פחית קוקה קולה", "desc": "0,33", "price": 10.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/db31ed34-9ae8-11ec-979c-ee0a42a95e9b_1a7063e8_42c7_11eb_9443_92ca09493036_coca_cola_can_330ml.jpeg"}, {"name": "פחית קולה זירו", "desc": "0,33", "price": 10.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/f628dd82-9ae8-11ec-950f-ae0219d22a58_de86245a_f8ea_11eb_9c89_6eb8ab816b95_______________.jpeg"}, {"name": "פחית ספרייט", "desc": "0,33", "price": 10.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/f082f296-f8ea-11eb-a003-9a7dc0e18722_53003_wolt_1440x810_sprite_can_330ml_lime.jpeg"}, {"name": "פריגת ענבים - בקבוק פלסטיק", "desc": "0,5", "price": 12.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/97a8d474-f8ea-11eb-a4b3-467f67de554e_52887_mashkal_2020_grape_500ml_wolt_1440x810.jpeg"}, {"name": "פיוז טי אפרסק", "desc": "0,5", "price": 12.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/dc602cbc-f8e9-11eb-a705-c268f97193e5_fuze_tea_peach_500ml.jpeg"}, {"name": "מים מינרליים סן פלגרינו - בקבוק זכוכית קטן", "desc": "0,25", "price": 14.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/b1e795a2-f8e8-11eb-bdda-467f67de554e_________250___.jpeg"}, {"name": "אריזונה תה ירוק", "desc": "0,45", "price": 14.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/63595276-f8e9-11eb-bdaf-c268f97193e5_____________.jpeg"}, {"name": "אריזונה תה אפרסק", "desc": "0,45", "price": 14.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/5ddd1c4c-f8e9-11eb-9c11-467f67de554e______________.jpeg"}, {"name": "גולדסטאר", "desc": "0,33", "price": 20.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/d92f677c-f8eb-11eb-809d-9a7dc0e18722_____________.jpeg?overlay=isr-softalcohol"}, {"name": "הייניקן", "desc": "0,33", "price": 20.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/03bb7896-f8ec-11eb-9574-9a7dc0e18722_______________330.jpeg?overlay=isr-softalcohol"}, {"name": "קולה זירו - גדול", "desc": "1,5", "price": 15.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/0291dd04-f8ef-11eb-ac5f-e242befbd933_______________.jpeg"}, {"name": "קוקה קולה - גדול", "desc": "1,5", "price": 15.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/eed2797c-f8ee-11eb-b0d4-dee9e2704e20_______________.jpeg"}, {"name": "פריגת ענבים - גדול", "desc": "1,5", "price": 15.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/71fb5278-f8f0-11eb-90dd-dee9e2704e20_52887_mashkal_grape_1.5l_wolt_1440x810.jpeg"}, {"name": "פיוזטי אפרסק - גדול", "desc": "1,5", "price": 15.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/d4250642-f8f0-11eb-9857-dee9e2704e20__________________.jpeg"}, {"name": "מים מינרליים סן פלגרינו", "desc": "0,75", "price": 22.0, "img": "https://image-resizer-proxy.development.dev.woltapi.com/wolt-dev-development-restaurant-api-menu-images/menu-images/5fbe3d6b40ccbfedccfd71a0/c0f1b384-f8e8-11eb-8809-467f67de554e____________________.jpeg"}]}], "menu_title": "התפריט", "services": [], "gallery": [], "order_url": "https://wolt.com/he/isr/tel-aviv/restaurant/bezzo-pizza-hayarkon"};</script>
+<script>
+(function(){
+const S = window.SITE;
+const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const DAYS = ["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
+const hm = m => { m = ((m % 1440) + 1440) % 1440; return String(Math.floor(m/60)).padStart(2,"0") + ":" + String(m%60).padStart(2,"0"); };
+const ICON = {
+  phone:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>',
+  nav:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 3 3 10.6l7.4 2.9L13.4 21z"/></svg>',
+  bag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>',
+  menu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
+  pics:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m3 16 5-5 5 5 3-3 5 5"/></svg>'
+};
+
+function nowIL(){
+  const p = new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Jerusalem",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date());
+  const g = t => p.find(x => x.type === t).value;
+  return { d: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")), m: (+g("hour")) * 60 + (+g("minute")) };
+}
+function status(){
+  const H = S.hours; if (!H) return null;
+  const {d, m} = nowIL();
+  for (const [a,b] of H[d] || []) { const end = b <= a ? b + 1440 : b; if (m >= a && m < end) return {open:true, text:"פתוח עכשיו, עד " + hm(b)}; }
+  for (const [a,b] of H[(d+6)%7] || []) if (b <= a && m < b) return {open:true, text:"פתוח עכשיו, עד " + hm(b)};
+  for (let i = 0; i < 7; i++) {
+    const rs = (H[(d+i)%7] || []).filter(([a]) => i > 0 || a > m).sort((x,y) => x[0]-y[0]);
+    if (rs.length) {
+      const when = i === 0 ? "היום" : i === 1 ? "מחר" : "ביום " + DAYS[(d+i)%7];
+      return {open:false, text:"סגור עכשיו, נפתח " + when + " ב-" + hm(rs[0][0])};
+    }
+  }
+  return null;
+}
+
+const st = status();
+const waLink = S.whatsapp ? "https://wa.me/972" + S.whatsapp.replace(/^0/,"") : "";
+const tel = S.phone ? "tel:" + S.phone.replace(/[^\d+]/g,"") : "";
+const waze = S.lat ? "https://waze.com/ul?ll=" + S.lat + "," + S.lon + "&navigate=yes" : "";
+const gmaps = S.lat ? "https://www.google.com/maps/search/?api=1&query=" + S.lat + "," + S.lon : "";
+let h = "";
+
+h += '<p class="ribbon">אתר הדגמה ש-TOMI הכינו עבור ' + esc(S.name) + '</p>';
+h += '<header class="hero">' + (S.cover ? '<img class="hero__img" src="' + esc(S.cover) + '" alt="" fetchpriority="high">' : '') +
+     '<div class="hero__text">' + (S.logo ? '<img class="hero__logo" src="' + esc(S.logo) + '" alt="">' : '') +
+     '<h1 class="hero__name">' + esc(S.name) + '</h1>' +
+     (S.tagline ? '<p class="hero__tag">' + esc(S.tagline) + '</p>' : '') +
+     (st ? '<p class="status' + (st.open ? ' open' : '') + '">' + esc(st.text) + '</p>' : '') +
+     '</div></header>';
+
+h += '<main class="wrap">';
+const facts = [];
+if (S.rating && S.rating.score) facts.push('<span>דירוג <b>' + esc(S.rating.score) + '</b> ב' + esc(S.rating.src) + (S.rating.count ? ', ' + esc(S.rating.count) + ' מדרגים' : '') + '</span>');
+if (S.address) facts.push('<span>' + esc(S.address) + '</span>');
+if (facts.length) h += '<div class="facts">' + facts.join("") + '</div>';
+if (S.about) h += '<section class="about"><p>' + esc(S.about) + '</p></section>';
+
+if (S.menu && S.menu.length) {
+  h += '<section id="menu"><h2>' + esc(S.menu_title || "התפריט") + '</h2><nav class="chips" aria-label="קטגוריות">' +
+       S.menu.map((c,i) => '<a href="#c' + i + '">' + esc(c.name) + '</a>').join("") + '</nav>';
+  S.menu.forEach((c,i) => {
+    h += '<div class="cat" id="c' + i + '"><h3>' + esc(c.name) + '</h3><ul>';
+    for (const it of c.items) {
+      h += '<li class="item"><div class="item__txt"><div class="item__name">' + esc(it.name) + '</div>' +
+           (it.desc ? '<p class="item__desc">' + esc(it.desc) + '</p>' : '') +
+           '<span class="item__price">' + esc(String(it.price).replace(/\.0+$/,"")) + ' ₪</span></div>' +
+           (it.img ? '<img loading="lazy" src="' + esc(it.img) + '?w=360" alt="' + esc(it.name) + '" onerror="this.remove()">' : '') + '</li>';
+    }
+    h += '</ul></div>';
+  });
+  h += '</section>';
+}
+if (S.services && S.services.length)
+  h += '<section id="services"><h2>הטיפולים שלנו</h2><ul class="services">' + S.services.map(s => '<li>' + esc(s) + '</li>').join("") + '</ul></section>';
+if (S.gallery && S.gallery.length)
+  h += '<section id="gallery"><h2>מהסטודיו</h2><div class="gallery">' + S.gallery.map(g => '<img loading="lazy" src="' + esc(g) + '" alt="" onerror="this.remove()">').join("") + '</div></section>';
+
+if (S.hours) {
+  const today = nowIL().d;
+  h += '<section id="hours"><h2>שעות פתיחה</h2><ul class="hours">' + DAYS.map((name,i) => {
+    const r = S.hours[i] || [];
+    return '<li' + (i === today ? ' class="today"' : '') + '><span>יום ' + name + '</span><span>' +
+      (r.length ? r.map(([a,b]) => hm(a) + "–" + hm(b)).join(", ") : "סגור") + '</span></li>';
+  }).join("") + '</ul></section>';
+}
+if (S.lat) {
+  h += '<section id="where"><h2>איך מגיעים</h2>' + (S.address ? '<p class="addr">' + esc(S.address) + '</p>' : '') +
+       '<iframe class="map" loading="lazy" title="מפה" src="https://maps.google.com/maps?q=' + S.lat + ',' + S.lon + '&z=16&hl=iw&output=embed"></iframe>' +
+       '<div class="links"><a class="btn" href="' + waze + '">' + ICON.nav + 'ניווט ב-Waze</a><a class="btn" href="' + gmaps + '">Google Maps</a></div></section>';
+}
+h += '</main>';
+h += '<footer class="foot"><div>© ' + new Date().getFullYear() + ' ' + esc(S.name) + ', כל הזכויות שמורות</div><div class="by">Website by <b>TOMI</b></div></footer>';
+
+const bar = [];
+if (tel) bar.push('<a href="' + tel + '"' + (S.kind === "beauty" && !waLink ? ' class="main"' : '') + '>' + ICON.phone + 'התקשרו</a>');
+if (waLink) bar.push('<a href="' + waLink + '"' + (S.kind === "beauty" ? ' class="main"' : '') + '>' + ICON.wa + 'וואטסאפ</a>');
+if (S.menu && S.menu.length) bar.push('<a href="#menu">' + ICON.menu + (S.kind === "shop" ? 'מוצרים' : 'תפריט') + '</a>');
+if (S.gallery && S.gallery.length) bar.push('<a href="#gallery">' + ICON.pics + 'תמונות</a>');
+if (waze) bar.push('<a href="' + waze + '">' + ICON.nav + 'ניווט</a>');
+if (S.order_url) bar.push('<a class="main" href="' + esc(S.order_url) + '">' + ICON.bag + 'להזמנה</a>');
+h += '<nav class="bar" aria-label="פעולות מהירות">' + bar.join("") + '</nav>';
+
+document.getElementById("app").innerHTML = h;
+
+// fit the name to the width of the hero
+const nm = document.querySelector(".hero__name");
+function fit(){
+  const cs = getComputedStyle(nm.parentElement);
+  const box = nm.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  nm.classList.remove("wrap");
+  let size = Math.min(150, window.innerHeight * 0.16);
+  nm.style.fontSize = size + "px";
+  while (nm.offsetWidth > box && size > 34) { size -= 2; nm.style.fontSize = size + "px"; }
+  if (nm.offsetWidth > box) { nm.classList.add("wrap"); nm.style.fontSize = "40px"; }
+}
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(fit);
+fit(); addEventListener("resize", fit);
+
+// highlight the menu category in view
+const chips = [...document.querySelectorAll(".chips a")];
+if (chips.length && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    chips.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));
+    const on = chips.find(a => a.classList.contains("on"));
+    if (on) on.scrollIntoView({block:"nearest", inline:"center", behavior:"smooth"});
+  }), {rootMargin:"-30% 0px -60% 0px"});
+  document.querySelectorAll(".cat").forEach(c => io.observe(c));
+}
+})();
+</script>
+</body>
+</html>
