@@ -168,7 +168,8 @@ function card(l) {
     esc(l.city) + (l.rating ? ", " + esc(l.rating) : "") + '</small></div></div>';
   if (st === "ready") h += '<p class="when">נבנה ' + ago(l.date + "T08:00:00") + '</p>';
   if (s.sentAt) h += '<p class="when">נשלח ' + ago(s.sentAt) + (st !== "sent" ? ", עודכן " + ago(s.t) : "") + '</p>';
-  if (st === "out") h += '<p class="when">' + OUT[s.s] + '. 🔒 הקישור לאתר נסגר (אם המחשב כבוי, ייסגר כשיידלק)</p>';
+  if (st === "out") h += '<p class="when">' + OUT[s.s] + (l.deleted ? '. 🗑 האתר נמחק (עבר שבוע). הבוט לא יפנה אליהם שוב.'
+                          : '. 🔒 הקישור לאתר נסגר. אם לא תחזיר אותו תוך שבוע, הוא יימחק.') + '</p>';
   if (st === "replied" || st === "won" || st === "out" && s.s === "lost")
     h += '<textarea class="note" data-note="' + esc(l.id) + '" placeholder="מה הוא ענה? מחיר, מה ביקש לשנות… (נשמר לבד)">' + esc(s.note || "") + '</textarea>';
   if (st === "ready") h += '<details><summary>ההודעה</summary><div class="msg">' + esc(l.message) + '</div></details>';
@@ -190,9 +191,8 @@ function card(l) {
   } else if (st === "won") {
     h += '<a class="wa" href="' + esc(waLink(l, false)) + '">לצ\'אט</a><a href="' + esc(l.site) + '" target="_blank" rel="noopener">האתר</a>' +
          '<button class="soft full" data-set="replied" data-id="' + esc(l.id) + '">החזר ל"ענו"</button>';
-  } else {
-    h += '<a href="' + esc(l.site) + '" target="_blank" rel="noopener">צפה באתר</a>' +
-         '<button data-set="' + (s.sentAt ? "sent" : "ready") + '" data-id="' + esc(l.id) + '">החזר ופתח שוב</button>';
+  } else if (!l.deleted) {
+    h += '<button class="full" data-set="' + (s.sentAt ? "sent" : "ready") + '" data-id="' + esc(l.id) + '">החזר ופתח שוב</button>';
   }
   return h + '</div></article>';
 }
