@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>TOMI · הרשימה של היום</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#EEF0F3;--card:#fff;--ink:#1B2130;--mute:#667085;--line:#E2E5EA;--wa:#1FA855;--go:#2D5BFF;--done:#9AA3AF}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.5 "Assistant",system-ui,sans-serif;padding:0 0 40px}
+header{padding:22px 18px 10px;max-width:640px;margin:0 auto}
+h1{font-size:26px;font-weight:800;line-height:1.2}
+.sum{color:var(--mute);margin-top:4px}
+.tabs{display:flex;gap:8px;margin-top:14px}
+.tabs button{font:inherit;font-weight:700;font-size:14.5px;border:0;border-radius:999px;padding:7px 14px;background:#fff;color:var(--ink)}
+.tabs button.on{background:var(--ink);color:#fff}
+main{max-width:640px;margin:0 auto;padding:0 12px}
+h2{font-size:15px;font-weight:700;color:var(--mute);margin:20px 6px 8px}
+.card{background:var(--card);border-radius:18px;padding:14px;margin-bottom:10px;scroll-margin-top:12px}
+.card.sent{opacity:.55}
+.top{display:flex;gap:12px;align-items:center}
+.top img{width:56px;height:56px;border-radius:14px;object-fit:cover;flex:none;background:var(--line)}
+.top b{font-size:18px;font-weight:800;display:block;line-height:1.25}
+.top small{color:var(--mute);font-size:14px}
+.kind{font-size:12.5px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--bg);margin-inline-start:6px;vertical-align:2px}
+details{margin-top:10px}
+summary{cursor:pointer;color:var(--mute);font-size:14px}
+.msg{white-space:pre-wrap;background:var(--bg);border-radius:12px;padding:10px 12px;margin-top:8px;font-size:14.5px}
+.acts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.acts a,.acts button{font:inherit;font-weight:700;font-size:15px;text-align:center;text-decoration:none;border:0;border-radius:12px;padding:11px 8px;background:var(--bg);color:var(--ink);cursor:pointer}
+.acts .wa{background:var(--wa);color:#fff}
+.acts .go{background:var(--go);color:#fff}
+.acts .full{grid-column:1/-1}
+.note{font-size:13.5px;color:var(--mute);margin-top:8px}
+.empty{text-align:center;color:var(--mute);padding:60px 20px}
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:999px;font-weight:700;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.show{opacity:1}
+</style>
+</head>
+<body>
+<header>
+  <h1>הרשימה של היום</h1>
+  <p class="sum" id="sum"></p>
+  <div class="tabs"><button class="on" data-f="todo">לשליחה</button><button data-f="sent">נשלחו</button><button data-f="all">הכל</button></div>
+</header>
+<main id="list"></main>
+<div class="toast" id="toast"></div>
+<script>
+const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const SENT_KEY = "tomi-sent";
+const sent = new Set(JSON.parse(localStorage.getItem(SENT_KEY) || "[]"));
+let leads = [], filter = "todo";
+
+function toast(t){ const el = document.getElementById("toast"); el.textContent = t; el.classList.add("show"); setTimeout(() => el.classList.remove("show"), 1800); }
+function save(){ localStorage.setItem(SENT_KEY, JSON.stringify([...sent])); }
+function dayLabel(d){
+  const t = new Date(); const iso = x => x.toISOString().slice(0,10);
+  const y = new Date(t); y.setDate(t.getDate() - 1);
+  if (d === iso(t)) return "היום"; if (d === iso(y)) return "אתמול";
+  const [Y,M,D] = d.split("-"); return D + "." + M;
+}
+function render(){
+  const todo = leads.filter(l => !sent.has(l.id)).length;
+  document.getElementById("sum").textContent = leads.length ? todo + " מחכים לשליחה, " + (leads.length - todo) + " נשלחו" : "";
+  const show = leads.filter(l => filter === "all" || (filter === "sent") === sent.has(l.id));
+  if (!show.length) { document.getElementById("list").innerHTML = '<p class="empty">' + (filter === "todo" ? "אין כרגע עסקים שמחכים לשליחה. הבוט מוסיף עסקים בכל פעם שהמחשב נדלק." : "אין עדיין עסקים ברשימה הזאת.") + '</p>'; return; }
+  let h = "", last = "";
+  for (const l of show) {
+    if (l.date !== last) { h += "<h2>" + dayLabel(l.date) + "</h2>"; last = l.date; }
+    const isSent = sent.has(l.id);
+    h += '<article class="card' + (isSent ? ' sent' : '') + '" id="' + esc(l.id) + '">' +
+      '<div class="top"><img src="' + esc(l.thumb) + '" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility=\'hidden\'"><div><b>' + esc(l.name) +
+      '<span class="kind">' + (l.kind === "food" ? "מסעדה" : "יופי") + '</span></b><small>' + esc(l.city) + (l.rating ? ", דירוג " + esc(l.rating) : "") + '</small></div></div>' +
+      '<details><summary>ההודעה</summary><div class="msg">' + esc(l.message) + '</div></details>' +
+      '<div class="acts"><a href="' + esc(l.site) + '" target="_blank" rel="noopener">צפה באתר</a>';
+    if (l.wa) h += '<a class="wa" href="' + esc(l.wa) + '" data-send="' + esc(l.id) + '">שלח בוואטסאפ</a>';
+    else h += '<button class="go" data-copy="' + esc(l.id) + '">העתק הודעה</button><a class="wa full" href="' + esc(l.source) + '" target="_blank" rel="noopener" data-send="' + esc(l.id) + '">פתח בבזק 144 ולחץ שם על וואטסאפ</a>';
+    h += '<button class="full" data-toggle="' + esc(l.id) + '">' + (isSent ? "החזר לרשימה" : "סמן כנשלח") + '</button></div>' +
+      (l.wa ? '' : '<p class="note">בבזק 144 המספר מוסתר: מעתיקים את ההודעה, פותחים את העמוד שלהם, לוחצים "וואטסאפ" ומדביקים.</p>') +
+      '</article>';
+  }
+  document.getElementById("list").innerHTML = h;
+}
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-f],[data-copy],[data-toggle],[data-send]"); if (!t) return;
+  if (t.dataset.f) { filter = t.dataset.f; document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("on", b === t)); render(); return; }
+  if (t.dataset.copy) { const l = leads.find(x => x.id === t.dataset.copy); navigator.clipboard.writeText(l.message).then(() => toast("ההודעה הועתקה")); return; }
+  if (t.dataset.toggle) { const id = t.dataset.toggle; sent.has(id) ? sent.delete(id) : sent.add(id); save(); render(); return; }
+  if (t.dataset.send && t.classList.contains("wa") && t.href.includes("wa.me")) { sent.add(t.dataset.send); save(); setTimeout(render, 600); }
+});
+fetch("leads.json?t=" + Date.now()).then(r => r.json()).then(d => {
+  leads = d; render();
+  if (location.hash) { const el = document.getElementById(location.hash.slice(1)); if (el) { filter = "all"; document.querySelectorAll(".tabs button").forEach(b => b.classList.toggle("on", b.dataset.f === "all")); render(); document.getElementById(location.hash.slice(1)).scrollIntoView(); } }
+}).catch(() => { document.getElementById("list").innerHTML = '<p class="empty">לא הצלחתי לטעון את הרשימה. בדוק שיש אינטרנט ונסה לרענן.</p>'; });
+</script>
+</body>
+</html>
