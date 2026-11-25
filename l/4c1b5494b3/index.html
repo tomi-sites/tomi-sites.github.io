@@ -173,7 +173,7 @@ function waLink(l, withText) {
   return "https://wa.me/" + n + (withText ? "?text=" + encodeURIComponent(l.message) : "");
 }
 
-const chatOf = s => s.chat || (s.note ? [{w: "them", x: s.note, t: s.t}] : []);
+const chatOf = s => (s.chat && s.chat.length) ? s.chat : ((s.note || "").trim() ? [{w: "them", x: s.note.trim(), t: s.t}] : []);
 function chatBlock(l, s) {
   const id = esc(l.id), chat = chatOf(s);
   let h = chat.length ? '<div class="chat">' + chat.map(m => '<p class="b ' + (m.w === "me" ? "me" : "them") + '">' + esc(m.x) + '</p>').join("") + '</div>' : "";
