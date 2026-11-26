@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Iben Pastry House | מאפייה ובית מאפה בנס ציונה</title>
+<meta name="description" content="אצלנו בסנונית 18 בנס ציונה מחכים לכם מאפים כמו קרואסון חמאה, קווין אמן ופסטל דה נטה. לצד המתוקים תמצאו אצלנו גם באגט, מקל זיתים וטוסטים.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Iben Pastry House | מאפייה ובית מאפה בנס ציונה">
+<meta property="og:description" content="אצלנו בסנונית 18 בנס ציונה מחכים לכם מאפים כמו קרואסון חמאה, קווין אמן ופסטל דה נטה. לצד המתוקים תמצאו אצלנו גם באגט, מקל זיתים וטוסטים.">
+<meta property="og:image" content="https://imageproxy.wolt.com/assets/67335dbcf89eb96f4520cca3?w=1200">
+<meta name="theme-color" content="#1C2433">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Bellefair&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#F1F3F6;--ink:#1C2433;--accent:#2D63C8;--second:#F0B429;--display:"Secular One",serif;--on-accent:#fff; }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "Assistant",system-ui,sans-serif;padding-bottom:calc(86px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%}
+a{color:inherit}
+ul{list-style:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.ribbon{background:var(--ink);color:var(--bg);font-size:13px;line-height:1.4;text-align:center;padding:7px 16px}
+
+/* hero: the business's own photo, its name set as large as the width allows */
+.hero{position:relative;min-height:74svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);color:#fff;isolation:isolate}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.35) 42%,rgba(0,0,0,0) 72%)}
+.hero__text{width:100%;max-width:980px;margin:0 auto;padding:0 22px 30px}
+.hero__logo{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.85);margin-bottom:14px;background:#fff}
+.hero__name{display:inline-block;font-family:var(--display);font-weight:400;line-height:.98;white-space:nowrap;font-size:64px;letter-spacing:-.005em}
+.hero__name.wrap{white-space:normal}
+.hero__tag{font-size:clamp(18px,4.6vw,22px);line-height:1.4;margin-top:12px;max-width:30ch;color:rgba(255,255,255,.92)}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-weight:700;font-size:15px;padding:7px 14px 7px 16px;border-radius:999px;background:rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#C9CDD3}
+.status.open::before{background:#5EE38B;box-shadow:0 0 0 4px rgba(94,227,139,.25)}
+@media (prefers-reduced-motion:no-preference){
+  .hero__img{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) both}
+  .hero__name{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes settle{from{transform:scale(1.07)}}
+  @keyframes rise{from{transform:translateY(35%);opacity:0}}
+}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;padding:20px 0 4px;font-size:15.5px}
+.facts b{color:var(--accent);font-weight:800}
+section{padding:40px 0 8px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(32px,8.4vw,46px);line-height:1.05;margin-bottom:20px}
+.about p{font-size:clamp(19px,4.8vw,22px);line-height:1.6;max-width:34ch}
+
+/* menu */
+.chips{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:12px 22px;margin:0 -22px 6px;background:var(--bg);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;text-decoration:none;font-weight:700;font-size:15px;padding:7px 15px;border-radius:999px;border:1.5px solid color-mix(in srgb,var(--ink) 30%,transparent);transition:background .2s,color .2s,border-color .2s}
+.chips a.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cat{padding-top:18px;scroll-margin-top:64px}
+.cat h3{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.2;color:var(--accent);padding-bottom:6px;border-bottom:3px solid var(--second)}
+.item{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.item__txt{flex:1;min-width:0}
+.item__name{font-weight:800;font-size:17.5px;line-height:1.35}
+.item__desc{font-size:15px;line-height:1.5;color:color-mix(in srgb,var(--ink) 72%,transparent);margin-top:3px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.item__price{display:block;margin-top:6px;font-weight:800;font-size:16px;color:var(--accent)}
+.item img{width:100px;height:100px;flex:none;object-fit:cover;border-radius:16px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+
+/* beauty */
+.services{display:flex;flex-wrap:wrap;gap:9px}
+.services li{font-weight:600;font-size:16px;padding:9px 16px;border-radius:999px;background:color-mix(in srgb,var(--accent) 13%,var(--bg));border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+.gallery img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+
+/* hours + location */
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent);font-size:16.5px}
+.hours li.today{font-weight:800;color:var(--accent)}
+.hours span:last-child{direction:ltr;unicode-bidi:isolate}
+.addr{font-size:18px;margin-bottom:14px}
+.map{width:100%;height:270px;border:0;border-radius:18px;display:block;background:color-mix(in srgb,var(--second) 25%,var(--bg))}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15.5px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--ink)}
+
+.foot{text-align:center;font-size:13.5px;padding:48px 22px 28px;color:color-mix(in srgb,var(--ink) 65%,transparent)}
+.foot .by{direction:ltr;margin-top:4px}
+.foot .by b{letter-spacing:.06em}
+
+/* bottom action bar */
+.bar{position:fixed;inset:auto 0 0 0;z-index:10;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--ink)}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;border-radius:14px;color:var(--bg);text-decoration:none;font-size:13px;font-weight:700}
+.bar a.main{background:var(--accent);color:var(--on-accent)}
+.bar svg{width:22px;height:22px}
+@media (min-width:760px){
+  .bar{left:50%;right:auto;bottom:16px;transform:translateX(-50%);width:min(560px,92vw);border-radius:22px;padding:8px}
+  .item img{width:120px;height:120px}
+  .gallery{grid-template-columns:1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>window.SITE = {"kind": "shop", "name": "Iben Pastry House", "tagline": "מאפייה ובית מאפה בנס ציונה", "about": "אצלנו בסנונית 18 בנס ציונה מחכים לכם מאפים כמו קרואסון חמאה, קווין אמן ופסטל דה נטה. לצד המתוקים תמצאו אצלנו גם באגט, מקל זיתים וטוסטים.", "phone": "0549640764", "whatsapp": "0549640764", "address": "סנונית 18 נס ציונה", "lat": 31.907319, "lon": 34.784179, "hours": [[[510, 1110]], [[510, 1110]], [[510, 1110]], [[510, 1110]], [[510, 1110]], [[510, 780]], [[480, 840]]], "cover": "https://imageproxy.wolt.com/assets/67335dbcf89eb96f4520cca3?w=1600", "logo": null, "rating": {"score": 9.0, "count": 50, "src": "וולט"}, "menu": [{"name": "מארזים", "items": [{"name": "אריזת מתנה וולט", "desc": "רוצים שנארוז לכם את הפריטים כמתנה עם ברכה? כתבו את הברכה בהערות | התמונה להמחשה בלבד", "price": 6.0, "img": "https://imageproxy.wolt.com/assets/68e379ff84261fa042b809cd"}, {"name": "‫זוג יינות ב112₪", "desc": "לבן/רוזה/אדום", "price": 112.0, "img": "https://imageproxy.wolt.com/assets/6994327eb353386403c1f43e?overlay=isr-softalcohol"}]}, {"name": "מאפים", "items": [{"name": "קרואסון חמאה", "desc": "על בסיס מחמצת | חלבי", "price": 17.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3766c65a-2c9c-11ef-a421-0ea565d0f941_____________.jpg"}, {"name": "קווין אמן", "desc": "בצק קרואסון מקורמל עם חמאה וסוכר | חלבי", "price": 18.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2ef653b0-2ca5-11ef-9f33-36d79db2ef73___________.jpg"}, {"name": "פסטל דה נטה", "desc": "מאפה פורטוגזי- בצק עלים עם ביצים וניל וקינמון אפויים | חלבי", "price": 15.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/26722dcc-2ca5-11ef-ac8a-e669d2e6c57a_____________.jpg"}, {"name": "מאפינס בננה קקאו", "desc": "מאפינס בננה, שוקולד וקרמבל קוקוס | טבעוני", "price": 18.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/44f4298a-2ca5-11ef-9f85-aa0796db2584________________.jpg"}, {"name": "מאפין אוכמניות", "desc": "", "price": 18.0, "img": "https://imageproxy.wolt.com/assets/6a314c75114c543b91362e25"}, {"name": "מקל שומשום", "desc": "בצק קרואסון מלוח עם שומשום", "price": 10.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/d00a0000-7415-11ef-80fd-869d77225d5c___________.jpg"}, {"name": "קרקרים", "desc": "קרקר כוסמין וגרעינים | טבעוני", "price": 30.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3e6ea314-2c9c-11ef-acac-12ad87635011_______.jpg"}, {"name": "מאפה ריקוטה ותרד", "desc": "בצק קרואסון עם תערובת גבינות מלוחות ותרד | חלבי", "price": 27.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ee9fb7d4-2c9a-11ef-8696-a610e9444aac____________.jpg"}]}, {"name": "עוגיות", "items": [{"name": "עוגיות פאדג' שוקולד", "desc": "פאדג׳ ללא גלוטן | חלבי", "price": 39.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8924932e-2c9b-11ef-bd1c-f67b962112b6_____________.jpg?overlay=isr-sugar"}, {"name": "עוגיות שוקולד צ'יפס", "desc": "חלבי", "price": 39.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/972c135c-2c9b-11ef-8385-9636fc2d56fa__________________.jpg?overlay=isr-sugar"}, {"name": "ברוריות", "desc": "עוגיות חמאה של אמא ברוריה | חלבי", "price": 34.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/7cf08094-2c8d-11ef-a435-022b80edd700________.jpg?overlay=isr-sugar"}, {"name": "עוגיות שיבולת שועל", "desc": "", "price": 39.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/7321009e-b2f1-11ef-859f-2e9c2033334c____________________________1_.png"}]}, {"name": "עוגות", "items": [{"name": "קראנץ שוקולד", "desc": "בצק שמרים כרוך עם שוקולד | חלבי", "price": 54.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2fdb9708-2c9c-11ef-a063-425fa2dfd2aa_____________.jpg?overlay=isr-sugar"}, {"name": "קראנץ קינמון", "desc": "בצק שמרים כרוך עם קינמון | חלבי | התמונה להמחשה בלבד", "price": 54.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/e64f9d40-c8fa-11ef-98fb-3a89c64bed93_______.jpg?overlay=isr-sugar"}, {"name": "בראוניז", "desc": "", "price": 48.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/296aab26-5554-11ef-b722-b69e09f0c2ab________.jpg"}, {"name": "בחושה גזר | פרווה", "desc": "", "price": 48.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/a7089236-96af-11ef-8ca9-ce1a4b04b6f8__________.jpg"}, {"name": "קרמבל גזר עם שוקולד לבן", "desc": "", "price": 34.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/09040744-e6d4-11ef-a8be-dab1442e8f96_______________________.jpg?overlay=isr-sugar"}, {"name": "בחושה תפוחים", "desc": "", "price": 58.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/5c99ed00-7a74-11ef-bbdb-66a0d091a08c________6.002.jpeg"}, {"name": "עוגת גבינה אפויה", "desc": "עוגת הגבינה האפויה של האיבן, קוטר 16 | חלבי", "price": 142.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/875ccae2-2c8d-11ef-b509-eaca58b1e18d____________.jpg?overlay=isr-sugar"}, {"name": "פרוסת עוגת גבינה אפויה", "desc": "עוגת הגבינה האפויה של האיבן | חלבי", "price": 38.0, "img": "https://imageproxy.wolt.com/assets/68b57d79b2dd3b045ad26254"}, {"name": "עוגה טירמיסו", "desc": "", "price": 46.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/c7b96e74-3632-11f0-b003-eaec1e6ce0b6_1a647780_0001_11f0_830b_d256af31b473_screenshot_2025_03_13_at_13.48.26.jpg?overlay=isr-sugar"}, {"name": "כדורי שוקולד", "desc": "מארז שישה כדורי שוקולד פאדג בציפוי קוקוס | חלבי ללא גלוטן", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f998c4bc-2c8d-11ef-af9d-dac4823e8207_____________.jpg?overlay=isr-sugar"}]}, {"name": "לחמים | פרווה", "items": [{"name": "מקל זיתים", "desc": "", "price": 16.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/ad50392e-5e3c-11ef-8c02-26171d8f3db1__________.png"}, {"name": "באגט", "desc": "באגט צרפתי על בסיס מחמצת", "price": 18.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8e54e8ee-2c8c-11ef-8465-8ee689262d8f____.jpg"}]}, {"name": "כריכים וסלטים", "items": [{"name": "טוסט גאודה", "desc": "טוסט גאודה בלחם בריוש מוגש עם חמוצים ואיולי סריראצ'ה", "price": 40.0, "img": null}, {"name": "טוסט שינקן גאודה", "desc": "טוסט שינקן גאודה בלחם בריוש מוגש עם חמוצים ואיולי סריראצ'ה", "price": 48.0, "img": null}, {"name": "סלט ביצים", "desc": "סלט ביצים ובצל ירוק מעל", "price": 32.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4eaa8564-2c9b-11ef-93f1-9a45562f9615__________.jpg"}, {"name": "סלט טונה", "desc": "סלט טונה במיונז עם פלפל קלוי ומלפפון חמוץ", "price": 35.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/eb9592f0-2c8d-11ef-aaec-ee9181bd74df_____.jpg"}, {"name": "סלט קטניות משתנה", "desc": "סלט קטניות משתנות עם ירקות קלויים ורוקט", "price": 44.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/19d27692-b2f3-11ef-9059-c6ae0e56b00b_de814bf0_5554_11ef_be71_7a904bf0a57e___________.png"}, {"name": "ספרינג רול", "desc": "דפי אורז ממולאים מלפפון, גזר, פטריות, כרוב, נענע ושומשום | \nמגיע עם רוטב חמאת בוטנים וסויה", "price": 41.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/7c72edb6-0df4-11f0-bd1b-aa6b96580d70__.jpg"}, {"name": "לביבות זוקיני", "desc": "4 לביבות זוקיני אפויות, ביצה קשה, רוקט ורוטב יוגורט", "price": 48.0, "img": "https://imageproxy.wolt.com/assets/690338db06e418131b085afe"}]}, {"name": "מעדניה", "items": [{"name": "סרוולד", "desc": "נקניק יבש בטחינה דקה", "price": 58.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/853b311e-2c9b-11ef-81c6-52fd363cc880_______.jpg"}, {"name": "בייקון חזיר", "desc": "נתח נחזה חזיר מקומי", "price": 64.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/45704b18-2c8d-11ef-a242-42f75add107e_______.jpg"}]}, {"name": "מזווה ומוצרי פיקניק", "items": [{"name": "זר פרחים יבש", "desc": "משתנה בהתאם לעונה | גודל 17 ס\"מ", "price": 55.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/b60c461a-2c8d-11ef-8421-b6a0a29b51f2_______.jpg"}, {"name": "מפת פינקניק", "desc": "1.5 מ׳ על 1.5 מ׳ | מפת פיקניק זוגית", "price": 45.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2fb19cf6-2c9b-11ef-9f33-36d79db2ef73___________.jpg"}, {"name": "קפה טחון", "desc": "100% ארביקה,VASCOVI", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/29b18e50-2c9c-11ef-8839-66995ce6b87d_____250____.jpg"}, {"name": "קילו קפה", "desc": "ווסקובי , קילו קפה איטלקי איכותי", "price": 168.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/233f1196-2c9c-11ef-b680-0631393c70f9_____1___.jpg"}, {"name": "דבש 250 גרם", "desc": "דבש טבעי ממושב קלחים", "price": 28.0, "img": "https://imageproxy.wolt.com/assets/68afecdb96fbe9c58f983c2a"}, {"name": "סבון מוצק | שדה ארומטיק", "desc": "", "price": 38.0, "img": "https://imageproxy.wolt.com/assets/69bbc8cd94e8ba0fb797cd6f"}, {"name": "מיקס אנד מאצ׳ה", "desc": "", "price": 142.0, "img": "https://imageproxy.wolt.com/assets/6a02b924d455387de36393d8"}]}, {"name": "אלכוהול", "items": [{"name": "Jasmin", "desc": "קוקטייל ג'זמין על בסיס ג'ין עם ליקר אשכוליות, לימון ופסיפלורה.", "price": 64.0, "img": "https://imageproxy.wolt.com/assets/6a314c80114c543b91362e29?overlay=isr-softalcohol"}, {"name": "קוט דה רון שאפוטייה בלרוש", "desc": "יין אדום, פירותי ,שאפוטייה,טאיין להרמיטאז'2021", "price": 84.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/0b3358dc-2c9c-11ef-bd9b-229f7222e574_________________.jpg?overlay=isr-softalcohol"}, {"name": "מוסקדה", "desc": "יין לבן, יבש וקליל,סבר מיין סור לי לה מארינייר 2021", "price": 84.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1b1d2a76-2c9b-11ef-b72c-a2d9866e3c75_______.jpg?overlay=isr-softalcohol"}, {"name": "רוזה סירה, פול מאס", "desc": "רוזה קליל ופירותי, פול מאס 2023", "price": 94.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/557dd75a-2c9c-11ef-9a9c-a62ce9b1278a_____________.jpg?overlay=isr-softalcohol"}, {"name": "פמיל בוגרייה שרדונה | 250 מ\"ל", "desc": "", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/c9bf678e-b2f0-11ef-b2cf-ee85c1cf29ae_____________________250___.png?overlay=isr-softalcohol"}, {"name": "פמיל בוגרייה רוזה | 250 מ\"ל", "desc": "", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/c5a45cb8-b2f0-11ef-bf33-6edf1a741e15_______________________250___.png?overlay=isr-softalcohol"}, {"name": "יין פוארי פורטה רוזה", "desc": "יין רוזה יבש", "price": 58.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/6443a8a4-cc11-11ef-a0a9-fe59b24ca182_3b65974c_cc0e_11ef_b94c_a6ff29822502_10dd5544_5e3d_11ef_88d9_4a2cbb55f917____________1___1_.png?overlay=isr-softalcohol"}, {"name": "יין פוארי פורטה לבן", "desc": "יין לבן יבש", "price": 58.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/6661697565ebc0d585c0264b/77b012f6-cc11-11ef-93a9-42bfb70004c9_3b65974c_cc0e_11ef_b94c_a6ff29822502_10dd5544_5e3d_11ef_88d9_4a2cbb55f917____________1___2_.png?overlay=isr-softalcohol"}]}, {"name": "שתיה קלה", "items": [{"name": "בקבוק קולה | זכוכית", "desc": "", "price": 13.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/c680e254-2ca5-11ef-87d8-e669d2e6c57a_e6b51f6c_42c6_11eb_9073_3a87a4ff4ab7_coca_cola_350ml.jpg?overlay=isr-sugar"}, {"name": "בקבוק קולה זירו | זכוכית", "desc": "", "price": 13.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/c5f0e01e-2ca5-11ef-b34b-aea7b196f0c7_5246f32c_f8e8_11eb_a39c_467f67de554e_coca_cola_zero_350ml.jpg"}, {"name": "בקבוק סודה | זכוכית", "desc": "NORDIC", "price": 10.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/c9142260-2ca5-11ef-9aaf-e669d2e6c57a_32efd188_f57b_11ed_a9c3_6eda0db810a7_soda_water_250ml_nordic_mist.jpg"}, {"name": "קולד ברו", "desc": "חליטה קרה של קפה, 48 שעות, ווסקובי", "price": 21.0, "img": "https://imageproxy.wolt.com/assets/68b57ef6b2dd3b045ad262f6"}, {"name": "בקבוק מים מינרלים | זכוכית", "desc": "נביעות", "price": 11.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ca05b49a-2ca5-11ef-a418-164ccd7b0579_02513832_7223_11ec_b5e7_da59de3ca130______________.jpg"}]}], "menu_title": "המוצרים", "services": [], "gallery": [], "order_url": "https://wolt.com/he/isr/rishon-lezion-hashfela-area/venue/iben-pastry-house"};</script>
+<script>
+(function(){
+const S = window.SITE;
+const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const DAYS = ["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
+const hm = m => { m = ((m % 1440) + 1440) % 1440; return String(Math.floor(m/60)).padStart(2,"0") + ":" + String(m%60).padStart(2,"0"); };
+const ICON = {
+  phone:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>',
+  nav:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 3 3 10.6l7.4 2.9L13.4 21z"/></svg>',
+  bag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>',
+  menu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
+  pics:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m3 16 5-5 5 5 3-3 5 5"/></svg>'
+};
+
+function nowIL(){
+  const p = new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Jerusalem",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date());
+  const g = t => p.find(x => x.type === t).value;
+  return { d: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")), m: (+g("hour")) * 60 + (+g("minute")) };
+}
+function status(){
+  const H = S.hours; if (!H) return null;
+  const {d, m} = nowIL();
+  for (const [a,b] of H[d] || []) { const end = b <= a ? b + 1440 : b; if (m >= a && m < end) return {open:true, text:"פתוח עכשיו, עד " + hm(b)}; }
+  for (const [a,b] of H[(d+6)%7] || []) if (b <= a && m < b) return {open:true, text:"פתוח עכשיו, עד " + hm(b)};
+  for (let i = 0; i < 7; i++) {
+    const rs = (H[(d+i)%7] || []).filter(([a]) => i > 0 || a > m).sort((x,y) => x[0]-y[0]);
+    if (rs.length) {
+      const when = i === 0 ? "היום" : i === 1 ? "מחר" : "ביום " + DAYS[(d+i)%7];
+      return {open:false, text:"סגור עכשיו, נפתח " + when + " ב-" + hm(rs[0][0])};
+    }
+  }
+  return null;
+}
+
+const st = status();
+const waLink = S.whatsapp ? "https://wa.me/972" + S.whatsapp.replace(/^0/,"") : "";
+const tel = S.phone ? "tel:" + S.phone.replace(/[^\d+]/g,"") : "";
+const waze = S.lat ? "https://waze.com/ul?ll=" + S.lat + "," + S.lon + "&navigate=yes" : "";
+const gmaps = S.lat ? "https://www.google.com/maps/search/?api=1&query=" + S.lat + "," + S.lon : "";
+let h = "";
+
+h += '<p class="ribbon">אתר הדגמה ש-TOMI הכינו עבור ' + esc(S.name) + '</p>';
+h += '<header class="hero">' + (S.cover ? '<img class="hero__img" src="' + esc(S.cover) + '" alt="" fetchpriority="high">' : '') +
+     '<div class="hero__text">' + (S.logo ? '<img class="hero__logo" src="' + esc(S.logo) + '" alt="">' : '') +
+     '<h1 class="hero__name">' + esc(S.name) + '</h1>' +
+     (S.tagline ? '<p class="hero__tag">' + esc(S.tagline) + '</p>' : '') +
+     (st ? '<p class="status' + (st.open ? ' open' : '') + '">' + esc(st.text) + '</p>' : '') +
+     '</div></header>';
+
+h += '<main class="wrap">';
+const facts = [];
+if (S.rating && S.rating.score) facts.push('<span>דירוג <b>' + esc(S.rating.score) + '</b> ב' + esc(S.rating.src) + (S.rating.count ? ', ' + esc(S.rating.count) + ' מדרגים' : '') + '</span>');
+if (S.address) facts.push('<span>' + esc(S.address) + '</span>');
+if (facts.length) h += '<div class="facts">' + facts.join("") + '</div>';
+if (S.about) h += '<section class="about"><p>' + esc(S.about) + '</p></section>';
+
+if (S.menu && S.menu.length) {
+  h += '<section id="menu"><h2>' + esc(S.menu_title || "התפריט") + '</h2><nav class="chips" aria-label="קטגוריות">' +
+       S.menu.map((c,i) => '<a href="#c' + i + '">' + esc(c.name) + '</a>').join("") + '</nav>';
+  S.menu.forEach((c,i) => {
+    h += '<div class="cat" id="c' + i + '"><h3>' + esc(c.name) + '</h3><ul>';
+    for (const it of c.items) {
+      h += '<li class="item"><div class="item__txt"><div class="item__name">' + esc(it.name) + '</div>' +
+           (it.desc ? '<p class="item__desc">' + esc(it.desc) + '</p>' : '') +
+           '<span class="item__price">' + esc(String(it.price).replace(/\.0+$/,"")) + ' ₪</span></div>' +
+           (it.img ? '<img loading="lazy" src="' + esc(it.img) + '?w=360" alt="' + esc(it.name) + '" onerror="this.remove()">' : '') + '</li>';
+    }
+    h += '</ul></div>';
+  });
+  h += '</section>';
+}
+if (S.services && S.services.length)
+  h += '<section id="services"><h2>הטיפולים שלנו</h2><ul class="services">' + S.services.map(s => '<li>' + esc(s) + '</li>').join("") + '</ul></section>';
+if (S.gallery && S.gallery.length)
+  h += '<section id="gallery"><h2>מהסטודיו</h2><div class="gallery">' + S.gallery.map(g => '<img loading="lazy" src="' + esc(g) + '" alt="" onerror="this.remove()">').join("") + '</div></section>';
+
+if (S.hours) {
+  const today = nowIL().d;
+  h += '<section id="hours"><h2>שעות פתיחה</h2><ul class="hours">' + DAYS.map((name,i) => {
+    const r = S.hours[i] || [];
+    return '<li' + (i === today ? ' class="today"' : '') + '><span>יום ' + name + '</span><span>' +
+      (r.length ? r.map(([a,b]) => hm(a) + "–" + hm(b)).join(", ") : "סגור") + '</span></li>';
+  }).join("") + '</ul></section>';
+}
+if (S.lat) {
+  h += '<section id="where"><h2>איך מגיעים</h2>' + (S.address ? '<p class="addr">' + esc(S.address) + '</p>' : '') +
+       '<iframe class="map" loading="lazy" title="מפה" src="https://maps.google.com/maps?q=' + S.lat + ',' + S.lon + '&z=16&hl=iw&output=embed"></iframe>' +
+       '<div class="links"><a class="btn" href="' + waze + '">' + ICON.nav + 'ניווט ב-Waze</a><a class="btn" href="' + gmaps + '">Google Maps</a></div></section>';
+}
+h += '</main>';
+h += '<footer class="foot"><div>© ' + new Date().getFullYear() + ' ' + esc(S.name) + ', כל הזכויות שמורות</div><div class="by">Website by <b>TOMI</b></div></footer>';
+
+const bar = [];
+if (tel) bar.push('<a href="' + tel + '"' + (S.kind === "beauty" && !waLink ? ' class="main"' : '') + '>' + ICON.phone + 'התקשרו</a>');
+if (waLink) bar.push('<a href="' + waLink + '"' + (S.kind === "beauty" ? ' class="main"' : '') + '>' + ICON.wa + 'וואטסאפ</a>');
+if (S.menu && S.menu.length) bar.push('<a href="#menu">' + ICON.menu + (S.kind === "shop" ? 'מוצרים' : 'תפריט') + '</a>');
+if (S.gallery && S.gallery.length) bar.push('<a href="#gallery">' + ICON.pics + 'תמונות</a>');
+if (waze) bar.push('<a href="' + waze + '">' + ICON.nav + 'ניווט</a>');
+if (S.order_url) bar.push('<a class="main" href="' + esc(S.order_url) + '">' + ICON.bag + 'להזמנה</a>');
+h += '<nav class="bar" aria-label="פעולות מהירות">' + bar.join("") + '</nav>';
+
+document.getElementById("app").innerHTML = h;
+
+// fit the name to the width of the hero
+const nm = document.querySelector(".hero__name");
+function fit(){
+  const cs = getComputedStyle(nm.parentElement);
+  const box = nm.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  nm.classList.remove("wrap");
+  let size = Math.min(150, window.innerHeight * 0.16);
+  nm.style.fontSize = size + "px";
+  while (nm.offsetWidth > box && size > 34) { size -= 2; nm.style.fontSize = size + "px"; }
+  if (nm.offsetWidth > box) { nm.classList.add("wrap"); nm.style.fontSize = "40px"; }
+}
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(fit);
+fit(); addEventListener("resize", fit);
+
+// highlight the menu category in view
+const chips = [...document.querySelectorAll(".chips a")];
+if (chips.length && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    chips.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));
+    const on = chips.find(a => a.classList.contains("on"));
+    if (on) on.scrollIntoView({block:"nearest", inline:"center", behavior:"smooth"});
+  }), {rootMargin:"-30% 0px -60% 0px"});
+  document.querySelectorAll(".cat").forEach(c => io.observe(c));
+}
+})();
+</script>
+</body>
+</html>
