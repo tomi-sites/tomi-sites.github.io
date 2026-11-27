@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Café 31 | מאפייה ובית קפה בבת ים</title>
+<meta name="description" content="אצלנו בדניאל 31 בבת ים תמצאו עוגיות, פאים, קוראסון חמאה וכדורי שוקולד. לצד המתוקים אנחנו מציעים גם כריכים ותה.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Café 31 | מאפייה ובית קפה בבת ים">
+<meta property="og:description" content="אצלנו בדניאל 31 בבת ים תמצאו עוגיות, פאים, קוראסון חמאה וכדורי שוקולד. לצד המתוקים אנחנו מציעים גם כריכים ותה.">
+<meta property="og:image" content="https://imageproxy.wolt.com/assets/673214bfa5d40829eea5e846?w=1200">
+<meta name="theme-color" content="#1C2433">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Bellefair&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#F1F3F6;--ink:#1C2433;--accent:#2D63C8;--second:#F0B429;--display:"Secular One",serif;--on-accent:#fff; }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "Assistant",system-ui,sans-serif;padding-bottom:calc(86px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%}
+a{color:inherit}
+ul{list-style:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.ribbon{background:var(--ink);color:var(--bg);font-size:13px;line-height:1.4;text-align:center;padding:7px 16px}
+
+/* hero: the business's own photo, its name set as large as the width allows */
+.hero{position:relative;min-height:74svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);color:#fff;isolation:isolate}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.35) 42%,rgba(0,0,0,0) 72%)}
+.hero__text{width:100%;max-width:980px;margin:0 auto;padding:0 22px 30px}
+.hero__logo{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.85);margin-bottom:14px;background:#fff}
+.hero__name{display:inline-block;font-family:var(--display);font-weight:400;line-height:.98;white-space:nowrap;font-size:64px;letter-spacing:-.005em}
+.hero__name.wrap{white-space:normal}
+.hero__tag{font-size:clamp(18px,4.6vw,22px);line-height:1.4;margin-top:12px;max-width:30ch;color:rgba(255,255,255,.92)}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-weight:700;font-size:15px;padding:7px 14px 7px 16px;border-radius:999px;background:rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#C9CDD3}
+.status.open::before{background:#5EE38B;box-shadow:0 0 0 4px rgba(94,227,139,.25)}
+@media (prefers-reduced-motion:no-preference){
+  .hero__img{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) both}
+  .hero__name{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes settle{from{transform:scale(1.07)}}
+  @keyframes rise{from{transform:translateY(35%);opacity:0}}
+}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;padding:20px 0 4px;font-size:15.5px}
+.facts b{color:var(--accent);font-weight:800}
+section{padding:40px 0 8px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(32px,8.4vw,46px);line-height:1.05;margin-bottom:20px}
+.about p{font-size:clamp(19px,4.8vw,22px);line-height:1.6;max-width:34ch}
+
+/* menu */
+.chips{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:12px 22px;margin:0 -22px 6px;background:var(--bg);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;text-decoration:none;font-weight:700;font-size:15px;padding:7px 15px;border-radius:999px;border:1.5px solid color-mix(in srgb,var(--ink) 30%,transparent);transition:background .2s,color .2s,border-color .2s}
+.chips a.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cat{padding-top:18px;scroll-margin-top:64px}
+.cat h3{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.2;color:var(--accent);padding-bottom:6px;border-bottom:3px solid var(--second)}
+.item{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.item__txt{flex:1;min-width:0}
+.item__name{font-weight:800;font-size:17.5px;line-height:1.35}
+.item__desc{font-size:15px;line-height:1.5;color:color-mix(in srgb,var(--ink) 72%,transparent);margin-top:3px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.item__price{display:block;margin-top:6px;font-weight:800;font-size:16px;color:var(--accent)}
+.item img{width:100px;height:100px;flex:none;object-fit:cover;border-radius:16px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+
+/* beauty */
+.services{display:flex;flex-wrap:wrap;gap:9px}
+.services li{font-weight:600;font-size:16px;padding:9px 16px;border-radius:999px;background:color-mix(in srgb,var(--accent) 13%,var(--bg));border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+.gallery img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+
+/* hours + location */
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent);font-size:16.5px}
+.hours li.today{font-weight:800;color:var(--accent)}
+.hours span:last-child{direction:ltr;unicode-bidi:isolate}
+.addr{font-size:18px;margin-bottom:14px}
+.map{width:100%;height:270px;border:0;border-radius:18px;display:block;background:color-mix(in srgb,var(--second) 25%,var(--bg))}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15.5px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--ink)}
+
+.foot{text-align:center;font-size:13.5px;padding:48px 22px 28px;color:color-mix(in srgb,var(--ink) 65%,transparent)}
+.foot .by{direction:ltr;margin-top:4px}
+.foot .by b{letter-spacing:.06em}
+
+/* bottom action bar */
+.bar{position:fixed;inset:auto 0 0 0;z-index:10;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--ink)}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;border-radius:14px;color:var(--bg);text-decoration:none;font-size:13px;font-weight:700}
+.bar a.main{background:var(--accent);color:var(--on-accent)}
+.bar svg{width:22px;height:22px}
+@media (min-width:760px){
+  .bar{left:50%;right:auto;bottom:16px;transform:translateX(-50%);width:min(560px,92vw);border-radius:22px;padding:8px}
+  .item img{width:120px;height:120px}
+  .gallery{grid-template-columns:1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>window.SITE = {"kind": "shop", "name": "Café 31", "tagline": "מאפייה ובית קפה בבת ים", "about": "אצלנו בדניאל 31 בבת ים תמצאו עוגיות, פאים, קוראסון חמאה וכדורי שוקולד. לצד המתוקים אנחנו מציעים גם כריכים ותה.", "phone": "0555043031", "whatsapp": "0555043031", "address": "דניאל 31 בת ים", "lat": 32.0226251, "lon": 34.7501816, "hours": [[[420, 1080]], [[420, 1080]], [[420, 1080]], [[420, 1080]], [[420, 1080]], [[420, 840]], []], "cover": "https://imageproxy.wolt.com/assets/673214bfa5d40829eea5e846?w=1600", "logo": "https://imageproxy.wolt.com/assets/6af070cec5ed2f8a7bbeeb71?w=200", "rating": {"score": 9.6, "count": 20, "src": "וולט"}, "menu": [{"name": "מארזי ‫עוגיות 🍪", "items": [{"name": "עוגיות שוקולד צ׳יפס | 200 גרם", "desc": "", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/627bb9501c54b612d37db757/83e599a4-d1f7-11ec-94fd-42c345337caf_77e6bca4_d1ee_11ec_ad06_ce26ab0b1e05______.043.jpeg"}, {"name": "עוגיות גרנולה | 220 גרם", "desc": "", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/627bb9501c54b612d37db757/afbe4e18-d1ed-11ec-af55-4ed2eb04c548______.029.jpeg"}, {"name": "עוגיות סנדוויץ חלבה | 300 גרם", "desc": "ללא תוספת סוכר", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/627bb9501c54b612d37db757/248423d0-d1ee-11ec-b103-0a228644398f______.037.jpeg"}, {"name": "מארז נשיקות מרנג | 165 גרם", "desc": "", "price": 45.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/627bb9501c54b612d37db757/175fb0ca-d1ee-11ec-b8e0-6e2d4854acb2______.036.jpeg"}, {"name": "עוגיות גרנולה חמוציות", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/627bb9501c54b612d37db757/6b504c0c-efa9-11ec-88cd-b621d2442eb8_1d6c492f_d525_4998_8a05_0aea3bbb8e0c_copy.jpeg"}, {"name": "עוגיות שומשום מלוחות", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/627bb9501c54b612d37db757/c60cc120-efa9-11ec-a1a9-4a2ece9c6c8c_99a8c2d4_da5b_4675_89fa_c7864dc1a6c3_copy.jpeg"}, {"name": "עוגיות אלפחורס | 300 גרם", "desc": "כשר | חלבי עוגיות דרום אמריקאיות במילוי ריבת חלב ועיטור קוקוס", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3094987c-1f2b-11ee-adb4-224330fe4173_64_______________.png"}, {"name": "עוגיות פרמז׳ן | 200 גרם", "desc": "כשר | חלבי", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9db23e6c-1f28-11ee-b0e8-7a488a38a9c3_45____________.png"}, {"name": "מארז מקרונים", "desc": "כשר | חלבי 14 יחידות | מיקס טעמים: לוטוס, אגוזים, תות, פיסטוק ושוקולד | התמונה להמחשה בלבד", "price": 79.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/bd2cf192-1f28-11ee-a45e-7a488a38a9c3_46____________.png"}, {"name": "עוגיות חמאה סבתא", "desc": "כשר | חלבי", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f50a2b98-1f28-11ee-b115-e2c72db6e345_47________________.png"}, {"name": "עוגיות חמאה סבתא |  ללא סוכר", "desc": "כשר | חלבי | ללא תוספת סוכר", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f88f5964-1f28-11ee-a7a1-da46bd5595d3_48_________________________________.png"}, {"name": "עוגיות בישקוטי", "desc": "כשר | חלבי", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/15a90680-1f29-11ee-8335-da46bd5595d3_49______________.png"}, {"name": "עוגיות בישקוטי  |   ללא תוספת סוכר", "desc": "כשר | חלבי | ללא תוספת סוכר", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1aa1c140-1f29-11ee-84d7-2afe2001ba72_50_______________________________.png"}, {"name": "עוגיות קראנציות ללא תוספת סוכר וללא קמח | 230 גרם", "desc": "כשר | חלבי | לא מכיל קמח | ללא תוספת סוכר", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/30f3c574-1f29-11ee-9ef8-46192c745f0b_51______________________________.png"}, {"name": "עוגיות מלוחות  |   עגבניות מיובשות | 235 גרם", "desc": "כשר | חלבי עוגיות בשילוב גבינות", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/06092808-1f2a-11ee-8817-1ecbc1f76ad5_53_____________________________.png"}, {"name": "עוגיות סבא שוקולד", "desc": "כשר | חלבי עוגיות שילדים אוהבים | עוגיות שוקולד בתוספת שבבי שוקולד לבן ומריר", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/66905a70-1f2a-11ee-a7ac-4ad3623eacab_58__________________.png"}, {"name": "עוגיות סבלה שקדים", "desc": "כשר | חלבי", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/88f92fd8-1f2a-11ee-b3a4-aef5d838acc8_59_________________.png"}, {"name": "עוגיות שלגיות קוואנטרו | 250 גרם", "desc": "כשר | חלבי", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/e1e4389a-1f2a-11ee-8072-02b01a80d3c6_60______________________.png"}, {"name": "‫עוגיות חמאת בוטנים ושוקולד צ׳יפס  |   טבעוני 🌱", "desc": "כשר | פרווה | טבעוני", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/022e680a-1f2b-11ee-b714-529b2e4a51a3_62_____________________________.png"}, {"name": "עוגיות שוקולטה", "desc": "כשר | חלבי | לא מכיל קמח סופלוני שוקולד בלגי", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/6a01af14-1f2b-11ee-a2bc-a6637e1cf14b_65______________.png"}, {"name": "קוביות שקדים | ללא תוספת סוכר", "desc": "כשר | חלבי", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/85779718-1f2b-11ee-97d7-7214d074b1a1_68_____________________________.png"}, {"name": "מארז קריספי סבתא", "desc": "", "price": 62.0, "img": "https://imageproxy.wolt.com/assets/6b00002a3656f4dbe36d778a"}, {"name": "מארז קראנצ׳יות שוקולד בננה", "desc": "", "price": 62.0, "img": "https://imageproxy.wolt.com/assets/6affffdadf5b386b139a03ac"}, {"name": "מארז רול תמרים ואגוזים", "desc": "", "price": 62.0, "img": "https://imageproxy.wolt.com/assets/6affffc999f318e42958e770"}, {"name": "מארז שוקולטה KIDS", "desc": "", "price": 62.0, "img": "https://imageproxy.wolt.com/assets/6b054120fd615eda5fececa5"}, {"name": "מארז נשיקות קקאו", "desc": "", "price": 62.0, "img": "https://imageproxy.wolt.com/assets/6affff5099f318e42958e75d"}, {"name": "מארז נשיקות אגוזים בקרמל", "desc": "", "price": 62.0, "img": "https://imageproxy.wolt.com/assets/6afff2e5df5b386b139a0337"}, {"name": "מארז נשיקות קפה", "desc": "", "price": 62.0, "img": "https://imageproxy.wolt.com/assets/6afff24edf5b386b139a032f"}, {"name": "מארז עוגיות קפה ואגוזים", "desc": "", "price": 62.0, "img": null}, {"name": "מארז עוגיות שוקובונד", "desc": "", "price": 62.0, "img": "https://imageproxy.wolt.com/assets/6afff2fadf5b386b139a0338"}]}, {"name": "‫תה וקפה ☕️", "items": [{"name": "תה פוקה תה שחור | 36 גרם", "desc": "צמחים מיובשים להכנת משקה חליטה, 100% אורגני ללא קפאין | 20 שקיקים", "price": 45.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/627bb9501c54b612d37db757/d56d14ce-d75a-11ec-9bd4-12afb30ee099_3b73c3f2_a759_4304_93d1_cdae6a8fdab3.jpeg"}, {"name": "PUKKA אינגליש ברקפסט | 50 גרם", "desc": "צמחים מיובשים להכנת משקה חליטה, 100% אורגני ללא קפאין | 20 שקיקים", "price": 50.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/fdf1f450-1f25-11ee-a3f2-b60542d44d93_3______________.png"}, {"name": "PUKKA קמומיל וניל ודבש | 32 גרם", "desc": "צמחים מיובשים להכנת משקה חליטה, 100% אורגני ללא קפאין | 20 שקיקים", "price": 50.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/13776cec-1f26-11ee-962d-b60542d44d93_6________________.png"}, {"name": "PUKKA תה ירוק מאצ'ה לימון | 30 גרם", "desc": "צמחים מיובשים להכנת משקה חליטה, 100% אורגני ללא קפאין | 20 שקיקים", "price": 50.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/174a7db4-1f26-11ee-8bd9-c2f3b6a4d609_7___________________.png"}, {"name": "PUKKA ארל גריי | 40 גרם", "desc": "צמחים מיובשים להכנת משקה חליטה, 100% אורגני | 20 שקיקים", "price": 50.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1b0c1fa2-1f26-11ee-a07f-728e5f2030a0_8________.png"}, {"name": "קפה ORO סקוואלה טרי טחון | 100 גרם", "desc": "פולי קפה טחונים - תערובת הזהב (85% ערביקה, 15 רובוסטה) ייבוא איטלקי", "price": 30.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/602ec0b4-1f2e-11ee-8b1c-be103034a9dd_107_______________.png"}, {"name": "קפה ORO סקוואלה טרי טחון | 200 גרם", "desc": "פולי קפה טחונים - תערובת הזהב (85% ערביקה, 15 רובוסטה) ייבוא איטלקי", "price": 50.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/63862202-1f2e-11ee-b8cf-76233714e504_108_______________.png"}, {"name": "קפה ORO סקוואלה טרי טחון | 300 גרם", "desc": "פולי קפה טחונים - תערובת הזהב (85% ערביקה, 15 רובוסטה) ייבוא איטלקי", "price": 68.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/6fd667c4-1f2e-11ee-b7ae-7a860d21ca52_106_______________.png"}, {"name": "שקית פולי קפה ORO סקוואלה | 1 ק״ג", "desc": "אורו' תערובת הזהב - 85% ערביקה 15% רובוסטה. תערובת קלאסית לטעם הישראלי. ארומה חזקה ונעימה (לחם קלוי)", "price": 170.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/6ba64124-1f2e-11ee-aa44-5a79a81db5fb_109______________oro.png"}]}, {"name": "‫עוד מתוקים 🧁", "items": [{"name": "עוגיות סבלה לוז  |   ללא תוספת סוכר", "desc": "כשר | חלבי", "price": 62.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/5cf2082e-1f2a-11ee-80cd-aef5d838acc8_57________________________________.png"}, {"name": "כדור שוקולד | יחידה", "desc": "כשר | חלבי כדור שוקולד מצופה קוקוס", "price": 7.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1193764a-1f2c-11ee-b7cc-32f4b1b8fd83_71__________________.png"}, {"name": "כדורי שוקולד | 3 יחידות", "desc": "כשר | חלבי כדורי שוקולד מצופים בקוקוס", "price": 19.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/19dd9704-1f2c-11ee-87e3-be103034a9dd_72_______________3_______.png"}, {"name": "אלפחורס | יחידה", "desc": "כשר | חלבי עוגיה דרום אמריקאית פריכה ממולאת ריבת חלב בעיטור קוקוס", "price": 7.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2c6b6c0c-1f2c-11ee-877d-2a02405c981f_73____________.png"}, {"name": "אלפחורס | 3 יחידות", "desc": "כשר | חלבי עוגיות דרום אמריקאיות פריכות ממולאות בריבת חלב בעיטור קוקוס", "price": 19.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/30b3c8d6-1f2c-11ee-ab15-aef5d838acc8_74________3_______.png"}]}, {"name": "‫כריכים 🥪", "items": [{"name": "כריך סלט ביצים", "desc": "‏לחמנייה לבנה, סלט ביצים(ביצים, בצל ירוק, מיונז, מלח מתובל), מלפפון, עגבניה ועלי חסה קראנצ'ים במיוחד", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/40640a62-1f26-11ee-a31c-a222d6045487_10______________.png"}, {"name": "כריך סלט טונה", "desc": "‏לחמנייה לבנה , סלט טונה(טונה, בצל סגול, פלפל אדום,מלפפונים חמוצים, מיונז, מלח מתובל), מלפפון, עגבניה ועלי חסה קראנצ'ים במיוחד", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/47481620-1f26-11ee-94cb-ba6c77a7a0f8_11_____________.png"}, {"name": "כריך סלמון מעושן", "desc": "‏לחמנייה לבנה, סלמון מעושן, גבינת שמנת, בצל סגול, מלפפון, עגבניה ועלי חסה קראנצ'ים במיוחד", "price": 44.0, "img": "https://imageproxy.wolt.com/assets/6b08f53a6d3c71ceec5ce38a"}]}, {"name": "‫מאפים 🥐", "items": [{"name": "קוראסון חמאה גדול | יחידה", "desc": "כשר | חלבי", "price": 18.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/68e55bd0-1f26-11ee-ac54-a244dc344878_15____________.png"}]}, {"name": "‫קישים, ופאים 🥧", "items": [{"name": "פאי אגוזים בטופי אישי", "desc": "כשר | חלבי פאי מבצק פריך, אגוזי מלך, אגוזי לוז ואגוזי פקאן בקרמל טופי", "price": 35.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/7b23f300-1f2c-11ee-9db3-76233714e504_83________________.png"}, {"name": "פאי לימון מרנג", "desc": "כשר | חלבי בצק פאי פריך במילוי קרם לימון ומעליו קציפת מרנג", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/bb6e6ed6-1f2c-11ee-b37b-7a860d21ca52_88______________.png"}]}, {"name": "‫שתייה 🥤", "items": [{"name": "קולה זירו  |   פחית", "desc": "", "price": 13.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/a4719512-1f2e-11ee-990d-16af9e0b6831_114______________.png"}, {"name": "‫סודה  |   בקבוק", "desc": "", "price": 12.0, "img": "https://imageproxy.wolt.com/assets/6aef66e6c5ed2f8a7bbecc57"}, {"name": "קוקה קולה  |   פחית", "desc": "", "price": 13.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/a7ea8104-1f2e-11ee-b332-aef5d838acc8_115________________.png"}, {"name": "מים מינרלים   |   בקבוק", "desc": "", "price": 10.0, "img": "https://imageproxy.wolt.com/assets/6aef6740c5ed2f8a7bbecc63"}, {"name": "משקה מנגו  |   פחית", "desc": "משקה מנגו בפחית.", "price": 13.0, "img": "https://imageproxy.wolt.com/assets/6aef6d60c5ed2f8a7bbecd5a"}, {"name": "ספרייט  |   פחית", "desc": "", "price": 13.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/d9fbc464-1f2e-11ee-a243-fede8aef37e1_121_____________.png"}, {"name": "פאנטה  |   פחית", "desc": "", "price": 13.0, "img": "https://imageproxy.wolt.com/assets/6aef6e50f0d85ff1ec9c9ddd"}, {"name": "XL  |   פחית", "desc": "", "price": 13.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/e375786e-1f2e-11ee-95e6-32a556a555af_123xl_______.png"}, {"name": "RedBull  |   פחית", "desc": "", "price": 17.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/e8145db8-1f2e-11ee-b20c-32a556a555af_124redbull_______.png"}, {"name": "שוופס תות שדה", "desc": "שוופס בטעם תות שדה.", "price": 13.0, "img": "https://imageproxy.wolt.com/assets/6af56675e0254df0f916a0fe"}, {"name": "קוקה קולה דיאט | פחית", "desc": "", "price": 14.0, "img": "https://imageproxy.wolt.com/assets/6af83670aa2345a75a93a8da"}, {"name": "תומס הנרי פינק גרייפפרוט", "desc": "", "price": 19.0, "img": "https://imageproxy.wolt.com/assets/6aef6ad99ce23c0f007cdf2a"}, {"name": "תומס הנרי מיסטיק מנגו", "desc": "תומס הנרי מיסטיק מנגו, משקה.", "price": 19.0, "img": "https://imageproxy.wolt.com/assets/6aef6b2cc5ed2f8a7bbeccef"}, {"name": "תומס הנרי טוניק ווטר", "desc": "", "price": 19.0, "img": "https://imageproxy.wolt.com/assets/6aef6bafc5ed2f8a7bbecd0b"}, {"name": "מונסטר פייפליין פאנץ׳", "desc": "מונסטר פייפליין פאנץ׳, משקה.", "price": 20.0, "img": "https://imageproxy.wolt.com/assets/6afab620df917809ec592274"}, {"name": "מונסטר אולטרה לבן", "desc": "משקה מונסטר אולטרה לבן.", "price": 20.0, "img": "https://imageproxy.wolt.com/assets/6afab61a2a50c34c3f82709a"}, {"name": "XL TEN ללא סוכר", "desc": "XL TEN ללא סוכר.", "price": 13.0, "img": "https://imageproxy.wolt.com/assets/6aef6cefc5ed2f8a7bbecd44"}, {"name": "ספרייט זירו", "desc": "ספרייט זירו.", "price": 13.0, "img": "https://imageproxy.wolt.com/assets/6afab6133084fc1367f78cfc"}, {"name": "מיץ פז ענבים", "desc": "מיץ פז ענבים.", "price": 12.0, "img": "https://imageproxy.wolt.com/assets/6aef6decf0d85ff1ec9c9dc9"}, {"name": "פיוזטי אפרסק", "desc": "פיוזטי בטעם אפרסק.", "price": 13.0, "img": "https://imageproxy.wolt.com/assets/6aef6ec4f0d85ff1ec9c9e38"}, {"name": "מיץ Real תפוח עץ וסלק | 250 מ״ל", "desc": "", "price": 22.0, "img": "https://imageproxy.wolt.com/assets/6b04015d341dad294993374e"}, {"name": "מיץ Real תפוז | 250 מ״ל", "desc": "", "price": 22.0, "img": null}, {"name": "מיץ Real תפוח עץ וג׳ינג׳ר | 250 מ״ל", "desc": "", "price": 22.0, "img": null}, {"name": "מיץ Real תפוח עץ גזר ותפוז | 250 מ״ל", "desc": "", "price": 22.0, "img": null}, {"name": "מיץ Real תפוח עץ טבעי | 250 מ״ל", "desc": "", "price": 22.0, "img": null}, {"name": "מי קוקוס FOCO עם אננס | 330 מ״ל", "desc": "", "price": 22.0, "img": null}, {"name": "מי קוקוס FOCO | 330 מ״ל", "desc": "", "price": 22.0, "img": null}, {"name": "מי קוקוס FOCO עם ליצ׳י | 330 מ״ל", "desc": "", "price": 22.0, "img": null}, {"name": "קומבוצ׳ה VIGO מנגו פסיפלורה", "desc": "", "price": 27.0, "img": null}, {"name": "קומבוצ׳ה VIGO אצרולה וג׳ינג׳ר", "desc": "", "price": 27.0, "img": null}]}], "menu_title": "המוצרים", "services": [], "gallery": [], "order_url": "https://wolt.com/he/isr/rishon-lezion-hashfela-area/venue/coffee-31"};</script>
+<script>
+(function(){
+const S = window.SITE;
+const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const DAYS = ["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
+const hm = m => { m = ((m % 1440) + 1440) % 1440; return String(Math.floor(m/60)).padStart(2,"0") + ":" + String(m%60).padStart(2,"0"); };
+const ICON = {
+  phone:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>',
+  nav:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 3 3 10.6l7.4 2.9L13.4 21z"/></svg>',
+  bag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>',
+  menu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
+  pics:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m3 16 5-5 5 5 3-3 5 5"/></svg>'
+};
+
+function nowIL(){
+  const p = new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Jerusalem",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date());
+  const g = t => p.find(x => x.type === t).value;
+  return { d: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")), m: (+g("hour")) * 60 + (+g("minute")) };
+}
+function status(){
+  const H = S.hours; if (!H) return null;
+  const {d, m} = nowIL();
+  for (const [a,b] of H[d] || []) { const end = b <= a ? b + 1440 : b; if (m >= a && m < end) return {open:true, text:"פתוח עכשיו, עד " + hm(b)}; }
+  for (const [a,b] of H[(d+6)%7] || []) if (b <= a && m < b) return {open:true, text:"פתוח עכשיו, עד " + hm(b)};
+  for (let i = 0; i < 7; i++) {
+    const rs = (H[(d+i)%7] || []).filter(([a]) => i > 0 || a > m).sort((x,y) => x[0]-y[0]);
+    if (rs.length) {
+      const when = i === 0 ? "היום" : i === 1 ? "מחר" : "ביום " + DAYS[(d+i)%7];
+      return {open:false, text:"סגור עכשיו, נפתח " + when + " ב-" + hm(rs[0][0])};
+    }
+  }
+  return null;
+}
+
+const st = status();
+const waLink = S.whatsapp ? "https://wa.me/972" + S.whatsapp.replace(/^0/,"") : "";
+const tel = S.phone ? "tel:" + S.phone.replace(/[^\d+]/g,"") : "";
+const waze = S.lat ? "https://waze.com/ul?ll=" + S.lat + "," + S.lon + "&navigate=yes" : "";
+const gmaps = S.lat ? "https://www.google.com/maps/search/?api=1&query=" + S.lat + "," + S.lon : "";
+let h = "";
+
+h += '<p class="ribbon">אתר הדגמה ש-TOMI הכינו עבור ' + esc(S.name) + '</p>';
+h += '<header class="hero">' + (S.cover ? '<img class="hero__img" src="' + esc(S.cover) + '" alt="" fetchpriority="high">' : '') +
+     '<div class="hero__text">' + (S.logo ? '<img class="hero__logo" src="' + esc(S.logo) + '" alt="">' : '') +
+     '<h1 class="hero__name">' + esc(S.name) + '</h1>' +
+     (S.tagline ? '<p class="hero__tag">' + esc(S.tagline) + '</p>' : '') +
+     (st ? '<p class="status' + (st.open ? ' open' : '') + '">' + esc(st.text) + '</p>' : '') +
+     '</div></header>';
+
+h += '<main class="wrap">';
+const facts = [];
+if (S.rating && S.rating.score) facts.push('<span>דירוג <b>' + esc(S.rating.score) + '</b> ב' + esc(S.rating.src) + (S.rating.count ? ', ' + esc(S.rating.count) + ' מדרגים' : '') + '</span>');
+if (S.address) facts.push('<span>' + esc(S.address) + '</span>');
+if (facts.length) h += '<div class="facts">' + facts.join("") + '</div>';
+if (S.about) h += '<section class="about"><p>' + esc(S.about) + '</p></section>';
+
+if (S.menu && S.menu.length) {
+  h += '<section id="menu"><h2>' + esc(S.menu_title || "התפריט") + '</h2><nav class="chips" aria-label="קטגוריות">' +
+       S.menu.map((c,i) => '<a href="#c' + i + '">' + esc(c.name) + '</a>').join("") + '</nav>';
+  S.menu.forEach((c,i) => {
+    h += '<div class="cat" id="c' + i + '"><h3>' + esc(c.name) + '</h3><ul>';
+    for (const it of c.items) {
+      h += '<li class="item"><div class="item__txt"><div class="item__name">' + esc(it.name) + '</div>' +
+           (it.desc ? '<p class="item__desc">' + esc(it.desc) + '</p>' : '') +
+           '<span class="item__price">' + esc(String(it.price).replace(/\.0+$/,"")) + ' ₪</span></div>' +
+           (it.img ? '<img loading="lazy" src="' + esc(it.img) + '?w=360" alt="' + esc(it.name) + '" onerror="this.remove()">' : '') + '</li>';
+    }
+    h += '</ul></div>';
+  });
+  h += '</section>';
+}
+if (S.services && S.services.length)
+  h += '<section id="services"><h2>הטיפולים שלנו</h2><ul class="services">' + S.services.map(s => '<li>' + esc(s) + '</li>').join("") + '</ul></section>';
+if (S.gallery && S.gallery.length)
+  h += '<section id="gallery"><h2>מהסטודיו</h2><div class="gallery">' + S.gallery.map(g => '<img loading="lazy" src="' + esc(g) + '" alt="" onerror="this.remove()">').join("") + '</div></section>';
+
+if (S.hours) {
+  const today = nowIL().d;
+  h += '<section id="hours"><h2>שעות פתיחה</h2><ul class="hours">' + DAYS.map((name,i) => {
+    const r = S.hours[i] || [];
+    return '<li' + (i === today ? ' class="today"' : '') + '><span>יום ' + name + '</span><span>' +
+      (r.length ? r.map(([a,b]) => hm(a) + "–" + hm(b)).join(", ") : "סגור") + '</span></li>';
+  }).join("") + '</ul></section>';
+}
+if (S.lat) {
+  h += '<section id="where"><h2>איך מגיעים</h2>' + (S.address ? '<p class="addr">' + esc(S.address) + '</p>' : '') +
+       '<iframe class="map" loading="lazy" title="מפה" src="https://maps.google.com/maps?q=' + S.lat + ',' + S.lon + '&z=16&hl=iw&output=embed"></iframe>' +
+       '<div class="links"><a class="btn" href="' + waze + '">' + ICON.nav + 'ניווט ב-Waze</a><a class="btn" href="' + gmaps + '">Google Maps</a></div></section>';
+}
+h += '</main>';
+h += '<footer class="foot"><div>© ' + new Date().getFullYear() + ' ' + esc(S.name) + ', כל הזכויות שמורות</div><div class="by">Website by <b>TOMI</b></div></footer>';
+
+const bar = [];
+if (tel) bar.push('<a href="' + tel + '"' + (S.kind === "beauty" && !waLink ? ' class="main"' : '') + '>' + ICON.phone + 'התקשרו</a>');
+if (waLink) bar.push('<a href="' + waLink + '"' + (S.kind === "beauty" ? ' class="main"' : '') + '>' + ICON.wa + 'וואטסאפ</a>');
+if (S.menu && S.menu.length) bar.push('<a href="#menu">' + ICON.menu + (S.kind === "shop" ? 'מוצרים' : 'תפריט') + '</a>');
+if (S.gallery && S.gallery.length) bar.push('<a href="#gallery">' + ICON.pics + 'תמונות</a>');
+if (waze) bar.push('<a href="' + waze + '">' + ICON.nav + 'ניווט</a>');
+if (S.order_url) bar.push('<a class="main" href="' + esc(S.order_url) + '">' + ICON.bag + 'להזמנה</a>');
+h += '<nav class="bar" aria-label="פעולות מהירות">' + bar.join("") + '</nav>';
+
+document.getElementById("app").innerHTML = h;
+
+// fit the name to the width of the hero
+const nm = document.querySelector(".hero__name");
+function fit(){
+  const cs = getComputedStyle(nm.parentElement);
+  const box = nm.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  nm.classList.remove("wrap");
+  let size = Math.min(150, window.innerHeight * 0.16);
+  nm.style.fontSize = size + "px";
+  while (nm.offsetWidth > box && size > 34) { size -= 2; nm.style.fontSize = size + "px"; }
+  if (nm.offsetWidth > box) { nm.classList.add("wrap"); nm.style.fontSize = "40px"; }
+}
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(fit);
+fit(); addEventListener("resize", fit);
+
+// highlight the menu category in view
+const chips = [...document.querySelectorAll(".chips a")];
+if (chips.length && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    chips.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));
+    const on = chips.find(a => a.classList.contains("on"));
+    if (on) on.scrollIntoView({block:"nearest", inline:"center", behavior:"smooth"});
+  }), {rootMargin:"-30% 0px -60% 0px"});
+  document.querySelectorAll(".cat").forEach(c => io.observe(c));
+}
+})();
+</script>
+</body>
+</html>
