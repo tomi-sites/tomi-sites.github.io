@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Non Stop Ice Cream | גלידות ומתוקים בראשון לציון</title>
+<meta name="description" content="אצלנו ברחוב כהן יעקב 2 בראשון לציון מחכים לכם טילונים, שלגונים, קסטות ומאגדות. יש לנו גם פיינטים של בן אנד ג׳ריס, למי שבא לו לפנק את עצמו בבית.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Non Stop Ice Cream | גלידות ומתוקים בראשון לציון">
+<meta property="og:description" content="אצלנו ברחוב כהן יעקב 2 בראשון לציון מחכים לכם טילונים, שלגונים, קסטות ומאגדות. יש לנו גם פיינטים של בן אנד ג׳ריס, למי שבא לו לפנק את עצמו בבית.">
+<meta property="og:image" content="https://imageproxy.wolt.com/assets/678c9558362be7192070cab6?w=1200">
+<meta name="theme-color" content="#1C2433">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Bellefair&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#F1F3F6;--ink:#1C2433;--accent:#2D63C8;--second:#F0B429;--display:"Secular One",serif;--on-accent:#fff; }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "Assistant",system-ui,sans-serif;padding-bottom:calc(86px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%}
+a{color:inherit}
+ul{list-style:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.ribbon{background:var(--ink);color:var(--bg);font-size:13px;line-height:1.4;text-align:center;padding:7px 16px}
+
+/* hero: the business's own photo, its name set as large as the width allows */
+.hero{position:relative;min-height:74svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);color:#fff;isolation:isolate}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.35) 42%,rgba(0,0,0,0) 72%)}
+.hero__text{width:100%;max-width:980px;margin:0 auto;padding:0 22px 30px}
+.hero__logo{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.85);margin-bottom:14px;background:#fff}
+.hero__name{display:inline-block;font-family:var(--display);font-weight:400;line-height:.98;white-space:nowrap;font-size:64px;letter-spacing:-.005em}
+.hero__name.wrap{white-space:normal}
+.hero__tag{font-size:clamp(18px,4.6vw,22px);line-height:1.4;margin-top:12px;max-width:30ch;color:rgba(255,255,255,.92)}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-weight:700;font-size:15px;padding:7px 14px 7px 16px;border-radius:999px;background:rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#C9CDD3}
+.status.open::before{background:#5EE38B;box-shadow:0 0 0 4px rgba(94,227,139,.25)}
+@media (prefers-reduced-motion:no-preference){
+  .hero__img{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) both}
+  .hero__name{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes settle{from{transform:scale(1.07)}}
+  @keyframes rise{from{transform:translateY(35%);opacity:0}}
+}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;padding:20px 0 4px;font-size:15.5px}
+.facts b{color:var(--accent);font-weight:800}
+section{padding:40px 0 8px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(32px,8.4vw,46px);line-height:1.05;margin-bottom:20px}
+.about p{font-size:clamp(19px,4.8vw,22px);line-height:1.6;max-width:34ch}
+
+/* menu */
+.chips{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:12px 22px;margin:0 -22px 6px;background:var(--bg);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;text-decoration:none;font-weight:700;font-size:15px;padding:7px 15px;border-radius:999px;border:1.5px solid color-mix(in srgb,var(--ink) 30%,transparent);transition:background .2s,color .2s,border-color .2s}
+.chips a.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cat{padding-top:18px;scroll-margin-top:64px}
+.cat h3{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.2;color:var(--accent);padding-bottom:6px;border-bottom:3px solid var(--second)}
+.item{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.item__txt{flex:1;min-width:0}
+.item__name{font-weight:800;font-size:17.5px;line-height:1.35}
+.item__desc{font-size:15px;line-height:1.5;color:color-mix(in srgb,var(--ink) 72%,transparent);margin-top:3px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.item__price{display:block;margin-top:6px;font-weight:800;font-size:16px;color:var(--accent)}
+.item img{width:100px;height:100px;flex:none;object-fit:cover;border-radius:16px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+
+/* beauty */
+.services{display:flex;flex-wrap:wrap;gap:9px}
+.services li{font-weight:600;font-size:16px;padding:9px 16px;border-radius:999px;background:color-mix(in srgb,var(--accent) 13%,var(--bg));border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+.gallery img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+
+/* hours + location */
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent);font-size:16.5px}
+.hours li.today{font-weight:800;color:var(--accent)}
+.hours span:last-child{direction:ltr;unicode-bidi:isolate}
+.addr{font-size:18px;margin-bottom:14px}
+.map{width:100%;height:270px;border:0;border-radius:18px;display:block;background:color-mix(in srgb,var(--second) 25%,var(--bg))}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15.5px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--ink)}
+
+.foot{text-align:center;font-size:13.5px;padding:48px 22px 28px;color:color-mix(in srgb,var(--ink) 65%,transparent)}
+.foot .by{direction:ltr;margin-top:4px}
+.foot .by b{letter-spacing:.06em}
+
+/* bottom action bar */
+.bar{position:fixed;inset:auto 0 0 0;z-index:10;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--ink)}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;border-radius:14px;color:var(--bg);text-decoration:none;font-size:13px;font-weight:700}
+.bar a.main{background:var(--accent);color:var(--on-accent)}
+.bar svg{width:22px;height:22px}
+@media (min-width:760px){
+  .bar{left:50%;right:auto;bottom:16px;transform:translateX(-50%);width:min(560px,92vw);border-radius:22px;padding:8px}
+  .item img{width:120px;height:120px}
+  .gallery{grid-template-columns:1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>window.SITE = {"kind": "shop", "name": "Non Stop Ice Cream", "tagline": "גלידות ומתוקים בראשון לציון", "about": "אצלנו ברחוב כהן יעקב 2 בראשון לציון מחכים לכם טילונים, שלגונים, קסטות ומאגדות. יש לנו גם פיינטים של בן אנד ג׳ריס, למי שבא לו לפנק את עצמו בבית.", "phone": "0508477006", "whatsapp": "0508477006", "address": "כהן יעקב 2 ראשון לציון", "lat": 31.980631, "lon": 34.7896851, "hours": [[[570, 1185]], [[570, 1185]], [[570, 1185]], [[570, 1185]], [[570, 1185]], [[450, 960]], []], "cover": "https://imageproxy.wolt.com/assets/678c9558362be7192070cab6?w=1600", "logo": null, "rating": {"score": 9.4, "count": 20, "src": "וולט"}, "menu": [{"name": "שטראוס", "items": [{"name": "מאגדת מיני מגנום שוקלד שקדים", "desc": "שלגון שמנת בטעם וניל בציפוי שוקלד חלב מעולה ושקדים", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9212a838-de3c-11ef-80f7-12472ac9c03d_______________________.png?overlay=isr-chokinghazard2%2Cisr-fat%2Cisr-sugar"}, {"name": "מאגדת מיני מגנום שוקלד לבן", "desc": "שלגון שמנת בטעם וניל בציפוי שוקלד לבן מעולה", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8c0f2100-de3c-11ef-bcb5-6ee8af5136fa____________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "מאגדת מיני מגנום דואט שוקלד עם נוגט", "desc": "שלגון בטעם וניל בציפוי שוקלד לבן מעולה ושוקלד חלב מעולה עם ריפל בטעם נוגט", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8e23b8ca-de3c-11ef-a234-364b0d45d685________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "מאגדת מיני מגנום שוקלד קלאסי", "desc": "שלגון שמנת בטעם וניל בציפוי שוקלד חלב מעולה, שלגון שמנת בטעם שוקלד בציפוי שוקלד חלב מעולה", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/903dccea-de3c-11ef-9613-4eda789748e7______________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "מאגדת קורנטו וניל | טבעוני פרווה", "desc": "", "price": 52.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/988dd0ca-de3c-11ef-9d28-72c5904a677a_______________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "מאגדת גודיז לייט מיני סנדוויץ׳", "desc": "", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/82aff166-de3c-11ef-93db-42923b15053a______________________________.png"}, {"name": "קרמיסימו גלידונית חלבי", "desc": "גלידה בטעם וניל בציפוי מכיל שוקלד חלב", "price": 69.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/6ee8eb6e-de3d-11ef-a4c9-46ecceeb5ad2_______________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קרמיסימו נשנושים פרווה", "desc": "גלידה בטעם וניל בציפוי מכיל שוקלד מריר", "price": 69.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9013d3a8-de3d-11ef-b237-4e1b46e00c72_______________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קרמיסימו משפחתית בטעם וניל עוגיות", "desc": "", "price": 36.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/84942154-de3d-11ef-a375-a2142404c6f7__________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קרמיסימו משפחתית בטעם וניל מסטיגם", "desc": "", "price": 36.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/738d3724-de3d-11ef-987c-0a024a237168__________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קרמיסימו משפחתית בטעם וניל צרפתי", "desc": "", "price": 36.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/87f89ff0-de3d-11ef-aee6-12472ac9c03d_________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קרמיסימו משפחתית בטעם שוקלד צ'יפ", "desc": "", "price": 36.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/05adbe9a-de3d-11ef-b3f5-5666c0cb810f____________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קרמיסימו משפחתית בטעם שרבט תות לימון", "desc": "", "price": 36.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9715ccd8-de3d-11ef-96d2-b6bbfe096dc1_____________________________________.png?overlay=isr-sugar"}, {"name": "שטראוס משפחתית אריזת חסכון | וניל, שוקו, תות שדה | פרווה", "desc": "", "price": 48.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/cd8cf3fe-de3d-11ef-8fbc-e28caf997da0________________________________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "גלידת פנטזיה שוקו וניל", "desc": "", "price": 37.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/33717790-de3d-11ef-a0ba-364b0d45d685__________________________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "גלידת פנטזיה שוקו וניל פרווה", "desc": "", "price": 37.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/329d45ba-de3d-11ef-a0ba-364b0d45d685___________________________________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "משפחתית קרמיסימו שוקו וניל ציפ פרווה", "desc": "", "price": 37.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/bd001422-fa89-11ef-8a94-b259dfc6f81f_3_2_15_slider_crmisimo_178x180_09_178x180__1_.jpg"}, {"name": "מאגדת טוויסטר מרשמלו", "desc": "", "price": 45.0, "img": "https://imageproxy.wolt.com/assets/69e0737b488442231bbb39da"}, {"name": "מאגדת אייס לייט", "desc": "", "price": 48.0, "img": "https://imageproxy.wolt.com/assets/69f6d5080bde8999368240c7"}, {"name": "קרמיסימו שמנת בטעם פקאן וניל ואגוז לוז", "desc": "", "price": 38.0, "img": "https://imageproxy.wolt.com/assets/6a06ea72cf8c9f142af4fced"}, {"name": "קרמיסימו שמנת שוקולד חלב קרמל מלוח וניל", "desc": "", "price": 38.0, "img": "https://imageproxy.wolt.com/assets/6a06ea4e0e2b84c104ae49b6"}, {"name": "קרמיסימו שמנת בטעם שוקולד לבן ריבת חלב קרמל ופיסטוק", "desc": "", "price": 38.0, "img": "https://imageproxy.wolt.com/assets/6a06ea340abf94fccbcaeac0"}, {"name": "שלגון מגנום שוקלד לבן", "desc": "", "price": 12.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/057251c4-de3e-11ef-90ec-5a4294288596_______________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון מגנום שוקלד", "desc": "", "price": 12.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/07b4a324-de3e-11ef-b58c-328e384e5403___________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון מגנום שוקלד לבן פיסטוק", "desc": "", "price": 12.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/029ebb40-de3e-11ef-aacb-5a4294288596_______________________________.png?overlay=isr-chokinghazard2%2Cisr-fat%2Cisr-sugar"}, {"name": "שלגון מגנום שוקלד שקדים", "desc": "", "price": 12.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/06a326cc-de3e-11ef-9a40-a2142404c6f7_________________________.png?overlay=isr-chokinghazard2"}, {"name": "שלגון מגנום דואט שוקלד עם נוגט", "desc": "", "price": 12.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/011c94cc-de3e-11ef-aff1-0a024a237168________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "מגנום סנדוויץ׳", "desc": "גלידה בטעם וניל עם ביסקוויטים בציפוי חלקי של שוקלד חלב ושקדים", "price": 12.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/cc44f06a-de3c-11ef-a4c9-46ecceeb5ad2_______sandwich.png?overlay=isr-chokinghazard2"}, {"name": "טילון מגנום גדול שוקלד לבן", "desc": "", "price": 14.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3463ecd8-de3c-11ef-8ecf-72c5904a677a____________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "טילון מגנום גדול וניל צ'יפ ושוקלד", "desc": "", "price": 14.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/33a02a00-de3c-11ef-bd80-5a4294288596__________________________________.png?overlay=isr-fat%2Cisr-sugar"}]}, {"name": "נסטלה", "items": [{"name": "טילון אקסטרים ליבת ריבת חלב גדול", "desc": "", "price": 14.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1fb5d6e8-de3c-11ef-abb3-5666c0cb810f_________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "טילון אקסטרים וניל", "desc": "", "price": 10.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1a60bbea-de3c-11ef-83a9-4a7b0d40547c___________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "טילון אקסטרים שוקו וניל", "desc": "", "price": 10.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/27079ecc-de3c-11ef-9af3-4633c44ffdfa________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קראנץ׳ וניל ליבת נוגט שוקלד לבן", "desc": "", "price": 12.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/45270176-de3d-11ef-9693-22b58e14a451_________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קראנץ׳ שוקלד ליבת נוגט", "desc": "", "price": 12.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4fda3192-de3d-11ef-8e9a-c20542c8330d_______________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קראנץ׳ וניל עוגיות", "desc": "", "price": 12.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/498712f6-de3d-11ef-a895-22b58e14a451__________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קראנץ׳ שוקלד אגוזי לוז", "desc": "", "price": 12.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2761cc92-de3e-11ef-ac14-165e7ea706a0_____________________________.png?overlay=isr-chokinghazard2%2Cisr-fat%2Cisr-sugar"}, {"name": "קוקילדה", "desc": "", "price": 14.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3b3b1044-de3d-11ef-86f6-364b0d45d685_________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "ביסקולידה אקסטרה", "desc": "", "price": 9.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/b5c20acc-de3b-11ef-8de9-4e1b46e00c72_________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "מצופה שלגון וניל תות", "desc": "", "price": 7.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f952b10a-de3c-11ef-93ed-b6809177ad5f_____________________.png?overlay=isr-sugar"}, {"name": "גומיגם", "desc": "", "price": 11.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/b95341f6-de3b-11ef-ab8a-1aee34a031f6_______.png?overlay=isr-sugar"}, {"name": "שרבט אבטיח", "desc": "", "price": 9.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2a1c173a-de3e-11ef-aec4-b6bbfe096dc1___________.png?overlay=isr-sugar"}, {"name": "סופרולר", "desc": "", "price": 11.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/0adae87a-de3d-11ef-bebc-5a4294288596________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "לה פרוטה תפוח מלון", "desc": "", "price": 9.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4ccc017a-de3c-11ef-9931-4a1ed254f20a___________________.png?overlay=isr-sugar"}, {"name": "לה פרוטה קוקס אננס", "desc": "", "price": 9.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/510d2368-de3c-11ef-89ce-4a1ed254f20a____________________.png?overlay=isr-sugar"}, {"name": "לה פרוטה מנגו", "desc": "", "price": 9.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4ef7963a-de3c-11ef-9ec9-12e88296cb8c______________.png?overlay=isr-sugar"}, {"name": "לה פרוטה תות", "desc": "", "price": 9.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/5272460c-de3c-11ef-84fa-165e7ea706a0_____________.png?overlay=isr-sugar"}, {"name": "לה פרוטה בטעם בננה סילאן פקאן וחלבה", "desc": "", "price": 9.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9852788a-ff44-11ef-9d43-bea76ee35893______________________________________1_.jpg"}, {"name": "קראנץ׳ סנדוויץ קרמל וופל", "desc": "", "price": 12.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/00ca4f4e-2026-11f0-bcbc-1a46f7e281d1_fe196e55_0dba_484b_a2e0_8d6f403d3048_photoroom.jpg"}, {"name": "לה פרוטה אפרסק משמש", "desc": "", "price": 9.0, "img": "https://imageproxy.wolt.com/assets/69f6d4ee0bde8999368240c1"}, {"name": "אוראו סנדוויץ׳", "desc": "", "price": 14.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/afa926c0-de3b-11ef-9776-12e88296cb8c______________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון מילקה בטעם וניל עם ריפל שוקלד", "desc": "", "price": 15.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1473a6b4-de3e-11ef-b719-32c5002339ec_____________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון שוקלד מילקה קרמל ושברי ביסקוייט", "desc": "", "price": 15.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/15fb1f62-de3e-11ef-927f-4200f13e8fb0________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון שוקלד מילקה עוגיות", "desc": "", "price": 15.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/18030644-de3e-11ef-ac3f-32c5002339ec___________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "מילקה | בייגלה", "desc": "", "price": 15.0, "img": "https://imageproxy.wolt.com/assets/689771086ab951f1d2d67ab5"}, {"name": "קראנץ אמריקה", "desc": "", "price": 12.0, "img": "https://imageproxy.wolt.com/assets/6a06ea4490aada8d9215f8ed"}, {"name": "קראנץ סנדוויץ וניל קלאסי", "desc": "", "price": 12.0, "img": "https://imageproxy.wolt.com/assets/6a06ea57cf8c9f142af4fceb"}, {"name": "מאגדת שוקלד לייט", "desc": "", "price": 38.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ab7e4d04-de3c-11ef-9393-b26a74df2dfd__________________.png"}, {"name": "מאגדת ריבת חלב לייט", "desc": "", "price": 38.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ac9c5a78-de3c-11ef-9c37-b26a74df2dfd____________________.png"}, {"name": "מאגדת שלגוני 99 פיסטוק ושוקלד לבן", "desc": "", "price": 38.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/af07bcc6-de3c-11ef-9873-b26a74df2dfd______________99___________________.png?overlay=isr-chokinghazard2%2Cisr-fat%2Cisr-sugar"}]}, {"name": "פלדמן", "items": [{"name": "טילון בטעם ריבת חלב", "desc": "", "price": 10.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/777748ba-e1fe-11ef-98b0-623656b2308c____________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "טילון בטעם פיסטוק", "desc": "", "price": 10.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/767ddd3e-e1fe-11ef-bbbe-3ac2001f70b7__________________.png?overlay=isr-chokinghazard2"}, {"name": "טילון בטעם וניל", "desc": "", "price": 10.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/758e7320-e1fe-11ef-ba96-623656b2308c________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון לוקס", "desc": "שלגון חלבי בשומן צמחי בטעם וניל בתוספת בוטנים וקליפות תפוז מסוכרות בציפוי שוקלד חלב", "price": 12.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/e45ba302-e200-11ef-91d1-5e431cae59f3___________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון גרניטה בטעם אייס ונילה", "desc": "", "price": 6.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9856ff9c-e200-11ef-8bf0-2634ce239c75_____________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון גרניטה בטעם תות", "desc": "", "price": 6.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9e458f90-e200-11ef-b17d-de2ef753b927______________________.png?overlay=isr-sugar"}, {"name": "שלגון גרניטה בטעם קוקוס", "desc": "", "price": 6.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9d4fd14a-e200-11ef-bb7c-026b5593cf96________________________.png?overlay=isr-sugar"}, {"name": "שלגון גרניטה בטעם אייס קפוצינו", "desc": "", "price": 6.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9aa56c2a-e200-11ef-97ec-06f566aa6288_______________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון מיני מגטון בטעם שוקלד | פרווה", "desc": "", "price": 6.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f664972a-e200-11ef-b95f-129a2fcccc3f___________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "כוסות תות לימון | פרווה", "desc": "", "price": 5.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/a7e24e50-e1fe-11ef-bb3b-d6a543605f69______________________.png?overlay=isr-sugar"}, {"name": "כוסות שוקו וניל | פרווה", "desc": "", "price": 5.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/a71c9778-e1fe-11ef-a898-86cfb0fe4999______________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קסטה סנקור חלבי", "desc": "", "price": 6.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/322f9af8-e200-11ef-a49f-ee754806c95e________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "קסטה סנקור פרווה", "desc": "", "price": 6.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/33c9ab92-e200-11ef-b97f-ee754806c95e_________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון מצופה שוקו וניל", "desc": "", "price": 7.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/0ecabbaa-e201-11ef-a5ea-ee754806c95e______________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון מצופה שוקו בננה", "desc": "", "price": 7.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/02f06a28-e201-11ef-80ba-5a4d2cca8f5d______________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון מצופה שוקו שוקו", "desc": "", "price": 7.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/188795c8-e201-11ef-88eb-e62d2e4d40a1______________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון גלית תות וניל", "desc": "", "price": 7.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8f595228-e200-11ef-ab4f-de2ef753b927_____________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "יוגורטיה", "desc": "גלידת יוגורט", "price": 11.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9b694f20-e1fe-11ef-8e0a-86cfb0fe4999_________.png"}, {"name": "שלגון פסים", "desc": "שלגון חלבי בשומן צמחי בטעם וניל מרשמלו", "price": 9.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2e7fc09e-e201-11ef-afdc-a623a62fde60___________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "שלגון מיני מגטון בטעם וניל פרווה", "desc": "", "price": 6.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/621537bc-faa8-11ef-b697-7a484555230f___________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "פרוטיז", "desc": "", "price": 12.0, "img": "https://imageproxy.wolt.com/assets/69df218c488442231bbadade?overlay=isr-chokinghazard2"}, {"name": "שלגון גרניטה בטעם לימונענע", "desc": "", "price": 6.0, "img": "https://imageproxy.wolt.com/assets/69df219b488442231bbadae2"}, {"name": "קרטיב קרח בטעם תפוח", "desc": "", "price": 3.0, "img": "https://imageproxy.wolt.com/assets/69e07398488442231bbb39db"}, {"name": "שרבט בטעם בננה", "desc": "", "price": 6.0, "img": "https://imageproxy.wolt.com/assets/69e073b7488442231bbb39dc"}, {"name": "שרבט בטעם אבטיח מלון", "desc": "", "price": 6.0, "img": "https://imageproxy.wolt.com/assets/69e073c8488442231bbb39de"}, {"name": "שרבט בטעם מיקס טרופי", "desc": "", "price": 6.0, "img": "https://imageproxy.wolt.com/assets/69e073dd488442231bbb39e1"}, {"name": "קרחון שרבט חמצוצים", "desc": "", "price": 8.0, "img": "https://imageproxy.wolt.com/assets/69f6d4f90bde8999368240c2"}, {"name": "קרחון שרבט סוכריות קופצות", "desc": "", "price": 8.0, "img": "https://imageproxy.wolt.com/assets/69f6d4fb0bde8999368240c3"}, {"name": "קרטיב קרח בטעם מסטיק", "desc": "", "price": 3.0, "img": "https://imageproxy.wolt.com/assets/69f6d4fe0bde8999368240c4"}, {"name": "גלידה כוכב פונטש בננה", "desc": "", "price": 11.0, "img": "https://imageproxy.wolt.com/assets/69f6d5010bde8999368240c5"}]}, {"name": "בן אנד ג׳ריס", "items": [{"name": "פיינט בן אנד ג׳ריס בטעם קרם עוגיות", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/010dc8d2-e200-11ef-8b41-7e9b6369ae10__________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "פיינט בן אנד ג׳ריס בטעם וניל טופי קראנץ׳", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/d1c918b0-e1ff-11ef-a291-8ade3d01d66f_______________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "פיינט בן אנד ג׳ריס בטעם וניל", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/d40e36b4-e1ff-11ef-98a7-de2ef753b927____________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "פיינט בן אנד ג׳ריס בטעם דולצ'ה דה לצ׳ה", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/cf521eec-e1ff-11ef-8a13-2634ce239c75____________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "פיינט בן אנד ג׳ריס בטעם קפה", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/fe77eb20-e1ff-11ef-8730-3649cd194611___________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "פיינט בן אנד ג׳ריס בטעם בצק עוגיות", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/bfdb0942-e1ff-11ef-b8d9-026b5593cf96__________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "פיינט בן אנד ג׳ריס בטעם צ׳אנקי מנקי", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/fc7405a2-e1ff-11ef-a3e4-7e9b6369ae10__________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "פיינט בן אנד ג׳ריס בטעם שוקלד בראוניס", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/0525d2c0-e200-11ef-805a-5e431cae59f3______________________________________.png?overlay=isr-fat%2Cisr-sugar"}]}, {"name": "גלידות איטלקיות", "items": [{"name": "סמונטנה קסטה דואטו בטעם שוקולד וניל", "desc": "ללא הכשר", "price": 12.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8c34486c-faa8-11ef-b8c2-7abc72c4ae0e________________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "סמונטנה קסטה טאנדם", "desc": "ללא הכשר", "price": 14.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/60797fea-51a5-11f0-8656-8691c1698d96___________.jpg?overlay=isr-fat%2Cisr-sugar"}, {"name": "סמונטנה ברטולינו גלידה שמנת איטלקית בטעם קרמל מלוח", "desc": "ללא הכשר", "price": 60.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/925b4380-faa8-11ef-8f94-3e8a4eba1e93___________________________________________________.png?overlay=isr-fat%2Cisr-sugar"}]}, {"name": "גלידות מיוחדות", "items": [{"name": "מאגדת שלגון לוטוס שוקלד חלב", "desc": "", "price": 68.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4335fcda-e1ff-11ef-bbce-3ac2001f70b7_____________________________.png"}, {"name": "מאגדת שלגון רפאלו קלאסי", "desc": "3 יחידות", "price": 52.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/770a87f6-e1ff-11ef-8f64-3a166d4fb9bd________________________.png?overlay=isr-chokinghazard2"}, {"name": "מאגדת שלגון פררו רושה קלאסי", "desc": "3 יחידות", "price": 52.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4fdde114-e1ff-11ef-b52c-3e00bacd0641____________________________.png?overlay=isr-chokinghazard2"}, {"name": "מאגדת טילוני קינדר בואנו שוקלד לבן", "desc": "", "price": 52.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/21fb011e-e1ff-11ef-854b-16dd30a0c2cd______________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "מאגדת טילוני קינדר בואנו שוקלד חלב", "desc": "", "price": 52.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/20d807be-e1ff-11ef-96af-de3792223bdc____________________________________.png"}, {"name": "שוקלד פרנאוי חלב", "desc": "פטל מוקפא מצופה בשוקלד לבן מעולנ ושוקלד חלב", "price": 54.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/86315d12-e200-11ef-89c0-06f566aa6288__________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "Snickers מארז גלידה סניקרס חום", "desc": "", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/5a381320-faa8-11ef-8a3c-167ab255b43f_snickers_ice_cream_309391_400x.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "Snickers white מארז גלידה סניקרס לבן", "desc": "", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4c976176-faa8-11ef-a665-dadaddd05cbd_1674395485_niederegger_______20______20____20______20______2031.png.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "מארז גלידת באונטי | 5 יחידות", "desc": "", "price": 42.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2e61df1c-2026-11f0-8fc1-8e93be1648f8_d2a380a1_87ea_448a_a8a4_93ec1bfba847_photoroom.jpg"}, {"name": "שוקולד פרנוי מריר", "desc": "", "price": 54.0, "img": "https://imageproxy.wolt.com/assets/69df21ae488442231bbadae6"}, {"name": "שלגון לוטוס שוקלד חלב", "desc": "", "price": 18.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/dbb6fc2e-e200-11ef-bc18-6a46ffa9886e________________________.png"}, {"name": "חטיף גלידה סניקרס שוקלד לבן", "desc": "", "price": 12.9, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/67853c8c-e1fe-11ef-b437-3ac2001f70b7____________________________.png?overlay=isr-chokinghazard2"}, {"name": "חטיף גלידה באונטי", "desc": "", "price": 12.9, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/555f1942-e1fe-11ef-b358-8ade3d01d66f__________________.png"}, {"name": "שוקולד פרנאוי לבן", "desc": "", "price": 54.0, "img": "https://imageproxy.wolt.com/assets/69f6d50b0bde8999368240c8"}]}, {"name": "חטיפים וממתקים", "items": [{"name": "ביסלי גריל אסם", "desc": "", "price": 8.0, "img": "https://imageproxy.wolt.com/assets/69e4758b1597c6550855d2a4?overlay=isr-chokinghazard2"}, {"name": "ביסלי פיצה אסם", "desc": "", "price": 8.0, "img": "https://imageproxy.wolt.com/assets/69e475961597c6550855d2a5?overlay=isr-chokinghazard2"}, {"name": "ביסלי ברביקיו אסם", "desc": "", "price": 8.0, "img": "https://imageproxy.wolt.com/assets/69e475991597c6550855d2a6?overlay=isr-chokinghazard2"}, {"name": "חטיף במבה אסם", "desc": "", "price": 8.0, "img": "https://imageproxy.wolt.com/assets/69e475f5488442231bbc2d6c?overlay=isr-chokinghazard2"}, {"name": "חטיף במבה ביסלי גריל", "desc": "", "price": 8.0, "img": "https://imageproxy.wolt.com/assets/69e475a41597c6550855d2a7?overlay=isr-chokinghazard2"}, {"name": "חטיף ביסלי בצל אסם", "desc": "", "price": 8.0, "img": "https://imageproxy.wolt.com/assets/69e475eb488442231bbc2d69?overlay=isr-chokinghazard2"}, {"name": "חטיף כיפלי גריל", "desc": "", "price": 12.0, "img": "https://imageproxy.wolt.com/assets/69e475ee488442231bbc2d6a?overlay=isr-chokinghazard2"}, {"name": "חטיף כיפלי בצל", "desc": "", "price": 12.0, "img": "https://imageproxy.wolt.com/assets/69e475ef488442231bbc2d6b?overlay=isr-chokinghazard2"}, {"name": "חטיף כיפלי קטשופ", "desc": "", "price": 11.0, "img": "https://imageproxy.wolt.com/assets/69e475fb488442231bbc2d6e?overlay=isr-chokinghazard2"}, {"name": "סוכריות מגה בורגר", "desc": "", "price": 6.0, "img": "https://imageproxy.wolt.com/assets/69e47611488442231bbc2d76?overlay=isr-chokinghazard2"}]}, {"name": "שתיה קלה", "items": [{"name": "מארז טרופית בוסטן 40 יחידות בטעם ענבים", "desc": "", "price": 45.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/c8685e14-de3c-11ef-b72d-7262a07b0802____________________40______________.png"}, {"name": "מארז טרופיות טרופי קש 20 יחידות בטעם ענבים", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/be95c1a6-de3c-11ef-a15b-1aee34a031f6_______________________20______________.png"}]}, {"name": "גלידות פלומביר", "items": [{"name": "שלגון פלומביר וניל שוקלד ושקדים", "desc": "", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/24361f48-e201-11ef-a02a-ee754806c95e________________________________.png?overlay=isr-chokinghazard2%2Cisr-fat%2Cisr-sugar"}, {"name": "גלידת פלומביר סנדוויץ׳ וניל", "desc": "גלידת שמנת משובחת בטעם וניל", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/20671974-e1fe-11ef-8ec2-d61896b76bf6___________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "גלידת פלומביר סנדוויץ׳ שוקלד", "desc": "גלידת שמנת משובחת בטעם שוקלד", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/21d555a0-e1fe-11ef-af0c-5e431cae59f3_____________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "גלידת רוד בטעם מלון וליים", "desc": "גלידת חלבית בשומן צמחי עם מלון וליים", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3337e54c-e1fe-11ef-a791-1e0abcdfd8af________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "יוקי פלומביר סופלה", "desc": "", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/450e9678-3535-11f0-aecf-725ee77a7bb8___________________.png"}, {"name": "יוקי פלומביר טראפל", "desc": "", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/441c4ee0-3535-11f0-8a74-c23bd9ea127b___________.png"}, {"name": "פלומביר סנדוויץ no1", "desc": "", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4736742a-3535-11f0-9732-725ee77a7bb8_________________no1.png"}, {"name": "פלומביר אסקימוס", "desc": "", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/48e426be-3535-11f0-a800-3649c4332718________________.png"}, {"name": "פלומביר אסקימוס שוקולד", "desc": "", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4af6a0da-3535-11f0-b45b-3649c4332718_______________________.png"}, {"name": "גלידת פלומביר בגביע וופל שוקולד", "desc": "", "price": 8.5, "img": "https://imageproxy.wolt.com/assets/69f6d584c3fcff4d1cf393e8"}, {"name": "גלידת רוד בטעם אפרסק מנגו", "desc": "שלגון שרבט במילוי אפרסק מנגו בציפוי קרח", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/322ecddc-e1fe-11ef-86f6-1e0abcdfd8af__________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "גלידת רוד בטעם אוכמניות כחולות ושחורות", "desc": "שלגון שרבט במילוי אוכמניות שחורות וכחולות בציפוי קרח", "price": 8.5, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3123c69a-e1fe-11ef-90e2-16dd30a0c2cd_______________________________________.png?overlay=isr-fat%2Cisr-sugar"}]}, {"name": "שלוקים גביעי גלידה ונוספים", "items": [{"name": "מארז גביע גלידה עלמה | 12 יחידות", "desc": "", "price": 22.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3dbf8b2a-3535-11f0-a283-3a8e458be39d_300x300__11_.png"}, {"name": "חבילת קרמבו וניל חברת שטראוס", "desc": "", "price": 34.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/00f761ea-de3c-11ef-af46-96588eb865e7________________________.png?overlay=isr-fat%2Cisr-sugar"}, {"name": "חבילת קרמבו מוקה חברת שטראוס", "desc": "", "price": 34.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/02086944-de3c-11ef-b97a-7e8e38a67ab2________________________.png?overlay=isr-fat%2Cisr-sugar"}]}], "menu_title": "המוצרים", "services": [], "gallery": [], "order_url": "https://wolt.com/he/isr/rishon-lezion-hashfela-area/venue/non-stop-ice-cream"};</script>
+<script>
+(function(){
+const S = window.SITE;
+const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const DAYS = ["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
+const hm = m => { m = ((m % 1440) + 1440) % 1440; return String(Math.floor(m/60)).padStart(2,"0") + ":" + String(m%60).padStart(2,"0"); };
+const ICON = {
+  phone:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>',
+  nav:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 3 3 10.6l7.4 2.9L13.4 21z"/></svg>',
+  bag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>',
+  menu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
+  pics:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m3 16 5-5 5 5 3-3 5 5"/></svg>'
+};
+
+function nowIL(){
+  const p = new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Jerusalem",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date());
+  const g = t => p.find(x => x.type === t).value;
+  return { d: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")), m: (+g("hour")) * 60 + (+g("minute")) };
+}
+function status(){
+  const H = S.hours; if (!H) return null;
+  const {d, m} = nowIL();
+  for (const [a,b] of H[d] || []) { const end = b <= a ? b + 1440 : b; if (m >= a && m < end) return {open:true, text:"פתוח עכשיו, עד " + hm(b)}; }
+  for (const [a,b] of H[(d+6)%7] || []) if (b <= a && m < b) return {open:true, text:"פתוח עכשיו, עד " + hm(b)};
+  for (let i = 0; i < 7; i++) {
+    const rs = (H[(d+i)%7] || []).filter(([a]) => i > 0 || a > m).sort((x,y) => x[0]-y[0]);
+    if (rs.length) {
+      const when = i === 0 ? "היום" : i === 1 ? "מחר" : "ביום " + DAYS[(d+i)%7];
+      return {open:false, text:"סגור עכשיו, נפתח " + when + " ב-" + hm(rs[0][0])};
+    }
+  }
+  return null;
+}
+
+const st = status();
+const waLink = S.whatsapp ? "https://wa.me/972" + S.whatsapp.replace(/^0/,"") : "";
+const tel = S.phone ? "tel:" + S.phone.replace(/[^\d+]/g,"") : "";
+const waze = S.lat ? "https://waze.com/ul?ll=" + S.lat + "," + S.lon + "&navigate=yes" : "";
+const gmaps = S.lat ? "https://www.google.com/maps/search/?api=1&query=" + S.lat + "," + S.lon : "";
+let h = "";
+
+h += '<p class="ribbon">אתר הדגמה ש-TOMI הכינו עבור ' + esc(S.name) + '</p>';
+h += '<header class="hero">' + (S.cover ? '<img class="hero__img" src="' + esc(S.cover) + '" alt="" fetchpriority="high">' : '') +
+     '<div class="hero__text">' + (S.logo ? '<img class="hero__logo" src="' + esc(S.logo) + '" alt="">' : '') +
+     '<h1 class="hero__name">' + esc(S.name) + '</h1>' +
+     (S.tagline ? '<p class="hero__tag">' + esc(S.tagline) + '</p>' : '') +
+     (st ? '<p class="status' + (st.open ? ' open' : '') + '">' + esc(st.text) + '</p>' : '') +
+     '</div></header>';
+
+h += '<main class="wrap">';
+const facts = [];
+if (S.rating && S.rating.score) facts.push('<span>דירוג <b>' + esc(S.rating.score) + '</b> ב' + esc(S.rating.src) + (S.rating.count ? ', ' + esc(S.rating.count) + ' מדרגים' : '') + '</span>');
+if (S.address) facts.push('<span>' + esc(S.address) + '</span>');
+if (facts.length) h += '<div class="facts">' + facts.join("") + '</div>';
+if (S.about) h += '<section class="about"><p>' + esc(S.about) + '</p></section>';
+
+if (S.menu && S.menu.length) {
+  h += '<section id="menu"><h2>' + esc(S.menu_title || "התפריט") + '</h2><nav class="chips" aria-label="קטגוריות">' +
+       S.menu.map((c,i) => '<a href="#c' + i + '">' + esc(c.name) + '</a>').join("") + '</nav>';
+  S.menu.forEach((c,i) => {
+    h += '<div class="cat" id="c' + i + '"><h3>' + esc(c.name) + '</h3><ul>';
+    for (const it of c.items) {
+      h += '<li class="item"><div class="item__txt"><div class="item__name">' + esc(it.name) + '</div>' +
+           (it.desc ? '<p class="item__desc">' + esc(it.desc) + '</p>' : '') +
+           '<span class="item__price">' + esc(String(it.price).replace(/\.0+$/,"")) + ' ₪</span></div>' +
+           (it.img ? '<img loading="lazy" src="' + esc(it.img) + '?w=360" alt="' + esc(it.name) + '" onerror="this.remove()">' : '') + '</li>';
+    }
+    h += '</ul></div>';
+  });
+  h += '</section>';
+}
+if (S.services && S.services.length)
+  h += '<section id="services"><h2>הטיפולים שלנו</h2><ul class="services">' + S.services.map(s => '<li>' + esc(s) + '</li>').join("") + '</ul></section>';
+if (S.gallery && S.gallery.length)
+  h += '<section id="gallery"><h2>מהסטודיו</h2><div class="gallery">' + S.gallery.map(g => '<img loading="lazy" src="' + esc(g) + '" alt="" onerror="this.remove()">').join("") + '</div></section>';
+
+if (S.hours) {
+  const today = nowIL().d;
+  h += '<section id="hours"><h2>שעות פתיחה</h2><ul class="hours">' + DAYS.map((name,i) => {
+    const r = S.hours[i] || [];
+    return '<li' + (i === today ? ' class="today"' : '') + '><span>יום ' + name + '</span><span>' +
+      (r.length ? r.map(([a,b]) => hm(a) + "–" + hm(b)).join(", ") : "סגור") + '</span></li>';
+  }).join("") + '</ul></section>';
+}
+if (S.lat) {
+  h += '<section id="where"><h2>איך מגיעים</h2>' + (S.address ? '<p class="addr">' + esc(S.address) + '</p>' : '') +
+       '<iframe class="map" loading="lazy" title="מפה" src="https://maps.google.com/maps?q=' + S.lat + ',' + S.lon + '&z=16&hl=iw&output=embed"></iframe>' +
+       '<div class="links"><a class="btn" href="' + waze + '">' + ICON.nav + 'ניווט ב-Waze</a><a class="btn" href="' + gmaps + '">Google Maps</a></div></section>';
+}
+h += '</main>';
+h += '<footer class="foot"><div>© ' + new Date().getFullYear() + ' ' + esc(S.name) + ', כל הזכויות שמורות</div><div class="by">Website by <b>TOMI</b></div></footer>';
+
+const bar = [];
+if (tel) bar.push('<a href="' + tel + '"' + (S.kind === "beauty" && !waLink ? ' class="main"' : '') + '>' + ICON.phone + 'התקשרו</a>');
+if (waLink) bar.push('<a href="' + waLink + '"' + (S.kind === "beauty" ? ' class="main"' : '') + '>' + ICON.wa + 'וואטסאפ</a>');
+if (S.menu && S.menu.length) bar.push('<a href="#menu">' + ICON.menu + (S.kind === "shop" ? 'מוצרים' : 'תפריט') + '</a>');
+if (S.gallery && S.gallery.length) bar.push('<a href="#gallery">' + ICON.pics + 'תמונות</a>');
+if (waze) bar.push('<a href="' + waze + '">' + ICON.nav + 'ניווט</a>');
+if (S.order_url) bar.push('<a class="main" href="' + esc(S.order_url) + '">' + ICON.bag + 'להזמנה</a>');
+h += '<nav class="bar" aria-label="פעולות מהירות">' + bar.join("") + '</nav>';
+
+document.getElementById("app").innerHTML = h;
+
+// fit the name to the width of the hero
+const nm = document.querySelector(".hero__name");
+function fit(){
+  const cs = getComputedStyle(nm.parentElement);
+  const box = nm.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  nm.classList.remove("wrap");
+  let size = Math.min(150, window.innerHeight * 0.16);
+  nm.style.fontSize = size + "px";
+  while (nm.offsetWidth > box && size > 34) { size -= 2; nm.style.fontSize = size + "px"; }
+  if (nm.offsetWidth > box) { nm.classList.add("wrap"); nm.style.fontSize = "40px"; }
+}
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(fit);
+fit(); addEventListener("resize", fit);
+
+// highlight the menu category in view
+const chips = [...document.querySelectorAll(".chips a")];
+if (chips.length && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    chips.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));
+    const on = chips.find(a => a.classList.contains("on"));
+    if (on) on.scrollIntoView({block:"nearest", inline:"center", behavior:"smooth"});
+  }), {rootMargin:"-30% 0px -60% 0px"});
+  document.querySelectorAll(".cat").forEach(c => io.observe(c));
+}
+})();
+</script>
+</body>
+</html>
