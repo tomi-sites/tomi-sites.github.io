@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>AT Mobile | אלקטרוניקה ואביזרים לנייד באשדוד</title>
+<meta name="description" content="אצלנו ברחוב המסחר 8 באשדוד תמצאו מוצרי אלקטרוניקה ואביזרים לטלפון. יש לנו מטענים, מגני מסך, אוזניות אלחוטיות, רמקולים ועוד.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AT Mobile | אלקטרוניקה ואביזרים לנייד באשדוד">
+<meta property="og:description" content="אצלנו ברחוב המסחר 8 באשדוד תמצאו מוצרי אלקטרוניקה ואביזרים לטלפון. יש לנו מטענים, מגני מסך, אוזניות אלחוטיות, רמקולים ועוד.">
+<meta property="og:image" content="https://imageproxy.wolt.com/assets/67335ee1c59f3326de544821?w=1200">
+<meta name="theme-color" content="#1C2433">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Bellefair&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#F1F3F6;--ink:#1C2433;--accent:#2D63C8;--second:#F0B429;--display:"Secular One",serif;--on-accent:#fff; }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "Assistant",system-ui,sans-serif;padding-bottom:calc(86px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%}
+a{color:inherit}
+ul{list-style:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.ribbon{background:var(--ink);color:var(--bg);font-size:13px;line-height:1.4;text-align:center;padding:7px 16px}
+
+/* hero: the business's own photo, its name set as large as the width allows */
+.hero{position:relative;min-height:74svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);color:#fff;isolation:isolate}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.35) 42%,rgba(0,0,0,0) 72%)}
+.hero__text{width:100%;max-width:980px;margin:0 auto;padding:0 22px 30px}
+.hero__logo{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.85);margin-bottom:14px;background:#fff}
+.hero__name{display:inline-block;font-family:var(--display);font-weight:400;line-height:.98;white-space:nowrap;font-size:64px;letter-spacing:-.005em}
+.hero__name.wrap{white-space:normal}
+.hero__tag{font-size:clamp(18px,4.6vw,22px);line-height:1.4;margin-top:12px;max-width:30ch;color:rgba(255,255,255,.92)}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-weight:700;font-size:15px;padding:7px 14px 7px 16px;border-radius:999px;background:rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#C9CDD3}
+.status.open::before{background:#5EE38B;box-shadow:0 0 0 4px rgba(94,227,139,.25)}
+@media (prefers-reduced-motion:no-preference){
+  .hero__img{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) both}
+  .hero__name{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes settle{from{transform:scale(1.07)}}
+  @keyframes rise{from{transform:translateY(35%);opacity:0}}
+}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;padding:20px 0 4px;font-size:15.5px}
+.facts b{color:var(--accent);font-weight:800}
+section{padding:40px 0 8px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(32px,8.4vw,46px);line-height:1.05;margin-bottom:20px}
+.about p{font-size:clamp(19px,4.8vw,22px);line-height:1.6;max-width:34ch}
+
+/* menu */
+.chips{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:12px 22px;margin:0 -22px 6px;background:var(--bg);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;text-decoration:none;font-weight:700;font-size:15px;padding:7px 15px;border-radius:999px;border:1.5px solid color-mix(in srgb,var(--ink) 30%,transparent);transition:background .2s,color .2s,border-color .2s}
+.chips a.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cat{padding-top:18px;scroll-margin-top:64px}
+.cat h3{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.2;color:var(--accent);padding-bottom:6px;border-bottom:3px solid var(--second)}
+.item{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.item__txt{flex:1;min-width:0}
+.item__name{font-weight:800;font-size:17.5px;line-height:1.35}
+.item__desc{font-size:15px;line-height:1.5;color:color-mix(in srgb,var(--ink) 72%,transparent);margin-top:3px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.item__price{display:block;margin-top:6px;font-weight:800;font-size:16px;color:var(--accent)}
+.item img{width:100px;height:100px;flex:none;object-fit:cover;border-radius:16px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+
+/* beauty */
+.services{display:flex;flex-wrap:wrap;gap:9px}
+.services li{font-weight:600;font-size:16px;padding:9px 16px;border-radius:999px;background:color-mix(in srgb,var(--accent) 13%,var(--bg));border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+.gallery img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+
+/* hours + location */
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent);font-size:16.5px}
+.hours li.today{font-weight:800;color:var(--accent)}
+.hours span:last-child{direction:ltr;unicode-bidi:isolate}
+.addr{font-size:18px;margin-bottom:14px}
+.map{width:100%;height:270px;border:0;border-radius:18px;display:block;background:color-mix(in srgb,var(--second) 25%,var(--bg))}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15.5px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--ink)}
+
+.foot{text-align:center;font-size:13.5px;padding:48px 22px 28px;color:color-mix(in srgb,var(--ink) 65%,transparent)}
+.foot .by{direction:ltr;margin-top:4px}
+.foot .by b{letter-spacing:.06em}
+
+/* bottom action bar */
+.bar{position:fixed;inset:auto 0 0 0;z-index:10;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--ink)}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;border-radius:14px;color:var(--bg);text-decoration:none;font-size:13px;font-weight:700}
+.bar a.main{background:var(--accent);color:var(--on-accent)}
+.bar svg{width:22px;height:22px}
+@media (min-width:760px){
+  .bar{left:50%;right:auto;bottom:16px;transform:translateX(-50%);width:min(560px,92vw);border-radius:22px;padding:8px}
+  .item img{width:120px;height:120px}
+  .gallery{grid-template-columns:1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>window.SITE = {"kind": "shop", "name": "AT Mobile", "tagline": "אלקטרוניקה ואביזרים לנייד באשדוד", "about": "אצלנו ברחוב המסחר 8 באשדוד תמצאו מוצרי אלקטרוניקה ואביזרים לטלפון. יש לנו מטענים, מגני מסך, אוזניות אלחוטיות, רמקולים ועוד.", "phone": "0522057979", "whatsapp": "0522057979", "address": "המסחר 8, אשדוד", "lat": 31.8071346, "lon": 34.6457078, "hours": [[[600, 1125]], [[600, 1125]], [[600, 1125]], [[600, 1125]], [[600, 1125]], [[600, 780]], []], "cover": "https://imageproxy.wolt.com/assets/67335ee1c59f3326de544821?w=1600", "logo": null, "rating": {"score": 9.0, "count": 10, "src": "וולט"}, "menu": [{"name": "מטענים וכבלים", "items": [{"name": "מטען קיר פי די עם כבל | טייפ סי PD17C-30W", "desc": "", "price": 80.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4d9783c2-96d4-11ef-a431-5a0b6bbe19cb_______________________________pd17_30w.jpg"}, {"name": "מטען קיר עם כבל | טייפ סיי 15W", "desc": "", "price": 140.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/d421234a-96d3-11ef-8348-02b19de68437__________________________15w____.jpg"}, {"name": "מטען קיר עם כבל | מיקרו KX3M 2.1A", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3130b500-96d4-11ef-8b11-029b00e27dc1_______________________kx3m_2.jpeg.1a.jpg"}, {"name": "מטען קיר פי די עם כבל | טייפ סי PD16C -20W", "desc": "", "price": 79.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/43c89d5e-96d4-11ef-9ea2-06d82ceff8f3_______________________________pd16c__20w.jpg"}, {"name": "מטען קיר פי די עם כבל | אייפון PD17L -30W", "desc": "", "price": 80.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3e80577e-96d4-11ef-934f-ea8a3ed3ab46______________________________pd17l__30w.jpg"}, {"name": "ראש מטען | QC6 -15W", "desc": "", "price": 59.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/23fc0360-96d6-11ef-9825-dae8a3e549fc__________qc6__15w.jpg"}, {"name": "ראש מטען | GRN5- 30W", "desc": "", "price": 99.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/17b706f4-96d6-11ef-9954-8eb0668bb81f__________grn5__30w.jpg"}, {"name": "מטען קיר עם כבל | טייפ סיי 25W | שחור", "desc": "", "price": 151.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1e1e4e96-96d4-11ef-a091-52987a2d9f93__________________________25w.jpg"}, {"name": "מטען שעון חכם עם כניסת יו אס בי", "desc": "", "price": 89.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/5e0ad358-96d4-11ef-b985-029b00e27dc1________________________________.jpg"}, {"name": "ראש מטען | PD16 -20W", "desc": "", "price": 69.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1d002ece-96d6-11ef-90af-1e7b870df575__________pd16__20w.jpg"}, {"name": "מטען לרכב  עם כנעסת יו אס בי CA5- 30W", "desc": "", "price": 79.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/594e7294-96d3-11ef-a1ac-52987a2d9f93______________________________ca5__30w.jpg"}, {"name": "מטען לרכב עם כניסת יו אס בי | CA7", "desc": "", "price": 70.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/642f1ab0-96d3-11ef-8ece-d65612dbd8c3_____________________________ca7.jpg"}, {"name": "מטען לרכב עם כניסת יו אס בי | ומשדר בלוטוס CP15", "desc": "", "price": 60.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/686eb20c-96d3-11ef-a058-a214f3f043c0__________________________________________cp15.jpg"}, {"name": "מטען נייד | QSK10 10,000MAH", "desc": "", "price": 125.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/7d2a933c-96d3-11ef-8385-ea0a1b0e24be___________qsk10_10_000mah.jpg"}, {"name": "מטען נייד | TSK10 10,000MAH", "desc": "", "price": 110.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/7edf63ba-96d3-11ef-9569-d230248ba53c___________tsk10_10_000mah.jpg"}, {"name": "ראש מטען | קיר מקורי 45W", "desc": "", "price": 119.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2b33012e-96d6-11ef-bafe-b2b54c3140bc___________________________45w.jpg"}, {"name": "מטען קיר עם כבל | אייפון KX3L 2.1A", "desc": "", "price": 79.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/a45f9eb6-96d3-11ef-938b-0207fe4dc552________________________kx3l_2.1a.jpg"}, {"name": "ראש מטען | GRN2 -20W", "desc": "", "price": 99.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/12b3cb6a-96d6-11ef-a172-8a05c877c70e__________grn2__20w.jpg"}, {"name": "מטען קיר | GRN7 -65W", "desc": "", "price": 100.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/95e262ec-96d3-11ef-a40a-ea0a1b0e24be__________grn7__65w.jpg"}, {"name": "מטען קיר עם כבל | טייפ סיי 15W", "desc": "", "price": 140.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/fdfd36e0-96d3-11ef-9ae9-a2bf00e4c76f__________________________15w.jpg"}, {"name": "מטען נייד | TSK20 20,000MAH", "desc": "", "price": 140.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/89d6b5e8-96d3-11ef-a84b-aa2dbcc95459___________tsk20_20_000mah.jpg"}, {"name": "מטען לרכב עם כניסת יו אס בי | CA6 -40W", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/5df9c3fc-96d3-11ef-9c57-2ac659c9323c_____________________________ca6__40w.jpg"}, {"name": "מטען נייד | QSK20 20,000MAH", "desc": "", "price": 159.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/84f3e56e-96d3-11ef-8385-ea0a1b0e24be___________qsk20_20_000mah.jpg"}, {"name": "מתאם לכבל | טייפ סי", "desc": "", "price": 100.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9bdb3312-96d4-11ef-af8b-d230248ba53c__________________.jpg"}, {"name": "מתאם אייפון לאוקס נקבה L1", "desc": "", "price": 39.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/97a43514-96d4-11ef-8385-ea0a1b0e24be________________________l1.jpg"}, {"name": "מטען SIKENAI למיקרו SH02", "desc": "כבל 2 מטר חיבור USB", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/3788a9b4-dcbe-11ef-af71-266eb11cec2a______sikenai________sh02_.jpg"}, {"name": "מטען SIKENAI לטייפ סי SH09", "desc": "כבל 2 מטר חיבור USB לטייפ סי", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/5419abc8-dcbe-11ef-8a88-46de9d95affb______sikenai__________sh09.jpg"}, {"name": "כבל סנכרון TYPE C-TYPE C", "desc": "לבן מקורי סאני", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ef45d18e-f9bb-11ef-a219-22f06f4b10d4____________type_c_type_c___photoroom.jpg"}, {"name": "כבל משולב 2 ב 1", "desc": "כבל טעינה משולב 2 ב1 18W", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/eb1123e8-f9bb-11ef-8f68-c2cbf85ab3b3___________2___1_photoroom.jpg"}, {"name": "מטען יו אס בי לטייפ c", "desc": "מטען USB ל TYPE C 12W", "price": 59.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f77e3882-f9bb-11ef-841e-5606864c9ac7_____________________c_photoroom.jpg"}]}, {"name": "מגני מסך וכיסויים", "items": [{"name": "מגן מסך זכוכית אייפון | 15", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f027e1ea-975b-11ef-82e2-f2ee25633a38_______________________15.jpg"}, {"name": "מגן מסך זכוכית אייפון | 13 פרו מקס", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/fa373302-975b-11ef-95ef-6248d960e72b_______________________13________.jpg"}, {"name": "מגן מסך זכוכית אייפון | 14 פרו מקס", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/0919bf66-975c-11ef-a0c8-52f001ec48b6_______________________14________.jpg"}, {"name": "מגן מסך זכוכית אייפון | 15 פרו", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/0b73952a-975c-11ef-adfd-9a9c6fdf1ae3_______________________15____.jpg"}, {"name": "מגן אחורי אייפון | 15 פרו שחור", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/a7455e44-96cf-11ef-9457-fa11e441a3db__________________15__________grip_gold.jpg"}, {"name": "מגן מסך זכוכית אייפון | 14 פרו", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1691ef6a-975c-11ef-8126-5e4b362fb428_______________________14____.jpg"}, {"name": "מגן כיסוי אחורי אייפון | 14 פרו | סגול", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/df8e656c-96ce-11ef-aa4f-0a871e726aab__________________14__________grip_gold.jpg"}, {"name": "מגן כיסוי אחורי אייפון | 14 | אדום", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2a05b658-96cb-11ef-a708-f211072f4413__________________14_____grip_gold.jpg"}, {"name": "מגן כיסוי אחורי אייפון | 15 | סגול בהיר", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/3f9b1626-96cf-11ef-b45e-4e32782c11d4__________________15___________grip_gold.jpg"}, {"name": "מגן כיסוי אחורי אייפון | 14 | כתום", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/7e1b37c0-96cd-11ef-8c79-0207fe4dc552__________________14______grip_gold.jpg"}, {"name": "מגן כיסוי אחורי אייפון | 14 | סגול בהיר", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/88b315c2-96cd-11ef-8958-ea32a473597b__________________14___________grip_gold.jpg"}, {"name": "מגן כיסוי אחורי אייפון | 14 | סגול", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/7250016e-96cd-11ef-910a-96144ff6b6d4__________________14______grip_gold.jpg"}, {"name": "מגן כיסוי אחורי אייפון | 14 פרו מקס | אדום", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/7ede0d58-96ce-11ef-815d-52987a2d9f93__________________14_______________grip_gold.jpg"}, {"name": "מגן כיסוי אחורי אייפון | 14 פרו מקס | סגול", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/9b6e8790-96ce-11ef-b982-6a0810964bae__________________14______________grip_gold.jpg"}, {"name": "מגן כיסוי אחורי אייפון | 14 פרו | שחור", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/e920fda6-96ce-11ef-881f-5a7e50ef61c5__________________14___________grip_gold.jpg"}, {"name": "מגן כיסוי אחורי אייפון | 14 | שחור", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/29ff8ebe-96cf-11ef-892c-06d82ceff8f3__________________14______grip_gold.jpg"}, {"name": "מגן אחורי אייפון | 15 פרו מקס | שחור", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/f7cdf332-96d2-11ef-b71d-7a32ec97c7ac_______________________15________.jpg"}, {"name": "מגן אחורי אייפון 12 פרו מקס שחור", "desc": "NILLKIN  מגן כיסוי אחורי", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/241c6960-b243-11ef-b1b0-0647b4fa3eff__________________12_____________.jpg"}, {"name": "מגן אחורי אייפון 13 פרו מקס שחור", "desc": "NILLKIN  מגן כיסוי אחורי", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8cc04176-b243-11ef-8fa8-f67ffcee71ac__________________13_____________.jpg"}, {"name": "מגן מסך זכוכית גלאקסי | A14", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/79c42bc0-975c-11ef-ba53-c681ccac67bb_______________________a14.jpg"}, {"name": "מגן מסך זכוכית גלאקסי | A25", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/82ddef16-975c-11ef-894c-e64670defe51_______________________a25.jpg"}, {"name": "מגן מסך זכוכית  גלאקסי A35", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/89260ce6-975c-11ef-b36f-d686b7763839_______________________a35.jpg"}, {"name": "מגן מסך זכוכית גלאקסי | A24", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/7ef150f0-975c-11ef-a4f3-ce4ff7d51c27_______________________a24.jpg"}, {"name": "מגן מסך זכוכית גלאקסי | A33", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8661cf86-975c-11ef-8592-6e0ff7888bbb_______________________a33.jpg"}, {"name": "מגן מסך זכוכית גלאקסי | A51", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8ff221e0-975c-11ef-8af7-6248d960e72b_______________________a51.jpg"}, {"name": "מגן מסך זכוכית גלאקסי | A71", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/92e25302-975c-11ef-824e-be282234f486_______________________a71.jpg"}, {"name": "מגן מסך זכוכית גלאקסי | S24 PLUS", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/c847dc7e-975c-11ef-b3de-1e417ef45246_______________________s24_plus.jpg"}, {"name": "מגן מסך זכוכית גלאקסי | S22", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/aa075500-975c-11ef-b317-562ab0c38b1a_______________________s22.jpg"}, {"name": "מגן מסך זכוכית גלאקסי | S23 PLUS", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/b15db7ae-975c-11ef-8315-666862f3a14b_______________________s23_plus.jpg"}, {"name": "מגן אחורי גלאקסי S24 PLUS", "desc": "CARBOON מגן כיסוי אחורי", "price": 25.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/d9a33a20-b243-11ef-ba87-ca3a734a53a6__________________________s24__________.jpg"}]}, {"name": "אוזניות", "items": [{"name": "אוזניות בלוטוס אלחוטיות בצבע לבן T200", "desc": "לבן  SIKENAI  אוזניות אלחוטיות", "price": 99.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8b7538a4-b242-11ef-9b87-c24ff8d6ff84__________________________________t200.jpg"}, {"name": "אוזניות בלוטוס אלחוטיות בצבע לבן T450", "desc": "לבן  SIKENAI  אוזניות אלחוטיות", "price": 119.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/90444bae-b242-11ef-b9ab-c24ff8d6ff84__________________________________t450.jpg"}, {"name": "אוזניות בלוטוס אלחוטיות בצבע לבן ושחור TX10", "desc": "לבן שחור SIKENAI  אוזניות אלחוטיות", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/96cd7f22-b242-11ef-9a67-021e1605bf30________________________________________tx10.jpg"}, {"name": "אוזניות JBL LIVE 670BT", "desc": "אוזניות בלוטוס JBL LIVE 670BT", "price": 400.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/7dc9cb28-f9bb-11ef-949d-7e8c4a518bbe_________jbl_live_670bt__photoroom.jpg"}, {"name": "אוזניות גיימינג ONIKUMA", "desc": "אוזניות גיימינג ONIKUMA TWS T20", "price": 89.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/6b58a052-f9bd-11ef-a98e-224fa6b76d1c_________________onikuma___photoroom.jpg"}, {"name": "ONIKUMA T309", "desc": "אוזניות גיימינג אלחוטיות", "price": 89.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/836aa3be-6c6f-11f0-874a-a26c77aedaac__________________________t309.jpg"}, {"name": "ONIKUMA T35", "desc": "אוזניות גיימינג אלחוטיות", "price": 99.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/0bce3f72-6c70-11f0-a68d-625fb795f6d4__________________________t35.jpg"}, {"name": "אוזניות חוט עם חיבור טייפ סי MC1", "desc": "לבן SIKENAI אוזניות חוט", "price": 65.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/bb934e36-b242-11ef-91e0-6e4fd981a6ef______________________________mc1.jpg"}, {"name": "אוזניות חוט עם חיבור טייפ סי MC2", "desc": "לבן SIKENAI אוזניות חוט", "price": 65.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/c3ccfdf4-b242-11ef-a95e-e2db37cd6d88______________________________mc2.jpg"}, {"name": "אוזניות חוט עם חיבור טייפ סי MC3", "desc": "שחור SIKENAI אוזניות חוט", "price": 65.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/c8e3ce4e-b242-11ef-960d-de464c0387fc______________________________mc3.jpg"}, {"name": "אוזניות חוט עם חיבור פין MX1", "desc": "לבן SIKENAI אוזניות חוט", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ce88194a-b242-11ef-b79c-e204b20131f6__________________________mx1.jpg"}, {"name": "אוזניות חוט עם חיבור פין MX2", "desc": "לבן SIKENAI אוזניות חוט", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/d3ab1abc-b242-11ef-999f-fecf2d209f79__________________________mx2.jpg"}, {"name": "אוזניות חוט עם חיבור פין MX3", "desc": "שחור SIKENAI אוזניות חוט", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/d991764c-b242-11ef-a8be-9efcd63aca19__________________________mx3.jpg"}]}, {"name": "רמקולים", "items": [{"name": "רמקול ONIKUMA", "desc": "רמקול בלוטוס ONIKUMA L20", "price": 129.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/2fa4f3a8-f9bd-11ef-84b1-b68dc338a1b0_______onikuma__photoroom.jpg"}]}, {"name": "אביזרי סלולר", "items": [{"name": "עט לניפוץ גבים", "desc": "", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/b4998318-96d4-11ef-b033-ea32a473597b_______________.jpg"}, {"name": "עט סמסונג מקורי | בצבע לבן", "desc": "", "price": 239.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f387faf0-96d4-11ef-8fb4-be124a711fdd________________________.jpg"}, {"name": "עט סמסונג מקורי | בצבע שחור", "desc": "", "price": 239.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ff8c2a1e-975c-11ef-8865-e210c10c3056___________________________note_8.jpg"}, {"name": "עט סמסונג מקורי | בצבע אדום-שחור", "desc": "", "price": 239.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/dcd91a1e-96d4-11ef-908e-de8379a07958________________________________s22_ultra.jpg"}, {"name": "עט סמסונג מקורי | בצבע כחול", "desc": "", "price": 239.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/e9fe94f8-96d4-11ef-a6ff-d230248ba53c___________________________note_10_plus.jpg"}, {"name": "עט סמסונג מקורי | בצבע שמנת", "desc": "", "price": 239.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/cecdbf46-96d5-11ef-9054-0260961f1c48___________________________s23_ultra.jpg"}, {"name": "עט סמסונג מקורי | בצבע ברונזה", "desc": "", "price": 239.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/e2df9014-96d4-11ef-8cde-d65612dbd8c3___________________________s23_ultra.jpg"}, {"name": "עט סמסונג מקורי | בצבע שחור", "desc": "", "price": 239.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/b1f44d54-96d5-11ef-b2ec-ee1d6352f1a2___________________________note_10.jpg"}, {"name": "עט סמסונג מקורי | בצבע אפור-סגול", "desc": "", "price": 239.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/05c0b5fe-96d5-11ef-9189-2e3e4856e7b6________________________________s24_ultra.jpg"}, {"name": "עט סמסונג מקורי | בצבע סגול", "desc": "", "price": 239.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/038efd5e-96d5-11ef-a093-029b00e27dc1___________________________s23_ultra.jpg"}]}, {"name": "ציוד מעבדה סלולר", "items": [{"name": "מגנט עגול לרכב להחזקת הטלפון בצבע שחור | XO-31", "desc": "", "price": 39.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/4f191ae0-96d3-11ef-95d1-a2bf00e4c76f__________________x031.jpg"}, {"name": "פותחן מתכת | עם ידית פלסטיק", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f2b37e28-96d5-11ef-8e4f-ca2726982ba2__________________________.jpg"}, {"name": "פלטת חימום גדולה", "desc": "", "price": 369.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/08b616e0-96d6-11ef-97f9-ce1dea5a0724___________.jpg"}, {"name": "פותחן מתכת | עם שפיץ", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f40540ae-96d5-11ef-b9f5-4262ff6fb51e___________________.jpg"}, {"name": "פותחן מתכת משולש", "desc": "", "price": 40.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/67221938f5f0a0f63d5f6d9e/e811e176-96d5-11ef-a75a-3e6da652b6e8_________________.jpg"}, {"name": "פותחן מתכת | עגול עם ידית פלסטיק", "desc": "", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f0ba045c-96d5-11ef-acfa-ee91ebc53c9d_______________________________.jpg"}, {"name": "פותחן מתכת | ארוך", "desc": "", "price": 50.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/da85282e-96d5-11ef-92c4-12f244a78f03________________.jpg"}, {"name": "מיני קטר", "desc": "", "price": 69.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/6154d1da-96d4-11ef-9920-5a0b6bbe19cb_________.jpg"}, {"name": "משטח עבודה | שחור RF4 (RF-PO11)", "desc": "", "price": 130.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8eaed658-96d4-11ef-b207-3618788b7967_____________________.jpg"}, {"name": "פינצטה | זוויתית", "desc": "", "price": 69.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f9dddd56-96d5-11ef-a95a-9a582921677a_______________.jpg"}, {"name": "משטח עבודה | תכלת דגם 2820", "desc": "", "price": 140.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8cc255fe-96d4-11ef-938b-0207fe4dc552____________________.jpg"}, {"name": "פינצטה | מסוג BS-13", "desc": "", "price": 69.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ff1c0a9a-96d5-11ef-aad3-6203e15d8ec2_____________bs_13.jpg"}, {"name": "פינצטה ישרה", "desc": "פינצטה  B&R", "price": 69.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/cdb94c04-b243-11ef-a159-f672eb49fe50_____________.jpg"}, {"name": "דבק דו צדדי", "desc": "דבק דו צדדי 1MM,2MM,3MM,4MM,5MM", "price": 59.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/f6054ba0-b242-11ef-885b-de3bb8119154_____________1mm_2mm_3mm_4mm_5mm.jpg"}, {"name": "דבק נוזלי שחור להדבקת מסכים", "desc": "דבק נוזלי שחור", "price": 59.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/fbbe7cc4-b242-11ef-8486-cea01520b677____________________________.jpg"}, {"name": "דבק נוזלי שקוף להדבקת מסכים", "desc": "דבק נוזלי שקוף", "price": 59.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ffa9e210-b242-11ef-be40-b233c672fd4f_____________________________.jpg"}, {"name": "בקבוקון למילוי אלכוהול ורוד", "desc": "בקבוקון למילוי אלכוהול שקוף", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/eaecfb6e-b242-11ef-aa4e-aa13d354f873____________________________.jpg"}, {"name": "בקבוקון למילוי אלכוהול שקוף", "desc": "בקבוקון למילוי אלכוהול ורוד", "price": 49.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ec654f82-b242-11ef-a4ae-42b15e0be5ec____________________________.jpg"}]}, {"name": "אביזרים לרכב ואופניים", "items": [{"name": "מגנט לטלפון + מטען", "desc": "מגנט לטלפון לרכב +מטען 15W", "price": 140.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/182159d6-dcbe-11ef-bf50-56ba421e1bb8____________________.jpg"}, {"name": "מטען TOIKO", "desc": "כבל type c לtype c צבע לבן 60W", "price": 60.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/6c959248-dcbe-11ef-9053-5ae90a162d29______toiko.jpg"}, {"name": "מטען לרכב SIKENAI C28C", "desc": "מטען לרכב מגיע עם כבל טייפ סי לחיבור טייפ סי", "price": 59.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/71cb5356-dcbe-11ef-b3b7-ee9d3a377474___________sikenai_c28c.jpg"}, {"name": "מטען לרכב SIKENAI C28L", "desc": "מטען לרכב מגיע עם כבל טייפ סי לחיבור אייפון", "price": 59.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/74490b5a-dcbe-11ef-b63e-469f0491bb6f___________sikenai_c28l.jpg"}, {"name": "מחזיק לטלפון לאופניים", "desc": "מחזיק לטלפון עם חיבור בהברגה לאופניים עיצוב קרבון", "price": 151.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/682e9240-dcbe-11ef-8ac4-92d26ee746ba________________________.jpg"}, {"name": "מגנט לטלפון Buffalo", "desc": "מגנט לטלפון חיבור למזגן BL-04 BUFFALO", "price": 80.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/50de8d66-dcbe-11ef-822b-d2f0484bc432_____________buffalo_.jpg"}, {"name": "מגנט לטלפון CYCLE", "desc": "מגנט לפתחי האוורור ברכב", "price": 75.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/8c4c4190-dcbe-11ef-aba3-c2d92670dd34_____________cycle_.jpg"}, {"name": "מעמד לפלאפון", "desc": "זרוע מגנט BASELINE", "price": 59.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/244a20e2-f9bc-11ef-b070-8e62d7094a42_______________photoroom.jpg"}, {"name": "מצלמת רכב XIAOMI A500S PRO PLUS", "desc": "מצלמת רכב שיאומי פרו פלוס", "price": 289.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ddf8ebe2-6c6f-11f0-b016-7eea95587aa9___________________________.jpg"}]}, {"name": "אביזרים נלווים", "items": [{"name": "סוללת גיבוי", "desc": "סוללת גיבוי CHOETECH MAGSAFE 10000 B651", "price": 120.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/87b48b36-f9bc-11ef-b19e-1a289a56a0aa______________photoroom.jpg"}, {"name": "YOOKIE WS-1 GOLD", "desc": "שעון חכם לילדים ולמבוגרים", "price": 129.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/d1e2cb66-6c6f-11f0-90d2-96aa29fe5482__________________________________________.jpg"}, {"name": "YOOKIE WS-1 BLACK", "desc": "שעון חכם לילדים ולמבוגרים", "price": 129.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/375137d0-6c70-11f0-81fd-06d22caa7753_d1e2cb66_6c6f_11f0_90d2_96aa29fe5482__________________________________________.jpg"}, {"name": "מצלמת רכב XIAOMI D06", "desc": "מצלמת רכב שיאומי", "price": 179.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/249a97c6-6c70-11f0-9fd7-025a686879d5__________________.jpg"}]}, {"name": "אביזרי מחשב", "items": [{"name": "ONIKUMA G52 WHITE", "desc": "מקלדת גיימינג מכנית", "price": 149.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/795c46d4-6c6f-11f0-a971-8a5f275c7acb______________________________.jpg"}, {"name": "ONIKUMA G58 BLACK", "desc": "מקלדת גיימינג למחשב", "price": 149.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/7bcab414-6c6f-11f0-8c23-72e0441da8f3______________________________.jpg"}, {"name": "ONIKUMA G58 WHITE", "desc": "מקלדת גיימינג למחשב", "price": 149.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/9fe9ecca-6c6f-11f0-9a65-820093181a22____________________________.jpg"}, {"name": "ASUS W5000", "desc": "סט מקלדת ועכבר לבן", "price": 179.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/a8f7e862-6c6f-11f0-989c-7eea95587aa9____________________asus.jpg"}, {"name": "ONIKUMA TZ5006", "desc": "סט גיימינג למחשב -אוזניות,מקלדת ,עכבר ,משטח וסטנד לאוזניות", "price": 199.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/ac0223ba-6c6f-11f0-80ba-9219ded4300a___________________________________________________________.jpg"}, {"name": "ASUS KW100 BEIGE", "desc": "מקלדת אלחוטית למחשב", "price": 189.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/c93160d6-6c6f-11f0-9bbd-f602a2147a2f_____________________asus________.jpg"}]}], "menu_title": "המוצרים", "services": [], "gallery": [], "order_url": "https://wolt.com/he/isr/ashdod-and-lachish-area/venue/at-mobile"};</script>
+<script>
+(function(){
+const S = window.SITE;
+const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const DAYS = ["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
+const hm = m => { m = ((m % 1440) + 1440) % 1440; return String(Math.floor(m/60)).padStart(2,"0") + ":" + String(m%60).padStart(2,"0"); };
+const ICON = {
+  phone:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>',
+  nav:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 3 3 10.6l7.4 2.9L13.4 21z"/></svg>',
+  bag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>',
+  menu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
+  pics:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m3 16 5-5 5 5 3-3 5 5"/></svg>'
+};
+
+function nowIL(){
+  const p = new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Jerusalem",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date());
+  const g = t => p.find(x => x.type === t).value;
+  return { d: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")), m: (+g("hour")) * 60 + (+g("minute")) };
+}
+function status(){
+  const H = S.hours; if (!H) return null;
+  const {d, m} = nowIL();
+  for (const [a,b] of H[d] || []) { const end = b <= a ? b + 1440 : b; if (m >= a && m < end) return {open:true, text:"פתוח עכשיו, עד " + hm(b)}; }
+  for (const [a,b] of H[(d+6)%7] || []) if (b <= a && m < b) return {open:true, text:"פתוח עכשיו, עד " + hm(b)};
+  for (let i = 0; i < 7; i++) {
+    const rs = (H[(d+i)%7] || []).filter(([a]) => i > 0 || a > m).sort((x,y) => x[0]-y[0]);
+    if (rs.length) {
+      const when = i === 0 ? "היום" : i === 1 ? "מחר" : "ביום " + DAYS[(d+i)%7];
+      return {open:false, text:"סגור עכשיו, נפתח " + when + " ב-" + hm(rs[0][0])};
+    }
+  }
+  return null;
+}
+
+const st = status();
+const waLink = S.whatsapp ? "https://wa.me/972" + S.whatsapp.replace(/^0/,"") : "";
+const tel = S.phone ? "tel:" + S.phone.replace(/[^\d+]/g,"") : "";
+const waze = S.lat ? "https://waze.com/ul?ll=" + S.lat + "," + S.lon + "&navigate=yes" : "";
+const gmaps = S.lat ? "https://www.google.com/maps/search/?api=1&query=" + S.lat + "," + S.lon : "";
+let h = "";
+
+h += '<p class="ribbon">אתר הדגמה ש-TOMI הכינו עבור ' + esc(S.name) + '</p>';
+h += '<header class="hero">' + (S.cover ? '<img class="hero__img" src="' + esc(S.cover) + '" alt="" fetchpriority="high">' : '') +
+     '<div class="hero__text">' + (S.logo ? '<img class="hero__logo" src="' + esc(S.logo) + '" alt="">' : '') +
+     '<h1 class="hero__name">' + esc(S.name) + '</h1>' +
+     (S.tagline ? '<p class="hero__tag">' + esc(S.tagline) + '</p>' : '') +
+     (st ? '<p class="status' + (st.open ? ' open' : '') + '">' + esc(st.text) + '</p>' : '') +
+     '</div></header>';
+
+h += '<main class="wrap">';
+const facts = [];
+if (S.rating && S.rating.score) facts.push('<span>דירוג <b>' + esc(S.rating.score) + '</b> ב' + esc(S.rating.src) + (S.rating.count ? ', ' + esc(S.rating.count) + ' מדרגים' : '') + '</span>');
+if (S.address) facts.push('<span>' + esc(S.address) + '</span>');
+if (facts.length) h += '<div class="facts">' + facts.join("") + '</div>';
+if (S.about) h += '<section class="about"><p>' + esc(S.about) + '</p></section>';
+
+if (S.menu && S.menu.length) {
+  h += '<section id="menu"><h2>' + esc(S.menu_title || "התפריט") + '</h2><nav class="chips" aria-label="קטגוריות">' +
+       S.menu.map((c,i) => '<a href="#c' + i + '">' + esc(c.name) + '</a>').join("") + '</nav>';
+  S.menu.forEach((c,i) => {
+    h += '<div class="cat" id="c' + i + '"><h3>' + esc(c.name) + '</h3><ul>';
+    for (const it of c.items) {
+      h += '<li class="item"><div class="item__txt"><div class="item__name">' + esc(it.name) + '</div>' +
+           (it.desc ? '<p class="item__desc">' + esc(it.desc) + '</p>' : '') +
+           '<span class="item__price">' + esc(String(it.price).replace(/\.0+$/,"")) + ' ₪</span></div>' +
+           (it.img ? '<img loading="lazy" src="' + esc(it.img) + '?w=360" alt="' + esc(it.name) + '" onerror="this.remove()">' : '') + '</li>';
+    }
+    h += '</ul></div>';
+  });
+  h += '</section>';
+}
+if (S.services && S.services.length)
+  h += '<section id="services"><h2>הטיפולים שלנו</h2><ul class="services">' + S.services.map(s => '<li>' + esc(s) + '</li>').join("") + '</ul></section>';
+if (S.gallery && S.gallery.length)
+  h += '<section id="gallery"><h2>מהסטודיו</h2><div class="gallery">' + S.gallery.map(g => '<img loading="lazy" src="' + esc(g) + '" alt="" onerror="this.remove()">').join("") + '</div></section>';
+
+if (S.hours) {
+  const today = nowIL().d;
+  h += '<section id="hours"><h2>שעות פתיחה</h2><ul class="hours">' + DAYS.map((name,i) => {
+    const r = S.hours[i] || [];
+    return '<li' + (i === today ? ' class="today"' : '') + '><span>יום ' + name + '</span><span>' +
+      (r.length ? r.map(([a,b]) => hm(a) + "–" + hm(b)).join(", ") : "סגור") + '</span></li>';
+  }).join("") + '</ul></section>';
+}
+if (S.lat) {
+  h += '<section id="where"><h2>איך מגיעים</h2>' + (S.address ? '<p class="addr">' + esc(S.address) + '</p>' : '') +
+       '<iframe class="map" loading="lazy" title="מפה" src="https://maps.google.com/maps?q=' + S.lat + ',' + S.lon + '&z=16&hl=iw&output=embed"></iframe>' +
+       '<div class="links"><a class="btn" href="' + waze + '">' + ICON.nav + 'ניווט ב-Waze</a><a class="btn" href="' + gmaps + '">Google Maps</a></div></section>';
+}
+h += '</main>';
+h += '<footer class="foot"><div>© ' + new Date().getFullYear() + ' ' + esc(S.name) + ', כל הזכויות שמורות</div><div class="by">Website by <b>TOMI</b></div></footer>';
+
+const bar = [];
+if (tel) bar.push('<a href="' + tel + '"' + (S.kind === "beauty" && !waLink ? ' class="main"' : '') + '>' + ICON.phone + 'התקשרו</a>');
+if (waLink) bar.push('<a href="' + waLink + '"' + (S.kind === "beauty" ? ' class="main"' : '') + '>' + ICON.wa + 'וואטסאפ</a>');
+if (S.menu && S.menu.length) bar.push('<a href="#menu">' + ICON.menu + (S.kind === "shop" ? 'מוצרים' : 'תפריט') + '</a>');
+if (S.gallery && S.gallery.length) bar.push('<a href="#gallery">' + ICON.pics + 'תמונות</a>');
+if (waze) bar.push('<a href="' + waze + '">' + ICON.nav + 'ניווט</a>');
+if (S.order_url) bar.push('<a class="main" href="' + esc(S.order_url) + '">' + ICON.bag + 'להזמנה</a>');
+h += '<nav class="bar" aria-label="פעולות מהירות">' + bar.join("") + '</nav>';
+
+document.getElementById("app").innerHTML = h;
+
+// fit the name to the width of the hero
+const nm = document.querySelector(".hero__name");
+function fit(){
+  const cs = getComputedStyle(nm.parentElement);
+  const box = nm.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  nm.classList.remove("wrap");
+  let size = Math.min(150, window.innerHeight * 0.16);
+  nm.style.fontSize = size + "px";
+  while (nm.offsetWidth > box && size > 34) { size -= 2; nm.style.fontSize = size + "px"; }
+  if (nm.offsetWidth > box) { nm.classList.add("wrap"); nm.style.fontSize = "40px"; }
+}
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(fit);
+fit(); addEventListener("resize", fit);
+
+// highlight the menu category in view
+const chips = [...document.querySelectorAll(".chips a")];
+if (chips.length && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    chips.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));
+    const on = chips.find(a => a.classList.contains("on"));
+    if (on) on.scrollIntoView({block:"nearest", inline:"center", behavior:"smooth"});
+  }), {rootMargin:"-30% 0px -60% 0px"});
+  document.querySelectorAll(".cat").forEach(c => io.observe(c));
+}
+})();
+</script>
+</body>
+</html>
