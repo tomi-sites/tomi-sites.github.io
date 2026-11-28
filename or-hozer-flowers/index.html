@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<title>אור חוזר | חנות פרחים וצמחים בהוד השרון</title>
+<meta name="description" content="אצלנו תמצאו זרים, סידורי פרחים ומארזים, לצד כלים ואגרטלים. אנחנו בסוקולוב 46 בהוד השרון, ומזמינים אתכם לבחור פרחים לחג, להפתעה או סתם לבית.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="אור חוזר | חנות פרחים וצמחים בהוד השרון">
+<meta property="og:description" content="אצלנו תמצאו זרים, סידורי פרחים ומארזים, לצד כלים ואגרטלים. אנחנו בסוקולוב 46 בהוד השרון, ומזמינים אתכם לבחור פרחים לחג, להפתעה או סתם לבית.">
+<meta property="og:image" content="https://imageproxy.wolt.com/assets/67335e2b149445354de04f00?w=1200">
+<meta name="theme-color" content="#22331F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700;800&family=Bellefair&family=Secular+One&display=swap" rel="stylesheet">
+<style>
+:root{ --bg:#F3F5F0;--ink:#22331F;--accent:#B8436A;--second:#8DB07A;--display:"Bellefair",serif;--on-accent:#fff; }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "Assistant",system-ui,sans-serif;padding-bottom:calc(86px + env(safe-area-inset-bottom))}
+img{display:block;max-width:100%}
+a{color:inherit}
+ul{list-style:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.ribbon{background:var(--ink);color:var(--bg);font-size:13px;line-height:1.4;text-align:center;padding:7px 16px}
+
+/* hero: the business's own photo, its name set as large as the width allows */
+.hero{position:relative;min-height:74svh;display:flex;align-items:flex-end;overflow:hidden;background:var(--ink);color:#fff;isolation:isolate}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.35) 42%,rgba(0,0,0,0) 72%)}
+.hero__text{width:100%;max-width:980px;margin:0 auto;padding:0 22px 30px}
+.hero__logo{width:58px;height:58px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.85);margin-bottom:14px;background:#fff}
+.hero__name{display:inline-block;font-family:var(--display);font-weight:400;line-height:.98;white-space:nowrap;font-size:64px;letter-spacing:-.005em}
+.hero__name.wrap{white-space:normal}
+.hero__tag{font-size:clamp(18px,4.6vw,22px);line-height:1.4;margin-top:12px;max-width:30ch;color:rgba(255,255,255,.92)}
+.status{display:inline-flex;align-items:center;gap:9px;margin-top:18px;font-weight:700;font-size:15px;padding:7px 14px 7px 16px;border-radius:999px;background:rgba(255,255,255,.16);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.status::before{content:"";width:9px;height:9px;border-radius:50%;background:#C9CDD3}
+.status.open::before{background:#5EE38B;box-shadow:0 0 0 4px rgba(94,227,139,.25)}
+@media (prefers-reduced-motion:no-preference){
+  .hero__img{animation:settle 1.6s cubic-bezier(.2,.7,.2,1) both}
+  .hero__name{animation:rise .9s .15s cubic-bezier(.2,.7,.2,1) both}
+  @keyframes settle{from{transform:scale(1.07)}}
+  @keyframes rise{from{transform:translateY(35%);opacity:0}}
+}
+
+.wrap{max-width:720px;margin:0 auto;padding:0 22px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 22px;padding:20px 0 4px;font-size:15.5px}
+.facts b{color:var(--accent);font-weight:800}
+section{padding:40px 0 8px}
+h2{font-family:var(--display);font-weight:400;font-size:clamp(32px,8.4vw,46px);line-height:1.05;margin-bottom:20px}
+.about p{font-size:clamp(19px,4.8vw,22px);line-height:1.6;max-width:34ch}
+
+/* menu */
+.chips{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow-x:auto;padding:12px 22px;margin:0 -22px 6px;background:var(--bg);scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;text-decoration:none;font-weight:700;font-size:15px;padding:7px 15px;border-radius:999px;border:1.5px solid color-mix(in srgb,var(--ink) 30%,transparent);transition:background .2s,color .2s,border-color .2s}
+.chips a.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.cat{padding-top:18px;scroll-margin-top:64px}
+.cat h3{font-family:var(--display);font-weight:400;font-size:26px;line-height:1.2;color:var(--accent);padding-bottom:6px;border-bottom:3px solid var(--second)}
+.item{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.item__txt{flex:1;min-width:0}
+.item__name{font-weight:800;font-size:17.5px;line-height:1.35}
+.item__desc{font-size:15px;line-height:1.5;color:color-mix(in srgb,var(--ink) 72%,transparent);margin-top:3px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.item__price{display:block;margin-top:6px;font-weight:800;font-size:16px;color:var(--accent)}
+.item img{width:100px;height:100px;flex:none;object-fit:cover;border-radius:16px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+
+/* beauty */
+.services{display:flex;flex-wrap:wrap;gap:9px}
+.services li{font-weight:600;font-size:16px;padding:9px 16px;border-radius:999px;background:color-mix(in srgb,var(--accent) 13%,var(--bg));border:1px solid color-mix(in srgb,var(--accent) 30%,transparent)}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px;background:color-mix(in srgb,var(--second) 30%,var(--bg))}
+.gallery img:first-child{grid-column:1/-1;aspect-ratio:16/10}
+
+/* hours + location */
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent);font-size:16.5px}
+.hours li.today{font-weight:800;color:var(--accent)}
+.hours span:last-child{direction:ltr;unicode-bidi:isolate}
+.addr{font-size:18px;margin-bottom:14px}
+.map{width:100%;height:270px;border:0;border-radius:18px;display:block;background:color-mix(in srgb,var(--second) 25%,var(--bg))}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15.5px;padding:10px 18px;border-radius:999px;border:1.5px solid var(--ink)}
+
+.foot{text-align:center;font-size:13.5px;padding:48px 22px 28px;color:color-mix(in srgb,var(--ink) 65%,transparent)}
+.foot .by{direction:ltr;margin-top:4px}
+.foot .by b{letter-spacing:.06em}
+
+/* bottom action bar */
+.bar{position:fixed;inset:auto 0 0 0;z-index:10;display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:6px;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:var(--ink)}
+.bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;min-height:56px;border-radius:14px;color:var(--bg);text-decoration:none;font-size:13px;font-weight:700}
+.bar a.main{background:var(--accent);color:var(--on-accent)}
+.bar svg{width:22px;height:22px}
+@media (min-width:760px){
+  .bar{left:50%;right:auto;bottom:16px;transform:translateX(-50%);width:min(560px,92vw);border-radius:22px;padding:8px}
+  .item img{width:120px;height:120px}
+  .gallery{grid-template-columns:1fr 1fr 1fr}
+}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>window.SITE = {"kind": "shop", "name": "אור חוזר", "tagline": "חנות פרחים וצמחים בהוד השרון", "about": "אצלנו תמצאו זרים, סידורי פרחים ומארזים, לצד כלים ואגרטלים. אנחנו בסוקולוב 46 בהוד השרון, ומזמינים אתכם לבחור פרחים לחג, להפתעה או סתם לבית.", "phone": "0544271272", "whatsapp": "0544271272", "address": "סוקולוב 46 הוד השרון", "lat": 32.1685563, "lon": 34.9018318, "hours": [[[600, 1080]], [[600, 1080]], [[600, 1080]], [[600, 1080]], [[600, 1080]], [[540, 900]], []], "cover": "https://imageproxy.wolt.com/assets/67335e2b149445354de04f00?w=1600", "logo": null, "rating": {"score": 8.6, "count": 20, "src": "וולט"}, "menu": [{"name": "ראש השנה", "items": [{"name": "סידור תיק פרחים חגיגי בלבן", "desc": "תיק לבן הכולל פרחים לבנים\nהתמונה להמחשה בלבד", "price": 155.0, "img": "https://imageproxy.wolt.com/assets/6a9694236d77354c0b29e627"}, {"name": "סידור פרחים חגיגי בלבן לחג", "desc": "הפרחים מגיעים בלבן וירק עם כלי קרמיקה\nהתמונה להמחשה בלבד .בלבן\nקוטר הכלי 18ס״מ", "price": 295.0, "img": "https://imageproxy.wolt.com/assets/6a9694573a9b0b41a1d27f3a"}]}, {"name": "טו באב", "items": [{"name": "מארז טו באב", "desc": "תיק פרחים במגוון צבעים בשילוב love\nשוקולד חלב טבעי קרמל מלוח של דה קרינה\nהתמונה להמחשה 100גרם שוקולד", "price": 205.0, "img": "https://imageproxy.wolt.com/assets/6a55d95b13b9d669674022dc"}, {"name": "מארז מפנק לטו באב", "desc": "דובי ומארז שוקולד love\nהתמונה להמחשה בלבד\nגובה הדובי 25סמ\nשל דה קרינה משקל - 100 גרם\n, שוקולד כשר בטעמ קרם נוגט", "price": 205.0, "img": "https://imageproxy.wolt.com/assets/6a55d99513b9d669674022e7"}]}, {"name": "ולנטיין", "items": [{"name": "זר פרחים רומנטי", "desc": "זר פרחים רומנטי עם פרחי אוריינטלי ופרחים נוספים בגוונים ורודים ונגיעה בלבן (התמונה להמחשה) | לא כולל וואזה", "price": 250.0, "img": "https://imageproxy.wolt.com/assets/696c97f1f19647a6f19cff97"}]}, {"name": "זרים", "items": [{"name": "סידור תיק פרחים", "desc": "‫תיק יד עם ידיות עשוי מקרטון בצבע טבעי, שזור בספוג במגוון פרחים וירק.", "price": 150.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/66b8adbb8d9879e3da68fb33/d49bbd54-6900-11ef-964c-964db840c353__________.png"}, {"name": "זר בהפתעה", "desc": "זר מתחלף בטעם השוזרת ממבחר הפרחים (התמונה להמחשה)", "price": 160.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/0c39870a-57e0-11ef-ade0-0aa2f9697bfb__________.jpg"}, {"name": "זר חמניות", "desc": "חמניות וירק (התמונה להמחשה)", "price": 150.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/1b3213d0-57e0-11ef-a66c-0a65060a59e7__________.jpg"}, {"name": "זר אלגנט בלבן", "desc": "זר פרחים בלבן המכיל שושן צחור, ליזיאנטוס, גרברות, ירק וחרצית (התמונה להמחשה)", "price": 160.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/13a1b454-57e0-11ef-803d-9ea8168c84d8________.jpg"}, {"name": "זר ורדים", "desc": "13 ענפי ורדים בשילוב ירק וגיבסניות לקישוט", "price": 180.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/17c65530-57e0-11ef-966d-2a5e1dd84dd2_________.jpg"}, {"name": "סידור כפרי", "desc": "סידור פרחים מרהיב בסלסלת קש לפי בחירת השוזרת, אנחנו נשזור לכם את הסידור היפה ביותר (התמונה להמחשה)", "price": 300.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/399384c6-57e0-11ef-8fa9-ea5b7e2851fa___________.jpg"}, {"name": "זר פסטל", "desc": "זר יפיפה המכיל מגוון פרחים בצבעי פסטל ומשלב ירק | התמונה להמחשה בלבד | מגוון הפרחים תלוי במלאי החנות ובעונה", "price": 170.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/29b3f842-57e0-11ef-96f7-7eee0b131397________.jpg"}, {"name": "סידור אור חוזר", "desc": "סידור פרחים צבעוני ושמח המכיל ליזיאנטוס, חרצית, טווידה, ירק ושילובים נוספים של פרחים (התמונה להמחשה)", "price": 295.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/086e1f96-57e0-11ef-9306-625b3811cf3c____________.jpg"}, {"name": "סידור פרחים בכלי", "desc": "סידור קטן ומתוק בכלי קרמיקה עגול המכיל ליזיאנטוס, לימוניום, חרצית, ירק ומגוון פרחים נוספים (התמונה להמחשה)", "price": 180.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/shared/42120852-57e0-11ef-bf30-2a5e1dd84dd2_________________.jpg"}, {"name": "סידור יוטה", "desc": "סידור פרחים מפרחי שדה במגוון צבעים.", "price": 160.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/66b8adbb8d9879e3da68fb33/2def5f50-5ad8-11ef-b797-2619a254ba78___________.jpg"}, {"name": "זר פרחי חורף", "desc": "זר פרחים מהמם נמוך וצפוץ מפרחי חורף | התמונה להמחשה בלבד | סוג הפרחים לפי מלאי החנות ועונות השנה", "price": 200.0, "img": "https://imageproxy.wolt.com/assets/672cb93a591b80477eda9e70"}, {"name": "זר טוליפים", "desc": "זר טוליפים, 15 ענפים בצבע אחיד | התמונה להמחשה בלבד | מגיע ללא כלי | צבע הפרחים נקבע לפי מלאי החנות", "price": 170.0, "img": "https://imageproxy.wolt.com/assets/672cb93c591b80477eda9e71"}, {"name": "סידור פקעות יקינתון", "desc": "מגיע בכלי קרמיקה קוטר 20 ס״מ | צבע הכלי משתנה לפי מלאי חנות | צבע הפקעות משתנה בהתאם לעונה ולמלאי החנות", "price": 230.0, "img": "https://imageproxy.wolt.com/assets/674ed53b4b80e20da9347db4"}, {"name": "זר חורף", "desc": "זר יפהפה במגוון צבעים מפרחי חורף-נוריות,כלניות,עד עד ועוד| צבעי הפרחים משתנים לפי מלאי החנות| מגיע ללא כלי", "price": 200.0, "img": "https://imageproxy.wolt.com/assets/673f0db99c8b676535894110"}, {"name": "זר פרחים מיובשים במגוון צבעים", "desc": "הזר מגיע ללא הכלי\nהּהתמונה להמחש", "price": 150.0, "img": "https://imageproxy.wolt.com/assets/67765b43a2a1ca7bbf5b29a2"}, {"name": "זר פסטל גדול", "desc": "זר פרחים מהמם וגדול בצבעי פסטל בשילוב ענפי ירק\nסוגי הפרחים תלוי במלאי ועונות השנה\nהתמונה להמחשה בלבד", "price": 270.0, "img": "https://imageproxy.wolt.com/assets/67dfb66e043b8c2329968f87"}, {"name": "זר לבן גדול", "desc": "זר פרחים גדול ומהמם בצבעים של לבן בשילוב ענפי קישוט ירוקים\nסוגי הפרחים משתנים לפי מלאי החנות ועונות השנה\nהתמונה להמחשה בלבד", "price": 270.0, "img": "https://imageproxy.wolt.com/assets/67dfb757df096032fc2de6a5"}]}, {"name": "באנצ׳ים", "items": [{"name": "באנץ׳ חמניות | 10 ענפים", "desc": "‫10 ענפים של חמניות | ארוזים בנייר טבעי | התמונה להמחשה בלבד | הפרחים מגיעים ללא ירק או תוספת", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/680f72c337ab058cca26e6f1"}, {"name": "באנץ׳ שושן צחור | 7 ענפים", "desc": "‫7 ענפים של שושן צחור | ארוזים בנייר טבעי | התמונה להמחשה בלבד | הפרחים מגיעים ללא ירק או תוספת", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/680f73880b43fc2a1c010ec3"}, {"name": "באנץ ליזיאנטוס | 10 ענפים", "desc": "ענפים של ליזיאנטוס.\nהפרחים מגיעים ללא ירק או תוספת\nצבע הפרחים משתנים לפי מלאי החנות\nהתמונה להמחשה בלבד\nהפרחים לא כוללים את הכלי", "price": 130.0, "img": "https://imageproxy.wolt.com/assets/6b0693a684b721c1f84b68e7"}]}, {"name": "כדים", "items": [{"name": "כלי זכוכית ורוד עתיק", "desc": "כלי זכוכית בצבע ורוד עתיק | גובה 15 ס״מ | התמונה להמחשה בלבד", "price": 120.0, "img": "https://imageproxy.wolt.com/assets/672cb9aa9de7e67c57a2733c"}, {"name": "ואזה בסגנון וינטג", "desc": "בצבע אפור כהה\nגובה הכלי 15 ס״מ\nהתמונה להמחשה בלבד", "price": 120.0, "img": "https://imageproxy.wolt.com/assets/6af42f05172260103eb5064f"}]}, {"name": "עציצים", "items": [{"name": "עציץ ניצנית", "desc": "עציץ ניצנית קטן בכלי קרמיקה (בהתאם למלאי החנות) | גובה ממוצע 30 ס״מ.", "price": 89.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/66b8adbb8d9879e3da68fb33/5cd79e70-5ad5-11ef-bdf0-266a2b771cce____________.jpg"}, {"name": "עציץ שפע בכלי קרמיקה", "desc": "עציץ שפע בכלי קרמיקה עגול ואבני קישוט. קוטר הכלי 12 ס\"מ | התמונה להמחשה בלבד | צבע הכלי עלול להשתנות לפי המלאי.", "price": 130.0, "img": "https://imageproxy.wolt.com/assets/6707b2020baf9542542e4d54"}, {"name": "אנטורים ננסי בכלי קרמיקה", "desc": "אנטורים ננסי בכלי קרמיקה, גודל הכלי 13 ס\"מ | התמונה להמחשה בלבד | צבע הכלי עלול להשתנות לפי המלאי.", "price": 140.0, "img": "https://imageproxy.wolt.com/assets/6707b1cea7eb5c5d5a81490a"}, {"name": "עציץ זית ננסי בכלי קרמיקה", "desc": "עציץ זית ננסי בכלי קרמיקה, גודל הכלי 13 ס\"מ | התמונה להמחשה בלבד | צבע הכלי עלול להשתנות לפי המלאי", "price": 155.0, "img": "https://imageproxy.wolt.com/assets/6707b1d635b6997fcf8326bd"}, {"name": "עציץ פוטוס", "desc": "עציץ פוטוס, מגיע בסלסלת עץ קלוע | התמונה להמחשה בלבד", "price": 100.0, "img": "https://imageproxy.wolt.com/assets/6707b1dd35b6997fcf8326be"}, {"name": "עציץ סנסיווריה בכלי קרמיקה", "desc": "עציץ סנסיוורה 10/12 בכלי קרמיקה | התמונה להמחשה בלבד | צבע הכלי עלול להשתנות לפי המלאי.", "price": 120.0, "img": "https://imageproxy.wolt.com/assets/6707b1f935b6997fcf8326c2"}, {"name": "עציץ סנסיוורה בסלסלת עץ קלוע", "desc": "עציץ בגוניה 10/12, מגיע בסלסלת עץ קלוע.\nהתמונה להמחשה בלבד.", "price": 105.0, "img": "https://imageproxy.wolt.com/assets/6707b21835b6997fcf8326c6"}, {"name": "סידור פקעות יקינתון", "desc": "מגיע בכלי קרמיקה | התמונה להמחשה בלבד | צבע הכלי משתנה לפי המלאי | צבע הפקעות משתנה לפי מלאי החנות (סגול / ורוד / לבן)", "price": 230.0, "img": "https://imageproxy.wolt.com/assets/674ed543d972bb336cbdb2a2"}, {"name": "עציץ דקל ננסי", "desc": "מגיע בכלי קרמיקה עגול קוטר הכלי 19 ס״מ צבע הכלי עלול להשתנות לפי מלאי החנות | התמונה להמחשה", "price": 130.0, "img": "https://imageproxy.wolt.com/assets/677f871eef6a465fdb0289f8"}, {"name": "עציץ סחלב ננסי", "desc": "מגיע בכלי קרמיקה לבן | גובה הענף 29 ס״מ | גבוה הכלי 10 ס״מ", "price": 170.0, "img": "https://imageproxy.wolt.com/assets/68b551ee0ad00e6220d5b1d8"}, {"name": "עציץ קוקטייל יפייפה במגוון שתילים", "desc": "מגיע בכלי קרמיקה עגול | קוטר 21 ס\"מ\nגובה 7 ס\"מ\nצבע הכלי משתנה לפי מלאי החנות.\nהשתילים משתנים לפי מלאי שיש בחנות.\nהתמונה להמחשה בלבד.", "price": 230.0, "img": "https://imageproxy.wolt.com/assets/6912ef992d5740aaaa59166e"}, {"name": "כלי קרמיקה עם כיתוב עת לצמוח", "desc": "גובה7 ס״מ קוטר 8 ס״מ", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/6a095f14fea6724dac223721"}, {"name": "עציץ קרמיקה מיקס סוקולנטים", "desc": "גובה הכלי 8 סמ קוטר 14 סמ | צבע הכלי עלול להשתנות\nהתמונה להמחשה בלבד", "price": 230.0, "img": "https://imageproxy.wolt.com/assets/6a095f7948fc6ee4690f1618"}, {"name": "עציץ דקל בכלי קרמיקה עם כיתוב תודה על הלא מובן מאליו", "desc": "גובה הכלי 13 סמ קוטר 13 סמ | צבע הכלי בלבן\nהתמונה להמחשה בלבד", "price": 190.0, "img": "https://imageproxy.wolt.com/assets/6a095fbafea6724dac223728"}, {"name": "עציץ סחלב שני ענפים ייבוא", "desc": "גובה העציץ 40 סמ גובה הכלי 12 סמ קוטר 12 סמ | צבע הכלי יכול להשתנות לפי המלאי מגיע בכלי זכוכית או קרמיקה | התמונה להמחשה בלבד", "price": 260.0, "img": "https://imageproxy.wolt.com/assets/6a096017fea6724dac22372a"}, {"name": "\"עציץ דקל עם כיתוב \"בית לב נשמה", "desc": "התמונה להמחשה בלבד הכלי מגיע בלבן קוטר הכלי סמ ר12 13גובה סמ קוטר", "price": 190.0, "img": "https://imageproxy.wolt.com/assets/6a09605c90aada8d9216488d"}, {"name": "עציץ שפע בכלי קרמיקה עם הכיתוב פשוט להודות", "desc": "גובה הכלי 7 סמ\nקוטר 8 סמ\nהתמונה להמחשה בלבד.\nצבע הכלי עלול להשתנות לפי המלאי", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/6acc87af2f8e202bc4556576"}, {"name": "עציץ איתך זה בית", "desc": "עציץ קרמיקה עם הכיתוב איתך זה בית\n(עבודה בתנור) | קוטר הכלי 10 סמ\nהתמונה להמחשה בלבד\nצבע הכלי עלול להשתנות לפי מלאי החנות", "price": 140.0, "img": "https://imageproxy.wolt.com/assets/6ae9f8d45e5bc955a431b44c"}, {"name": "רקפת בכלי", "desc": "עציץ רקפת פורח בכלי עגול\nצבע הרקפת והכלי עלולים להשתנות לפי מלאי החנות\nהתמונה להמחשה בלבד", "price": 149.0, "img": "https://imageproxy.wolt.com/assets/6b0693f2d07422ddd19611e0"}, {"name": "עציץ סנציה נשפך מגיע בכלי קרמיקה", "desc": "קוטר העציץ 12 סמ קוטר הכלי 17 סמ\nהתמונה להמחשה בלבד\nצבע הכלי עלוח להשתנות לפי מלאי החנות", "price": 135.0, "img": "https://imageproxy.wolt.com/assets/6b0694823eccd8f7aac5d0b8"}]}, {"name": "סידורי פרחים", "items": [{"name": "סידור חגיגי בלבן", "desc": "סידור פרחים בספוג בלבן ותוספת ירק מגיע בכלי קרמיקה |  קוטר 20  ס״מ | גובה 7 ס\"מ | התמונה להמחשה בלבד", "price": 295.0, "img": "https://imageproxy.wolt.com/assets/69c12889282473d42b9d55ef"}, {"name": "קסם בכלי זכוכית", "desc": "סידור פרחים מלא בפרחי העונה במגון .\nצבעים.\nמגיע בקערת זכוכית שקופה\nקוטר 27סמ\nצבעי הפרחים משתנים לפי העונה ומלאי\nהחנות\nהתמונה להמחשה בלבד", "price": 230.0, "img": "https://imageproxy.wolt.com/assets/6ae86a2bd9edf4f739be1877"}, {"name": "קסם של צבעים", "desc": "סידור פרחים יפייפה מלא בפרחי העונה במגוון צבעים\nמגיע בכלי זכוכית קוטר 27 סמ\nצבעי הםרחים משתנים לפי העונה ומלאי החנות\nהתמונה להמחשה בלבד", "price": 230.0, "img": "https://imageproxy.wolt.com/assets/6b06942d84b721c1f84b691c"}]}, {"name": "נלווים", "items": [{"name": "יין אדום קברנה סוביניון", "desc": "קברנה סוביניון, יקב אור האגוז, סדרת עמוקה", "price": 95.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/66b8adbb8d9879e3da68fb33/20ab5648-5ad6-11ef-aa78-f2674302ea87____.jpg?overlay=isr-softalcohol"}, {"name": "יין לבן סוביניון בלאן", "desc": "שרדונה-11% אלכוהול", "price": 95.0, "img": "https://imageproxy.wolt.com/assets/673c58266160d2426a94bda1?overlay=isr-softalcohol"}, {"name": "יין אדום שירז | עמוקה", "desc": "שירז- עמוקה- 14%", "price": 95.0, "img": "https://imageproxy.wolt.com/assets/673c58726160d2426a94bdb0?overlay=isr-softalcohol"}, {"name": "ניר ריחני וטבעי בצנצנת זכוכית", "desc": "התמונה להמחשה בלבד\nניר ריחני וטבעי בצנצנת זכוכית מגיע בריחות שונים | בחרו את הניחוח נר שתרצו", "price": 150.0, "img": "https://imageproxy.wolt.com/assets/682f332ec1dac14301bdff29"}, {"name": "נר שעווה טבעי בכלי קרמיקה בניחוחות שונים", "desc": "התמונה להמחשה בלבד\nנר שעווה טבעי בכלי קרמיקה בניחוחות שונים | נא לבחור את הניחוח שרוצים", "price": 150.0, "img": "https://imageproxy.wolt.com/assets/682f3473f6adf52ef4462297"}, {"name": "יין של עמוקה לבחירה", "desc": "", "price": 90.0, "img": "https://imageproxy.wolt.com/assets/68b5649e6e290e77c468bf3c?overlay=isr-softalcohol"}, {"name": "שוקולד מארז מתנה של דה קרינה לפי בחירה", "desc": "שוקולד כשר", "price": 45.0, "img": "https://imageproxy.wolt.com/assets/6acb2ee3ce1dff8ba6d51a9c"}]}, {"name": "מיוחדים", "items": [{"name": "עציץ דקל ננסי בכלי קרמיקה לבן ייחודי ובלעדי", "desc": "‫הכיתוב איכותי ביותר בעבודת תנור מקצועי, לא ניתן למחיקה | ניתן לבחור את המשפט המתאים | התמונה להמחשה בלבד", "price": 140.0, "img": "https://imageproxy.wolt.com/assets/67dbd6cd149a6079e5ce6b52"}, {"name": "זר לראש", "desc": "קשת לראש מפרחים מיובשים במגוון צבעים.", "price": 130.0, "img": "https://wolt-menu-images-cdn.wolt.com/menu-images/66b8adbb8d9879e3da68fb33/d4eba792-5ad7-11ef-8ddf-d620e6435ca7________.jpg"}, {"name": "סידור פרחים בכלי", "desc": "סידור פרחים בספוג ובמגוון צבעי פסטל, מגיע בכלי קרמיקה לבן. גובה הכלי 16 ס\"מ קוטר הכלי 13 ס\"מ\nצבע הכלי עלול להשתנות לפי מלאי החנות.\nהתמונה להמחשה בלבד", "price": 180.0, "img": "https://imageproxy.wolt.com/assets/682f3691c1dac14301be008d"}]}, {"name": "מתנות", "items": [{"name": "יומיקו כלבים", "desc": "סוג הכלב והצבע בהתאם למלאי החנות\n19 ס״מ", "price": 80.0, "img": "https://imageproxy.wolt.com/assets/68da447860bb5cefbae5487c"}, {"name": "יומיקו חיות ים", "desc": "סוג וצבע בהתאם למלאי החנות\n19 ס״מ", "price": 80.0, "img": "https://imageproxy.wolt.com/assets/68da4576f18cfc617a58f5b8"}, {"name": "סבון מוצק טבעי", "desc": "איטלקי Oliveto הסבונים מגיעים במגוון\nריחות | התמונה להמחשה בלבד", "price": 50.0, "img": "https://imageproxy.wolt.com/assets/6912f1b169fd93f045fc18d0"}, {"name": "באף לצוואר  Hurley", "desc": "100% polyester\nהתמונה להמחשה בלבד", "price": 50.0, "img": "https://imageproxy.wolt.com/assets/695a2efa2eeaac6c9caa3d6a"}, {"name": "קטורת טבעית בעבודת יד בניחוח פצולי מגיע באריזת מתנה", "desc": "התמונה להמחשה בלבד", "price": 30.0, "img": "https://imageproxy.wolt.com/assets/6a0960b648fc6ee4690f1623"}, {"name": "פמוטי שבת | הדרייה", "desc": "12 ס״מ | מגיע בקופסת מתנה", "price": 185.0, "img": "https://imageproxy.wolt.com/assets/6a30e49a88730e8b6b55a21d"}, {"name": "בובת אנושקה", "desc": "‫35 ס״מ | התמונה להמחשה בלבד", "price": 105.0, "img": "https://imageproxy.wolt.com/assets/6a5c81ca616a386cfb731a57"}, {"name": "דובי הארי בצבע חום", "desc": "‫25 ס״מ | התמונה להמחשה בלבד", "price": 69.0, "img": "https://imageproxy.wolt.com/assets/6a5c8201616a386cfb731a5a"}, {"name": "מגוון בובות לפי בחירה", "desc": "גובה בין 16-20 ס״מ | התמונה להמחשה בלבד", "price": 55.0, "img": "https://imageproxy.wolt.com/assets/6a5c82d3de79d3eb0c37bc17"}, {"name": "סבון טבעי", "desc": "סבון פחם פעיל פצולי וחמאת שיאה | התמונה להמחשה בלבד", "price": 55.0, "img": "https://imageproxy.wolt.com/assets/6acb2fd7146ee769bc5cd2c0"}, {"name": "סבון טבעי עם תמציות", "desc": "בניחוח לבנדר ורבנה", "price": 55.0, "img": "https://imageproxy.wolt.com/assets/6acb2f9a34b1769c03913ffe"}, {"name": "חמסה ברכת הבית לתלייה", "desc": "עבודת יד\nגובה 14 סמ\nהתמונה להמחשה בלבד", "price": 105.0, "img": "https://imageproxy.wolt.com/assets/6acb2f60ce1dff8ba6d51a9f"}, {"name": "חמסה ברכת העסק לתלייה עבודת יד", "desc": "גובה 14 סמ\nהתמונה להמחשה בלבד", "price": 105.0, "img": "https://imageproxy.wolt.com/assets/6acc87e7332d64159c34ee85"}, {"name": "מתנה ליולדת בן", "desc": "מארז לידה מפנק המכיל שמיכה, שמיכי , בובה, תיבת נגינה וחמסה של המעצבת הדריה | התמונה להמחשה בלבד", "price": 230.0, "img": "https://imageproxy.wolt.com/assets/6b042d64341dad2949936007"}, {"name": "חמסה לתלייה", "desc": "חמסה של המעצבת הדרייה\nגובה 10סמ\nהתמונה להמחשה בלבד", "price": 65.0, "img": "https://imageproxy.wolt.com/assets/6b07f671c3ad356091a65e9f"}, {"name": "חנוכייה", "desc": "חנוכייה קריסטל של המעצבת הדרייה\nמגיע באריזת מתנה\nמתאים לנר חנוכה ולשמן\nהתמונה להמחשה בלבד", "price": 245.0, "img": "https://imageproxy.wolt.com/assets/6b07f6f9549ddc27e50fc2ac"}]}, {"name": "פרחים מיובשים", "items": [{"name": "ואזה ופרחים מיובשים", "desc": "בקבוקון סגול לילך קטן עם בוקט פרחים מיובשים | התמונה להמחשה בלבד | קוטר 5 ס״מ , גובה הכלי 12 ס״מ", "price": 85.0, "img": "https://imageproxy.wolt.com/assets/6a65dd51383847bab3f235f6"}]}], "menu_title": "המוצרים", "services": [], "gallery": [], "order_url": "https://wolt.com/he/isr/hasharon/venue/or-hozer"};</script>
+<script>
+(function(){
+const S = window.SITE;
+const esc = t => String(t == null ? "" : t).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+const DAYS = ["ראשון","שני","שלישי","רביעי","חמישי","שישי","שבת"];
+const hm = m => { m = ((m % 1440) + 1440) % 1440; return String(Math.floor(m/60)).padStart(2,"0") + ":" + String(m%60).padStart(2,"0"); };
+const ICON = {
+  phone:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.12.37 2.33.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>',
+  wa:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>',
+  nav:'<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 3 3 10.6l7.4 2.9L13.4 21z"/></svg>',
+  bag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8h14l-1 13H6z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg>',
+  menu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg>',
+  pics:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="m3 16 5-5 5 5 3-3 5 5"/></svg>'
+};
+
+function nowIL(){
+  const p = new Intl.DateTimeFormat("en-US",{timeZone:"Asia/Jerusalem",weekday:"short",hour:"2-digit",minute:"2-digit",hourCycle:"h23"}).formatToParts(new Date());
+  const g = t => p.find(x => x.type === t).value;
+  return { d: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")), m: (+g("hour")) * 60 + (+g("minute")) };
+}
+function status(){
+  const H = S.hours; if (!H) return null;
+  const {d, m} = nowIL();
+  for (const [a,b] of H[d] || []) { const end = b <= a ? b + 1440 : b; if (m >= a && m < end) return {open:true, text:"פתוח עכשיו, עד " + hm(b)}; }
+  for (const [a,b] of H[(d+6)%7] || []) if (b <= a && m < b) return {open:true, text:"פתוח עכשיו, עד " + hm(b)};
+  for (let i = 0; i < 7; i++) {
+    const rs = (H[(d+i)%7] || []).filter(([a]) => i > 0 || a > m).sort((x,y) => x[0]-y[0]);
+    if (rs.length) {
+      const when = i === 0 ? "היום" : i === 1 ? "מחר" : "ביום " + DAYS[(d+i)%7];
+      return {open:false, text:"סגור עכשיו, נפתח " + when + " ב-" + hm(rs[0][0])};
+    }
+  }
+  return null;
+}
+
+const st = status();
+const waLink = S.whatsapp ? "https://wa.me/972" + S.whatsapp.replace(/^0/,"") : "";
+const tel = S.phone ? "tel:" + S.phone.replace(/[^\d+]/g,"") : "";
+const waze = S.lat ? "https://waze.com/ul?ll=" + S.lat + "," + S.lon + "&navigate=yes" : "";
+const gmaps = S.lat ? "https://www.google.com/maps/search/?api=1&query=" + S.lat + "," + S.lon : "";
+let h = "";
+
+h += '<p class="ribbon">אתר הדגמה ש-TOMI הכינו עבור ' + esc(S.name) + '</p>';
+h += '<header class="hero">' + (S.cover ? '<img class="hero__img" src="' + esc(S.cover) + '" alt="" fetchpriority="high">' : '') +
+     '<div class="hero__text">' + (S.logo ? '<img class="hero__logo" src="' + esc(S.logo) + '" alt="">' : '') +
+     '<h1 class="hero__name">' + esc(S.name) + '</h1>' +
+     (S.tagline ? '<p class="hero__tag">' + esc(S.tagline) + '</p>' : '') +
+     (st ? '<p class="status' + (st.open ? ' open' : '') + '">' + esc(st.text) + '</p>' : '') +
+     '</div></header>';
+
+h += '<main class="wrap">';
+const facts = [];
+if (S.rating && S.rating.score) facts.push('<span>דירוג <b>' + esc(S.rating.score) + '</b> ב' + esc(S.rating.src) + (S.rating.count ? ', ' + esc(S.rating.count) + ' מדרגים' : '') + '</span>');
+if (S.address) facts.push('<span>' + esc(S.address) + '</span>');
+if (facts.length) h += '<div class="facts">' + facts.join("") + '</div>';
+if (S.about) h += '<section class="about"><p>' + esc(S.about) + '</p></section>';
+
+if (S.menu && S.menu.length) {
+  h += '<section id="menu"><h2>' + esc(S.menu_title || "התפריט") + '</h2><nav class="chips" aria-label="קטגוריות">' +
+       S.menu.map((c,i) => '<a href="#c' + i + '">' + esc(c.name) + '</a>').join("") + '</nav>';
+  S.menu.forEach((c,i) => {
+    h += '<div class="cat" id="c' + i + '"><h3>' + esc(c.name) + '</h3><ul>';
+    for (const it of c.items) {
+      h += '<li class="item"><div class="item__txt"><div class="item__name">' + esc(it.name) + '</div>' +
+           (it.desc ? '<p class="item__desc">' + esc(it.desc) + '</p>' : '') +
+           '<span class="item__price">' + esc(String(it.price).replace(/\.0+$/,"")) + ' ₪</span></div>' +
+           (it.img ? '<img loading="lazy" src="' + esc(it.img) + '?w=360" alt="' + esc(it.name) + '" onerror="this.remove()">' : '') + '</li>';
+    }
+    h += '</ul></div>';
+  });
+  h += '</section>';
+}
+if (S.services && S.services.length)
+  h += '<section id="services"><h2>הטיפולים שלנו</h2><ul class="services">' + S.services.map(s => '<li>' + esc(s) + '</li>').join("") + '</ul></section>';
+if (S.gallery && S.gallery.length)
+  h += '<section id="gallery"><h2>מהסטודיו</h2><div class="gallery">' + S.gallery.map(g => '<img loading="lazy" src="' + esc(g) + '" alt="" onerror="this.remove()">').join("") + '</div></section>';
+
+if (S.hours) {
+  const today = nowIL().d;
+  h += '<section id="hours"><h2>שעות פתיחה</h2><ul class="hours">' + DAYS.map((name,i) => {
+    const r = S.hours[i] || [];
+    return '<li' + (i === today ? ' class="today"' : '') + '><span>יום ' + name + '</span><span>' +
+      (r.length ? r.map(([a,b]) => hm(a) + "–" + hm(b)).join(", ") : "סגור") + '</span></li>';
+  }).join("") + '</ul></section>';
+}
+if (S.lat) {
+  h += '<section id="where"><h2>איך מגיעים</h2>' + (S.address ? '<p class="addr">' + esc(S.address) + '</p>' : '') +
+       '<iframe class="map" loading="lazy" title="מפה" src="https://maps.google.com/maps?q=' + S.lat + ',' + S.lon + '&z=16&hl=iw&output=embed"></iframe>' +
+       '<div class="links"><a class="btn" href="' + waze + '">' + ICON.nav + 'ניווט ב-Waze</a><a class="btn" href="' + gmaps + '">Google Maps</a></div></section>';
+}
+h += '</main>';
+h += '<footer class="foot"><div>© ' + new Date().getFullYear() + ' ' + esc(S.name) + ', כל הזכויות שמורות</div><div class="by">Website by <b>TOMI</b></div></footer>';
+
+const bar = [];
+if (tel) bar.push('<a href="' + tel + '"' + (S.kind === "beauty" && !waLink ? ' class="main"' : '') + '>' + ICON.phone + 'התקשרו</a>');
+if (waLink) bar.push('<a href="' + waLink + '"' + (S.kind === "beauty" ? ' class="main"' : '') + '>' + ICON.wa + 'וואטסאפ</a>');
+if (S.menu && S.menu.length) bar.push('<a href="#menu">' + ICON.menu + (S.kind === "shop" ? 'מוצרים' : 'תפריט') + '</a>');
+if (S.gallery && S.gallery.length) bar.push('<a href="#gallery">' + ICON.pics + 'תמונות</a>');
+if (waze) bar.push('<a href="' + waze + '">' + ICON.nav + 'ניווט</a>');
+if (S.order_url) bar.push('<a class="main" href="' + esc(S.order_url) + '">' + ICON.bag + 'להזמנה</a>');
+h += '<nav class="bar" aria-label="פעולות מהירות">' + bar.join("") + '</nav>';
+
+document.getElementById("app").innerHTML = h;
+
+// fit the name to the width of the hero
+const nm = document.querySelector(".hero__name");
+function fit(){
+  const cs = getComputedStyle(nm.parentElement);
+  const box = nm.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+  nm.classList.remove("wrap");
+  let size = Math.min(150, window.innerHeight * 0.16);
+  nm.style.fontSize = size + "px";
+  while (nm.offsetWidth > box && size > 34) { size -= 2; nm.style.fontSize = size + "px"; }
+  if (nm.offsetWidth > box) { nm.classList.add("wrap"); nm.style.fontSize = "40px"; }
+}
+(document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(fit);
+fit(); addEventListener("resize", fit);
+
+// highlight the menu category in view
+const chips = [...document.querySelectorAll(".chips a")];
+if (chips.length && "IntersectionObserver" in window) {
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    chips.forEach(a => a.classList.toggle("on", a.getAttribute("href") === "#" + e.target.id));
+    const on = chips.find(a => a.classList.contains("on"));
+    if (on) on.scrollIntoView({block:"nearest", inline:"center", behavior:"smooth"});
+  }), {rootMargin:"-30% 0px -60% 0px"});
+  document.querySelectorAll(".cat").forEach(c => io.observe(c));
+}
+})();
+</script>
+</body>
+</html>
